@@ -1,0 +1,4 @@
+{
+  "luau-lsp.diagnostics.strictDatamodelTypes": false,
+  "luau-lsp.require.mode": "relativeToFile"
+}

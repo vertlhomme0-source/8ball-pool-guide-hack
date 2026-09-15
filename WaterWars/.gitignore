@@ -1,0 +1,6 @@
+# Binaires de la chaine d'outils (recuperables via tools/setup_tools.sh)
+.tools/
+
+# Fichier genere par tools/gen_sourcemap.py
+sourcemap.json
+tools/globalTypes.d.luau

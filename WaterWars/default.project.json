@@ -1,0 +1,27 @@
+{
+  "name": "WaterWars",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "WaterWars": {
+        "$path": "src/ReplicatedStorage/WaterWars"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "WaterWarsServer": {
+        "$path": "src/ServerScriptService/WaterWarsServer"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "WaterWarsClient": {
+          "$path": "src/StarterPlayer/StarterPlayerScripts/WaterWarsClient"
+        }
+      }
+    }
+  }
+}
