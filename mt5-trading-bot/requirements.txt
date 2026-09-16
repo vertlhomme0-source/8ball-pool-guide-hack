@@ -1,0 +1,11 @@
+# Interface graphique
+PySide6>=6.6,<7
+
+# Calcul
+numpy>=1.24
+pandas>=2.0
+
+# Connexion au terminal MetaTrader 5 (Windows uniquement).
+# Sur un autre systeme, l'installation echoue : c'est normal, l'application
+# fonctionne alors en mode simulation hors-ligne.
+MetaTrader5>=5.0.45 ; sys_platform == "win32"
