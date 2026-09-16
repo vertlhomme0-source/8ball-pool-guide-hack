@@ -20,6 +20,28 @@ Trois méthodes, de la plus simple à la plus avancée. **La méthode A suffit d
 3. Appuyez sur **Play** (F5). C'est tout.
 4. Pour publier : **Fichier → Publier sur Roblox sous…**
 
+> ### « Le Workspace est vide, il n'y a aucune map ! »
+>
+> **C'est normal, et c'est voulu.** Le fichier ne contient que du code : les
+> 6 terrains sont **construits par le code au moment où la partie démarre**,
+> pas stockés en dur dans le fichier. En mode édition vous ne voyez donc qu'un
+> Workspace vide — il n'y a rien à réparer.
+>
+> Appuyez sur **Play (F5)** : le terrain apparaît en une fraction de seconde,
+> et la fenêtre *Output* (Affichage → Output) affiche la confirmation :
+>
+> ```
+> [WaterWars] Serveur pret - 25 armes, 6 maps, 20 joueurs max.
+> [WaterWars] Terrain construit : Jardin d'Ete (311 pieces) -> workspace.CurrentMap
+> ```
+>
+> Pendant la partie, le terrain vit dans `workspace.CurrentMap` : vous pouvez
+> le voir apparaître dans l'Explorateur. Il est détruit et remplacé à chaque
+> changement de terrain, ce qui rend le nettoyage de fin de manche instantané.
+>
+> C'est ce choix qui permet d'avoir 6 terrains et 1 385 pièces de décor dans
+> un fichier de 265 Ko, sans aucun asset à uploader.
+
 ### Méthode B — ajouter le jeu à une expérience existante
 
 1. Téléchargez **`build/WaterWars.rbxmx`**.

@@ -475,7 +475,12 @@ local function gameLoop()
 	-- arrivent dans un decor, pas dans le vide.
 	if not MapService.GetCurrentMap() then
 		local first = Util.Pick(MapService.GetAll(), rng)
-		pcall(MapService.Load, first)
+		local ok, err = pcall(MapService.Load, first)
+		if not ok then
+			-- Sans ce message, un terrain qui ne se construit pas donnerait un
+			-- monde vide sans la moindre explication dans la console.
+			warn("[WaterWars] Chargement du terrain de depart impossible : " .. tostring(err))
+		end
 	end
 
 	while true do

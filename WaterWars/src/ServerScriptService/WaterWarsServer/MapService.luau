@@ -177,6 +177,13 @@ function MapService.Load(map)
 	applyLighting(map.lighting)
 	workspace.FallenPartsDestroyHeight = (map.killY or -50) - 200
 
+	print(string.format(
+		"[WaterWars] Terrain construit : %s (%d pieces) -> workspace.%s",
+		map.name,
+		builder.count,
+		MAP_MODEL_NAME
+	))
+
 	return model
 end
 
