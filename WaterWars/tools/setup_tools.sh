@@ -20,7 +20,15 @@ curl -sSL -o lsp.zip \
 unzip -o -q lsp.zip
 rm -f lsp.zip
 
-chmod +x luau luau-compile luau-analyze luau-ast luau-lsp 2>/dev/null || true
+chmod +x luau luau-compile luau-analyze luau-ast luau-lsp rojo 2>/dev/null || true
+
+echo "== Rojo (generation des fichiers .rbxlx / .rbxmx) =="
+ROJO_VERSION="${ROJO_VERSION:-7.5.1}"
+curl -sSL -o rojo.zip \
+  "https://github.com/rojo-rbx/rojo/releases/download/v$ROJO_VERSION/rojo-$ROJO_VERSION-linux-x86_64.zip"
+unzip -o -q rojo.zip
+rm -f rojo.zip
+chmod +x rojo
 
 echo "== definitions de types Roblox =="
 curl -sSL -o "$ROOT/tools/globalTypes.d.luau" \

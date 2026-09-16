@@ -1,0 +1,15 @@
+{
+  "name": "WaterWars_Installation",
+  "tree": {
+    "$className": "Folder",
+    "WaterWars": {
+      "$path": "src/ReplicatedStorage/WaterWars"
+    },
+    "WaterWarsServer": {
+      "$path": "src/ServerScriptService/WaterWarsServer"
+    },
+    "WaterWarsClient": {
+      "$path": "src/StarterPlayer/StarterPlayerScripts/WaterWarsClient"
+    }
+  }
+}

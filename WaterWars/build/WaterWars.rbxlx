@@ -1,20 +1,20 @@
-<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
-	<Item class="ReplicatedStorage" referent="RBX1">
-		<Properties>
-			<string name="Name">ReplicatedStorage</string>
-		</Properties>
-		<Item class="Folder" referent="RBX2">
-			<Properties>
-				<string name="Name">WaterWars</string>
-			</Properties>
-			<Item class="Folder" referent="RBX3">
-				<Properties>
-					<string name="Name">Config</string>
-				</Properties>
-				<Item class="ModuleScript" referent="RBX4">
-					<Properties>
-						<string name="Name">GameConfig</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+<roblox version="4">
+  <Item class="ReplicatedStorage" referent="0">
+    <Properties>
+      <string name="Name">ReplicatedStorage</string>
+    </Properties>
+    <Item class="Folder" referent="1">
+      <Properties>
+        <string name="Name">WaterWars</string>
+      </Properties>
+      <Item class="Folder" referent="2">
+        <Properties>
+          <string name="Name">Config</string>
+        </Properties>
+        <Item class="ModuleScript" referent="3">
+          <Properties>
+            <string name="Name">GameConfig</string>
+            <string name="Source"><![CDATA[--[[
 	GameConfig
 	Toutes les constantes de reglage du jeu Water Wars.
 	Modifier ce fichier suffit pour re-equilibrer la partie : aucun autre
@@ -178,13 +178,13 @@ GameConfig.Keys = {
 
 table.freeze(GameConfig)
 return GameConfig
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX5">
-					<Properties>
-						<string name="Name">Maps</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="4">
+          <Properties>
+            <string name="Name">Maps</string>
+            <string name="Source"><![CDATA[--[[
 	Maps
 	Index des 6 terrains. Pour ajouter une map : creer le module a cote de
 	celui-ci puis l'ajouter a la liste ci-dessous. Le reste du jeu (vote,
@@ -238,12 +238,12 @@ function Maps.PickRandom(count, excludeId, rng)
 end
 
 return Maps
-]]></ProtectedString>
-					</Properties>
-					<Item class="ModuleScript" referent="RBX6">
-						<Properties>
-							<string name="Name">AquaPark</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+          <Item class="ModuleScript" referent="5">
+            <Properties>
+              <string name="Name">AquaPark</string>
+              <string name="Source"><![CDATA[--[[
 	Map 3/6 : Aqua Parc
 	Un parc aquatique abandonne pour la journee. Deux tours de toboggans
 	servent de bases et dominent une piscine a vagues centrale. Map tres
@@ -485,13 +485,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX7">
-						<Properties>
-							<string name="Name">Backyard</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="6">
+            <Properties>
+              <string name="Name">Backyard</string>
+              <string name="Source"><![CDATA[--[[
 	Map 1/6 : Jardin d'Ete
 	Une grande bataille d'arriere-cour : deux maisons face a face, une piscine
 	centrale, du mobilier de jardin en guise de couverture. Map d'initiation :
@@ -732,13 +732,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX8">
-						<Properties>
-							<string name="Name">NeonArena</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="7">
+            <Properties>
+              <string name="Name">NeonArena</string>
+              <string name="Source"><![CDATA[--[[
 	Map 6/6 : Arene Neon
 	Arene futuriste parfaitement symetrique, sans decor superflu : plateformes
 	flottantes, passerelles de verre et un anneau central sureleve. C'est la map
@@ -1002,13 +1002,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX9">
-						<Properties>
-							<string name="Name">Rooftops</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="8">
+            <Properties>
+              <string name="Name">Rooftops</string>
+              <string name="Source"><![CDATA[--[[
 	Map 4/6 : Toits de la Ville
 	Combat sur deux etages : des ruelles etroites au niveau de la rue et un
 	reseau de toits relies par des planches. Chaque base possede son propre
@@ -1276,13 +1276,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX10">
-						<Properties>
-							<string name="Name">SplashBay</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="9">
+            <Properties>
+              <string name="Name">SplashBay</string>
+              <string name="Source"><![CDATA[--[[
 	Map 2/6 : Baie des Eclaboussures
 	Plage ouverte bordee par la mer. Deux pontons de bois servent de bases, un
 	chateau de sable geant tient le centre. Les rochers et les barques offrent
@@ -1522,13 +1522,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX11">
-						<Properties>
-							<string name="Name">SunkenTemple</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="10">
+            <Properties>
+              <string name="Name">SunkenTemple</string>
+              <string name="Source"><![CDATA[--[[
 	Map 5/6 : Temple Englouti
 	Des ruines envahies par la jungle autour d'un bassin sacre. Pyramide
 	centrale a gradins, galeries couvertes sur les flancs, cascades en fond.
@@ -1791,14 +1791,14 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-				</Item>
-				<Item class="ModuleScript" referent="RBX12">
-					<Properties>
-						<string name="Name">Weapons</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+        </Item>
+        <Item class="ModuleScript" referent="11">
+          <Properties>
+            <string name="Name">Weapons</string>
+            <string name="Source"><![CDATA[--[[
 	Weapons
 	Catalogue des 25 armes a eau du jeu.
 
@@ -2231,18 +2231,18 @@ end
 Weapons.Count = #Weapons.List
 
 return Weapons
-]]></ProtectedString>
-					</Properties>
-				</Item>
-			</Item>
-			<Item class="Folder" referent="RBX13">
-				<Properties>
-					<string name="Name">Shared</string>
-				</Properties>
-				<Item class="ModuleScript" referent="RBX14">
-					<Properties>
-						<string name="Name">MapBuilder</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+      </Item>
+      <Item class="Folder" referent="12">
+        <Properties>
+          <string name="Name">Shared</string>
+        </Properties>
+        <Item class="ModuleScript" referent="13">
+          <Properties>
+            <string name="Name">MapBuilder</string>
+            <string name="Source"><![CDATA[--[[
 	MapBuilder
 	Petite bibliotheque de construction utilisee par les 6 maps.
 
@@ -2749,13 +2749,13 @@ function MapBuilder:Mirror(callback)
 end
 
 return MapBuilder
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX15">
-					<Properties>
-						<string name="Name">Net</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="14">
+          <Properties>
+            <string name="Name">Net</string>
+            <string name="Source"><![CDATA[--[[
 	Net
 	Point d'acces unique aux RemoteEvent / RemoteFunction du jeu.
 
@@ -2887,13 +2887,13 @@ function Net.Function(name): RemoteFunction
 end
 
 return Net
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX16">
-					<Properties>
-						<string name="Name">Signal</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="15">
+          <Properties>
+            <string name="Name">Signal</string>
+            <string name="Source"><![CDATA[--[[
 	Signal
 	Mini implementation d'evenement, plus legere qu'un BindableEvent et qui
 	conserve les references d'instances (un BindableEvent serialise ses
@@ -2949,13 +2949,13 @@ function Signal:DisconnectAll()
 end
 
 return Signal
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX17">
-					<Properties>
-						<string name="Name">Util</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="16">
+          <Properties>
+            <string name="Name">Util</string>
+            <string name="Source"><![CDATA[--[[
 	Util
 	Petites fonctions partagees entre le serveur et le client.
 ]]
@@ -3128,29 +3128,163 @@ function Util.CountKeys(dictionary)
 end
 
 return Util
-]]></ProtectedString>
-					</Properties>
-				</Item>
-			</Item>
-		</Item>
-	</Item>
-	<Item class="ServerScriptService" referent="RBX18">
-		<Properties>
-			<string name="Name">ServerScriptService</string>
-		</Properties>
-		<Item class="Script" referent="RBX19">
-			<Properties>
-				<string name="Name">WaterWarsServer</string>
-				<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+      </Item>
+    </Item>
+  </Item>
+  <Item class="ServerScriptService" referent="17">
+    <Properties>
+      <string name="Name">ServerScriptService</string>
+    </Properties>
+    <Item class="Script" referent="18">
+      <Properties>
+        <string name="Name">WaterWarsServer</string>
+        <token name="RunContext">0</token>
+        <string name="Source"><![CDATA[--[[
 	Water Wars - point d'entree serveur
-	Ce script demarre tous les services dans l'ordre. Rien d'autre n'est
-	necessaire : la map, les armes, l'interface et les manches sont generees
-	a l'execution.
+
+	Ce script est volontairement tolerant sur l'installation : que le contenu
+	ait ete ouvert comme une place complete ou insere n'importe ou comme un
+	modele, il retrouve ses morceaux et les remet a leur place tout seul.
+
+	Regle de conduite : on n'attend jamais indefiniment en silence. Si quelque
+	chose manque, on le dit clairement dans la fenetre Output.
 ]]
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerScriptService = game:GetService("ServerScriptService")
+local ServerStorage = game:GetService("ServerStorage")
+local StarterGui = game:GetService("StarterGui")
+local StarterPack = game:GetService("StarterPack")
+local StarterPlayer = game:GetService("StarterPlayer")
 
+local SHARED_NAME = "WaterWars"
+local CLIENT_NAME = "WaterWarsClient"
+
+--- Endroits ou le contenu peut avoir ete depose par erreur.
+local function searchRoots()
+	return { workspace, ServerScriptService, ServerStorage, StarterPlayer, StarterGui, StarterPack, ReplicatedStorage }
+end
+
+local function findDescendant(root, predicate)
+	for _, descendant in ipairs(root:GetDescendants()) do
+		if predicate(descendant) then
+			return descendant
+		end
+	end
+	return nil
+end
+
+--- Retrouve le dossier partage et le replace dans ReplicatedStorage.
+local function ensureSharedFolder()
+	local existing = ReplicatedStorage:FindFirstChild(SHARED_NAME)
+	if existing and existing:FindFirstChild("Config") then
+		return existing
+	end
+
+	for _, root in ipairs(searchRoots()) do
+		local found = findDescendant(root, function(instance)
+			return instance.Name == SHARED_NAME
+				and instance:IsA("Folder")
+				and instance:FindFirstChild("Config") ~= nil
+				and instance:FindFirstChild("Shared") ~= nil
+		end)
+		if found then
+			found.Parent = ReplicatedStorage
+			warn(string.format(
+				"[WaterWars] Le dossier partage etait dans %s : il a ete deplace vers ReplicatedStorage.",
+				root.Name
+			))
+			return found
+		end
+	end
+	return nil
+end
+
+--- Replace le script client dans StarterPlayerScripts (sans quoi il ne
+--- s'execute jamais : un LocalScript ne tourne que dans certains conteneurs).
+local function ensureClientScript()
+	local starterScripts = StarterPlayer:FindFirstChildOfClass("StarterPlayerScripts")
+	if not starterScripts then
+		warn("[WaterWars] StarterPlayerScripts est introuvable : l'interface ne pourra pas demarrer.")
+		return
+	end
+	if starterScripts:FindFirstChild(CLIENT_NAME) then
+		return
+	end
+
+	local found = nil
+	for _, root in ipairs(searchRoots()) do
+		found = findDescendant(root, function(instance)
+			return instance.Name == CLIENT_NAME and instance:IsA("LocalScript")
+		end)
+		if found then
+			break
+		end
+	end
+	if not found then
+		warn(string.format(
+			"[WaterWars] Le script client '%s' est introuvable : le jeu tournera sans interface.",
+			CLIENT_NAME
+		))
+		return
+	end
+
+	found.Parent = starterScripts
+	warn("[WaterWars] Le script client a ete deplace vers StarterPlayer.StarterPlayerScripts.")
+
+	-- Les joueurs deja connectes ont recu leur copie de StarterPlayerScripts
+	-- avant ce deplacement : on leur injecte le script a la main.
+	for _, player in ipairs(Players:GetPlayers()) do
+		pcall(function()
+			local playerScripts = player:FindFirstChild("PlayerScripts")
+			if playerScripts and not playerScripts:FindFirstChild(CLIENT_NAME) then
+				local copy = found:Clone()
+				copy.Parent = playerScripts
+			end
+		end)
+	end
+end
+
+--- Si le script a ete insere dans Workspace avec le modele, il se range.
+local function tidySelf()
+	if script.Parent == ServerScriptService then
+		return
+	end
+	local installer = script.Parent
+	pcall(function()
+		script.Parent = ServerScriptService
+	end)
+	-- Le dossier d'installation vide n'a plus de raison d'exister.
+	if installer and installer ~= ServerScriptService and #installer:GetChildren() == 0 then
+		pcall(function()
+			installer:Destroy()
+		end)
+	end
+end
+
+-- ========================== installation ==================================
+
+if not ensureSharedFolder() then
+	error(
+		"[WaterWars] Installation incomplete : le dossier 'WaterWars' (avec Config et Shared) est introuvable.\n"
+			.. "  - Si vous avez ouvert WaterWars.rbxlx : utilisez Fichier > Ouvrir, pas 'Insert from File'.\n"
+			.. "  - Si vous avez insere WaterWars.rbxmx : verifiez que le dossier insere est complet.",
+		0
+	)
+end
+
+ensureClientScript()
+tidySelf()
+
+-- ========================== demarrage des services ========================
+
+-- A ce stade le dossier est garanti present dans ReplicatedStorage : on y
+-- accede par son chemin litteral, ce qui permet aussi aux outils d'analyse
+-- de resoudre les modules.
 local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
 local Config = WaterWars:WaitForChild("Config")
 local Shared = WaterWars:WaitForChild("Shared")
@@ -3171,7 +3305,6 @@ local PlayerService = require(script:WaitForChild("PlayerService"))
 local TeamService = require(script:WaitForChild("TeamService"))
 local WeaponService = require(script:WaitForChild("WeaponService"))
 
--- Reglages globaux du serveur.
 Players.RespawnTime = GameConfig.RespawnTime
 workspace.FallenPartsDestroyHeight = -500
 
@@ -3185,11 +3318,17 @@ local START_ORDER = {
 	{ name = "MatchService", service = MatchService },
 }
 
+local failures = 0
 for _, entry in ipairs(START_ORDER) do
 	local ok, err = pcall(entry.service.Start)
 	if not ok then
+		failures = failures + 1
 		warn(string.format("[WaterWars] Echec du demarrage de %s : %s", entry.name, tostring(err)))
 	end
+end
+
+if failures > 0 then
+	warn(string.format("[WaterWars] %d service(s) n'ont pas demarre : le jeu sera degrade.", failures))
 end
 
 print(string.format(
@@ -3198,13 +3337,12 @@ print(string.format(
 	Maps.Count,
 	GameConfig.MaxPlayers
 ))
-]]></ProtectedString>
-				<bool name="Disabled">false</bool>
-			</Properties>
-			<Item class="ModuleScript" referent="RBX20">
-				<Properties>
-					<string name="Name">CombatService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+      </Properties>
+      <Item class="ModuleScript" referent="19">
+        <Properties>
+          <string name="Name">CombatService</string>
+          <string name="Source"><![CDATA[--[[
 	CombatService
 	Simulation des projectiles et application des degats, entierement cote
 	serveur : le client n'envoie qu'une intention de tir (origine + direction).
@@ -3615,13 +3753,13 @@ function CombatService.Start()
 end
 
 return CombatService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX21">
-				<Properties>
-					<string name="Name">DataService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="20">
+        <Properties>
+          <string name="Name">DataService</string>
+          <string name="Source"><![CDATA[--[[
 	DataService
 	Sauvegarde persistante : pieces, armes debloquees, equipement, statistiques.
 
@@ -3940,13 +4078,13 @@ function DataService.Start()
 end
 
 return DataService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX22">
-				<Properties>
-					<string name="Name">MapService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="21">
+        <Properties>
+          <string name="Name">MapService</string>
+          <string name="Source"><![CDATA[--[[
 	MapService
 	Construit et detruit les terrains, applique l'ambiance lumineuse, et
 	fabrique les elements de jeu propres a la map : stations de recharge,
@@ -4215,13 +4353,13 @@ function MapService.GetById(id)
 end
 
 return MapService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX23">
-				<Properties>
-					<string name="Name">MatchService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="22">
+        <Properties>
+          <string name="Name">MatchService</string>
+          <string name="Source"><![CDATA[--[[
 	MatchService
 	Chef d'orchestre de la partie : vote de map, lancement de la manche,
 	decompte, scores, eliminations, fin de manche et recompenses.
@@ -4834,13 +4972,13 @@ function MatchService.Start()
 end
 
 return MatchService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX24">
-				<Properties>
-					<string name="Name">PickupService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="23">
+        <Properties>
+          <string name="Name">PickupService</string>
+          <string name="Source"><![CDATA[--[[
 	PickupService
 	Bonus au sol : turbo, haute pression, impermeable et citerne.
 	Les plaques apparaissent aux emplacements definis par la map, se
@@ -5064,13 +5202,13 @@ function PickupService.Start()
 end
 
 return PickupService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX25">
-				<Properties>
-					<string name="Name">PlayerService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="24">
+        <Properties>
+          <string name="Name">PlayerService</string>
+          <string name="Source"><![CDATA[--[[
 	PlayerService
 	Tout ce qui concerne le personnage en jeu :
 	  - apparition sur un point de la map avec protection temporaire ;
@@ -5124,6 +5262,13 @@ function PlayerService.Spawn(player)
 		return
 	end
 	pendingRespawn[player] = nil
+
+	-- Sans terrain, faire apparaitre le joueur le ferait tomber dans le vide
+	-- indefiniment. Mieux vaut ne pas l'incarner et le dire clairement.
+	if not MapService.GetCurrentMap() then
+		warn("[WaterWars] Apparition annulee : aucun terrain n'est charge.")
+		return
+	end
 
 	local teamId = TeamService.IsTeamMode() and TeamService.GetTeamId(player) or nil
 	local key = teamId or "FFA"
@@ -5373,13 +5518,13 @@ function PlayerService.Start()
 end
 
 return PlayerService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX26">
-				<Properties>
-					<string name="Name">ServerEvents</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="25">
+        <Properties>
+          <string name="Name">ServerEvents</string>
+          <string name="Source"><![CDATA[--[[
 	ServerEvents
 	Bus d'evenements interne au serveur. Il evite les dependances circulaires
 	entre les services : personne n'a besoin de connaitre MatchService pour lui
@@ -5406,13 +5551,13 @@ ServerEvents.RoundEnded = Signal.new("RoundEnded")
 ServerEvents.ScoreChanged = Signal.new("ScoreChanged")
 
 return ServerEvents
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX27">
-				<Properties>
-					<string name="Name">TeamService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="26">
+        <Properties>
+          <string name="Name">TeamService</string>
+          <string name="Source"><![CDATA[--[[
 	TeamService
 	Creation des equipes et repartition equilibree des 20 joueurs.
 	En mode "chacun pour soi" les equipes sont videes et tout le monde devient
@@ -5549,13 +5694,13 @@ function TeamService.GetTeamColor(teamId)
 end
 
 return TeamService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX28">
-				<Properties>
-					<string name="Name">WeaponService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="27">
+        <Properties>
+          <string name="Name">WeaponService</string>
+          <string name="Source"><![CDATA[--[[
 	WeaponService
 	Fabrique les 25 armes sous forme de Tool entierement procedural (aucun
 	asset a uploader), distribue l'equipement et fait autorite sur les
@@ -5981,23 +6126,23 @@ function WeaponService.Start()
 end
 
 return WeaponService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-		</Item>
-	</Item>
-	<Item class="StarterPlayer" referent="RBX29">
-		<Properties>
-			<string name="Name">StarterPlayer</string>
-		</Properties>
-		<Item class="StarterPlayerScripts" referent="RBX30">
-			<Properties>
-				<string name="Name">StarterPlayerScripts</string>
-			</Properties>
-			<Item class="LocalScript" referent="RBX31">
-				<Properties>
-					<string name="Name">WaterWarsClient</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
+  <Item class="StarterPlayer" referent="28">
+    <Properties>
+      <string name="Name">StarterPlayer</string>
+    </Properties>
+    <Item class="StarterPlayerScripts" referent="29">
+      <Properties>
+        <string name="Name">StarterPlayerScripts</string>
+      </Properties>
+      <Item class="LocalScript" referent="30">
+        <Properties>
+          <string name="Name">WaterWarsClient</string>
+          <string name="Source"><![CDATA[--[[
 	Water Wars - point d'entree client
 	Demarre les controleurs dans l'ordre. Chaque controleur est isole : si
 	l'un d'eux echoue, les autres continuent de fonctionner et l'erreur est
@@ -6007,9 +6152,27 @@ return WeaponService
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+--- Attend une instance, mais previent au lieu de bloquer indefiniment en
+--- silence : un client qui attend un dossier absent est impossible a
+--- diagnostiquer sans ce message.
+local function waitFor(parent, name, timeout)
+	local found = parent:WaitForChild(name, timeout or 15)
+	if found then
+		return found
+	end
+	warn(string.format(
+		"[WaterWars] '%s' n'est toujours pas apparu dans %s apres %d s."
+			.. " Le serveur n'a probablement pas demarre : regardez la console du serveur.",
+		name,
+		parent:GetFullName(),
+		timeout or 15
+	))
+	return parent:WaitForChild(name)
+end
+
 -- On attend que le serveur ait publie les remotes avant de brancher quoi que ce soit.
-ReplicatedStorage:WaitForChild("WaterWars")
-ReplicatedStorage:WaitForChild("WaterWarsRemotes")
+waitFor(ReplicatedStorage, "WaterWars")
+waitFor(ReplicatedStorage, "WaterWarsRemotes")
 
 local ClientState = require(script:WaitForChild("ClientState"))
 local EffectsController = require(script:WaitForChild("EffectsController"))
@@ -6041,13 +6204,12 @@ end
 ClientState.MatchChanged:Fire(ClientState.match)
 
 print(string.format("[WaterWars] Client pret pour %s.", Players.LocalPlayer.DisplayName))
-]]></ProtectedString>
-					<bool name="Disabled">false</bool>
-				</Properties>
-				<Item class="ModuleScript" referent="RBX32">
-					<Properties>
-						<string name="Name">ClientState</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+        <Item class="ModuleScript" referent="31">
+          <Properties>
+            <string name="Name">ClientState</string>
+            <string name="Source"><![CDATA[--[[
 	ClientState
 	Etat local partage entre les controleurs du client (match en cours, profil,
 	munitions, equipe...). Chaque changement emet un signal : le HUD, la
@@ -6169,13 +6331,13 @@ function ClientState.GetEquippedWeapon()
 end
 
 return ClientState
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX33">
-					<Properties>
-						<string name="Name">EffectsController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="32">
+          <Properties>
+            <string name="Name">EffectsController</string>
+            <string name="Source"><![CDATA[--[[
 	EffectsController
 	Tout le visuel du combat cote client : gouttes d'eau, gerbes d'impact,
 	flaques au sol et lueur de canon.
@@ -6443,13 +6605,13 @@ function EffectsController.Start()
 end
 
 return EffectsController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX34">
-					<Properties>
-						<string name="Name">HudController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="33">
+          <Properties>
+            <string name="Name">HudController</string>
+            <string name="Source"><![CDATA[--[[
 	HudController
 	Interface de jeu : vie, endurance, reservoir d'eau, viseur dynamique,
 	chronometre, scores d'equipe, journal des eliminations, notifications,
@@ -7062,13 +7224,13 @@ function HudController.Start()
 end
 
 return HudController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX35">
-					<Properties>
-						<string name="Name">ScoreboardController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="34">
+          <Properties>
+            <string name="Name">ScoreboardController</string>
+            <string name="Source"><![CDATA[--[[
 	ScoreboardController
 	Tableau des scores affiche tant que la touche Tab est maintenue.
 	Les joueurs sont regroupes par equipe en mode par equipes, et classes par
@@ -7284,13 +7446,13 @@ function ScoreboardController.Start()
 end
 
 return ScoreboardController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX36">
-					<Properties>
-						<string name="Name">ShopController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="35">
+          <Properties>
+            <string name="Name">ShopController</string>
+            <string name="Source"><![CDATA[--[[
 	ShopController
 	Boutique et vestiaire : parcourir les 25 armes par categorie, consulter
 	leurs statistiques, les acheter avec les pieces gagnees en jeu, puis les
@@ -7700,13 +7862,13 @@ function ShopController.Start()
 end
 
 return ShopController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX37">
-					<Properties>
-						<string name="Name">SoundController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="36">
+          <Properties>
+            <string name="Name">SoundController</string>
+            <string name="Source"><![CDATA[--[[
 	SoundController
 	Habillage sonore. On n'utilise que des sons livres avec le client Roblox
 	(rbxasset://...) : aucun upload, aucun ID a moderer. Pour mettre vos
@@ -7828,13 +7990,13 @@ function SoundController.Start()
 end
 
 return SoundController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX38">
-					<Properties>
-						<string name="Name">UIKit</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="37">
+          <Properties>
+            <string name="Name">UIKit</string>
+            <string name="Source"><![CDATA[--[[
 	UIKit
 	Petits assistants pour construire l'interface en code. Aucune image n'est
 	utilisee : tout le HUD est fait de Frames, de coins arrondis et de degrades,
@@ -8002,13 +8164,13 @@ function UIKit.Screen(name, displayOrder)
 end
 
 return UIKit
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX39">
-					<Properties>
-						<string name="Name">VoteController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="38">
+          <Properties>
+            <string name="Name">VoteController</string>
+            <string name="Source"><![CDATA[--[[
 	VoteController
 	Ecran de vote entre les manches : trois terrains proposes, un clic pour
 	voter, le nombre de voix se met a jour en direct.
@@ -8158,13 +8320,13 @@ function VoteController.Start()
 end
 
 return VoteController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX40">
-					<Properties>
-						<string name="Name">WeaponController</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="39">
+          <Properties>
+            <string name="Name">WeaponController</string>
+            <string name="Source"><![CDATA[--[[
 	WeaponController
 	Entrees de combat : tir, rafale automatique, charge, visee, rechargement
 	et course. Le client ne fait que declarer une intention de tir ; le serveur
@@ -8439,10 +8601,209 @@ function WeaponController.Start()
 end
 
 return WeaponController
-]]></ProtectedString>
-					</Properties>
-				</Item>
-			</Item>
-		</Item>
-	</Item>
+]]></string>
+          </Properties>
+        </Item>
+      </Item>
+    </Item>
+  </Item>
+  <Item class="Workspace" referent="40">
+    <Properties>
+      <string name="Name">Workspace</string>
+      <bool name="NeedsPivotMigration">false</bool>
+    </Properties>
+    <Item class="Model" referent="41">
+      <Properties>
+        <string name="Name">ZoneAccueil</string>
+        <bool name="NeedsPivotMigration">false</bool>
+      </Properties>
+      <Item class="Part" referent="42">
+        <Properties>
+          <string name="Name">Bordure</string>
+          <bool name="Anchored">true</bool>
+          <CoordinateFrame name="CFrame">
+            <X>4000</X>
+            <Y>97.5</Y>
+            <Z>0</Z>
+            <R00>1</R00>
+            <R01>0</R01>
+            <R02>0</R02>
+            <R10>0</R10>
+            <R11>1</R11>
+            <R12>0</R12>
+            <R20>0</R20>
+            <R21>0</R21>
+            <R22>1</R22>
+          </CoordinateFrame>
+          <bool name="CanCollide">false</bool>
+          <Color3uint8 name="Color3uint8">4570623</Color3uint8>
+          <token name="Material">288</token>
+          <Vector3 name="size">
+            <X>190</X>
+            <Y>1</Y>
+            <Z>190</Z>
+          </Vector3>
+        </Properties>
+      </Item>
+      <Item class="Part" referent="43">
+        <Properties>
+          <string name="Name">Panneau</string>
+          <bool name="Anchored">true</bool>
+          <CoordinateFrame name="CFrame">
+            <X>4000</X>
+            <Y>115</Y>
+            <Z>-40</Z>
+            <R00>1</R00>
+            <R01>0</R01>
+            <R02>0</R02>
+            <R10>0</R10>
+            <R11>1</R11>
+            <R12>0</R12>
+            <R20>0</R20>
+            <R21>0</R21>
+            <R22>1</R22>
+          </CoordinateFrame>
+          <Color3uint8 name="Color3uint8">1185569</Color3uint8>
+          <token name="Material">272</token>
+          <Vector3 name="size">
+            <X>60</X>
+            <Y>22</Y>
+            <Z>1</Z>
+          </Vector3>
+        </Properties>
+        <Item class="SurfaceGui" referent="44">
+          <Properties>
+            <string name="Name">Affichage</string>
+            <bool name="AlwaysOnTop">false</bool>
+            <token name="Face">2</token>
+            <float name="PixelsPerStud">30</float>
+            <token name="SizingMode">1</token>
+          </Properties>
+          <Item class="TextLabel" referent="45">
+            <Properties>
+              <string name="Name">Sous_titre</string>
+              <float name="BackgroundTransparency">1</float>
+              <Font name="FontFace">
+                <Family>
+                  <url>rbxasset://fonts/families/GothamSSm.json</url>
+                </Family>
+                <Weight>400</Weight>
+                <Style>Normal</Style>
+              </Font>
+              <UDim2 name="Position">
+                <XS>0</XS>
+                <XO>0</XO>
+                <YS>0.52</YS>
+                <YO>0</YO>
+              </UDim2>
+              <UDim2 name="Size">
+                <XS>1</XS>
+                <XO>0</XO>
+                <YS>0.4</YS>
+                <YO>0</YO>
+              </UDim2>
+              <string name="Text">Zone d'accueil.
+Le terrain est genere par le code : appuyez sur Play.</string>
+              <Color3 name="TextColor3">
+                <R>0.85</R>
+                <G>0.9</G>
+                <B>0.96</B>
+              </Color3>
+              <bool name="TextScaled">true</bool>
+            </Properties>
+          </Item>
+          <Item class="TextLabel" referent="46">
+            <Properties>
+              <string name="Name">Titre</string>
+              <float name="BackgroundTransparency">1</float>
+              <Font name="FontFace">
+                <Family>
+                  <url>rbxasset://fonts/families/GothamSSm.json</url>
+                </Family>
+                <Weight>700</Weight>
+                <Style>Normal</Style>
+              </Font>
+              <UDim2 name="Position">
+                <XS>0</XS>
+                <XO>0</XO>
+                <YS>0.05</YS>
+                <YO>0</YO>
+              </UDim2>
+              <UDim2 name="Size">
+                <XS>1</XS>
+                <XO>0</XO>
+                <YS>0.45</YS>
+                <YO>0</YO>
+              </UDim2>
+              <string name="Text">WATER WARS</string>
+              <Color3 name="TextColor3">
+                <R>0.27</R>
+                <G>0.74</G>
+                <B>1</B>
+              </Color3>
+              <bool name="TextScaled">true</bool>
+            </Properties>
+          </Item>
+        </Item>
+      </Item>
+      <Item class="Part" referent="47">
+        <Properties>
+          <string name="Name">Plateforme</string>
+          <bool name="Anchored">true</bool>
+          <token name="BottomSurface">0</token>
+          <CoordinateFrame name="CFrame">
+            <X>4000</X>
+            <Y>100</Y>
+            <Z>0</Z>
+            <R00>1</R00>
+            <R01>0</R01>
+            <R02>0</R02>
+            <R10>0</R10>
+            <R11>1</R11>
+            <R12>0</R12>
+            <R20>0</R20>
+            <R21>0</R21>
+            <R22>1</R22>
+          </CoordinateFrame>
+          <Color3uint8 name="Color3uint8">2701391</Color3uint8>
+          <token name="Material">272</token>
+          <Vector3 name="size">
+            <X>180</X>
+            <Y>4</Y>
+            <Z>180</Z>
+          </Vector3>
+          <token name="TopSurface">0</token>
+        </Properties>
+      </Item>
+      <Item class="SpawnLocation" referent="48">
+        <Properties>
+          <string name="Name">PointDapparition</string>
+          <bool name="Anchored">true</bool>
+          <CoordinateFrame name="CFrame">
+            <X>4000</X>
+            <Y>102.5</Y>
+            <Z>0</Z>
+            <R00>1</R00>
+            <R01>0</R01>
+            <R02>0</R02>
+            <R10>0</R10>
+            <R11>1</R11>
+            <R12>0</R12>
+            <R20>0</R20>
+            <R21>0</R21>
+            <R22>1</R22>
+          </CoordinateFrame>
+          <Color3uint8 name="Color3uint8">4570623</Color3uint8>
+          <token name="Material">288</token>
+          <bool name="Neutral">true</bool>
+          <Vector3 name="size">
+            <X>14</X>
+            <Y>1</Y>
+            <Z>14</Z>
+          </Vector3>
+          <float name="Transparency">0.4</float>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
 </roblox>

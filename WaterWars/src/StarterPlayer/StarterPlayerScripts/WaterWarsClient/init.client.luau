@@ -8,9 +8,27 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+--- Attend une instance, mais previent au lieu de bloquer indefiniment en
+--- silence : un client qui attend un dossier absent est impossible a
+--- diagnostiquer sans ce message.
+local function waitFor(parent, name, timeout)
+	local found = parent:WaitForChild(name, timeout or 15)
+	if found then
+		return found
+	end
+	warn(string.format(
+		"[WaterWars] '%s' n'est toujours pas apparu dans %s apres %d s."
+			.. " Le serveur n'a probablement pas demarre : regardez la console du serveur.",
+		name,
+		parent:GetFullName(),
+		timeout or 15
+	))
+	return parent:WaitForChild(name)
+end
+
 -- On attend que le serveur ait publie les remotes avant de brancher quoi que ce soit.
-ReplicatedStorage:WaitForChild("WaterWars")
-ReplicatedStorage:WaitForChild("WaterWarsRemotes")
+waitFor(ReplicatedStorage, "WaterWars")
+waitFor(ReplicatedStorage, "WaterWarsRemotes")
 
 local ClientState = require(script:WaitForChild("ClientState"))
 local EffectsController = require(script:WaitForChild("EffectsController"))

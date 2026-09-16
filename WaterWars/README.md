@@ -20,43 +20,47 @@ Trois méthodes, de la plus simple à la plus avancée. **La méthode A suffit d
 3. Appuyez sur **Play** (F5). C'est tout.
 4. Pour publier : **Fichier → Publier sur Roblox sous…**
 
-> ### « Le Workspace est vide, il n'y a aucune map ! »
+> ### « Où est la map ? »
 >
-> **C'est normal, et c'est voulu.** Le fichier ne contient que du code : les
-> 6 terrains sont **construits par le code au moment où la partie démarre**,
-> pas stockés en dur dans le fichier. En mode édition vous ne voyez donc qu'un
-> Workspace vide — il n'y a rien à réparer.
+> **Les 6 terrains sont construits par le code au moment où la partie
+> démarre**, ils ne sont pas stockés en dur dans le fichier. En mode édition
+> vous ne voyez donc que la **zone d'accueil** (`Workspace → ZoneAccueil`),
+> une plateforme avec un panneau : c'est normal.
 >
-> Appuyez sur **Play (F5)** : le terrain apparaît en une fraction de seconde,
-> et la fenêtre *Output* (Affichage → Output) affiche la confirmation :
+> Appuyez sur **Play (F5)** : le terrain apparaît en une fraction de seconde
+> dans `workspace.CurrentMap`, et la fenêtre *Output* (Affichage → Output)
+> affiche la confirmation :
 >
 > ```
 > [WaterWars] Serveur pret - 25 armes, 6 maps, 20 joueurs max.
 > [WaterWars] Terrain construit : Jardin d'Ete (311 pieces) -> workspace.CurrentMap
 > ```
 >
-> Pendant la partie, le terrain vit dans `workspace.CurrentMap` : vous pouvez
-> le voir apparaître dans l'Explorateur. Il est détruit et remplacé à chaque
-> changement de terrain, ce qui rend le nettoyage de fin de manche instantané.
+> **Si vous ne voyez pas ces deux lignes**, le serveur n'a pas démarré : la
+> console affichera alors un message expliquant précisément ce qui manque.
 >
 > C'est ce choix qui permet d'avoir 6 terrains et 1 385 pièces de décor dans
-> un fichier de 265 Ko, sans aucun asset à uploader.
+> un fichier de 277 Ko, sans aucun asset à uploader.
 
 ### Méthode B — ajouter le jeu à une expérience existante
 
 1. Téléchargez **`build/WaterWars.rbxmx`**.
-2. Dans Studio, clic droit sur *Workspace* dans l'Explorateur → **Insert from
+2. Dans Studio, clic droit sur **Workspace** dans l'Explorateur → **Insert from
    File…** → sélectionnez `WaterWars.rbxmx`.
-3. Trois dossiers apparaissent, chacun porte sa destination dans son nom.
-   Glissez le **contenu** de chacun à l'endroit indiqué :
+3. Appuyez sur **Play**. C'est tout : **le modèle s'installe tout seul.**
 
-   | Dossier inséré | Destination |
-   |---|---|
-   | `1 - A METTRE DANS ReplicatedStorage` | `ReplicatedStorage` |
-   | `2 - A METTRE DANS ServerScriptService` | `ServerScriptService` |
-   | `3 - A METTRE DANS StarterPlayer.StarterPlayerScripts` | `StarterPlayer → StarterPlayerScripts` |
+Au démarrage, le script serveur vérifie où se trouve son contenu et le remet
+en place si nécessaire (dossier partagé vers `ReplicatedStorage`, script client
+vers `StarterPlayerScripts`, lui-même vers `ServerScriptService`). Il vous le
+dit dans l'Output :
 
-4. Supprimez les trois dossiers vides, puis appuyez sur **Play**.
+```
+[WaterWars] Le dossier partage etait dans Workspace : il a ete deplace vers ReplicatedStorage.
+[WaterWars] Le script client a ete deplace vers StarterPlayer.StarterPlayerScripts.
+```
+
+Vous pouvez donc insérer le modèle n'importe où sans risque de mauvaise
+manipulation.
 
 ### Méthode C — Rojo (pour développer en dehors de Studio)
 
@@ -233,7 +237,7 @@ bash tools/setup_tools.sh   # une fois : télécharge Luau et luau-lsp
 bash tools/check.sh
 ```
 
-Quatre étapes :
+Cinq étapes :
 
 1. **luau-compile** — aucune erreur de syntaxe sur les 33 fichiers.
 2. **luau-lsp** — typecheck contre l'API Roblox réelle (via `globalTypes.d.luau`),
@@ -244,6 +248,14 @@ Quatre étapes :
    exécutés sous Luau avec un simulateur d'API Roblox : champs manquants,
    équilibrage aberrant, points d'apparition sous le sol, terrains vides,
    `require` cassés et remotes non déclarés sont refusés.
+5. **Démarrage réel du serveur** — `tools/boot_test.py` construit l'arbre
+   d'instances, exécute `init.server.luau` sous Luau avec un simulateur
+   d'API Roblox (instances, hiérarchie, événements, attributs, ordonnanceur
+   `task`), puis simule 60 secondes de jeu avec un joueur connecté. Il vérifie
+   qu'aucune erreur n'est levée, qu'un terrain est bien construit, et que le
+   joueur apparaît dessus avec ses armes. Le test tourne **deux fois** : en
+   installation normale, et avec le contenu volontairement déposé au mauvais
+   endroit, pour vérifier que l'auto-réparation fonctionne.
 
 Pour régénérer les fichiers importables après une modification :
 
@@ -251,5 +263,7 @@ Pour régénérer les fichiers importables après une modification :
 python3 tools/build_roblox.py
 ```
 
-Le script relit le XML qu'il vient d'écrire et vérifie que chaque script y est
-identique au fichier source.
+La génération est déléguée à **Rojo**, l'outil de référence de l'écosystème
+Roblox : c'est lui qui garantit que le XML produit est exactement celui que
+Studio attend. Le script relit ensuite le fichier produit et vérifie que chaque
+script y est identique au fichier source.

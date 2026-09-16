@@ -1,20 +1,20 @@
-<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
-	<Item class="Folder" referent="RBX1">
-		<Properties>
-			<string name="Name">1 - A METTRE DANS ReplicatedStorage</string>
-		</Properties>
-		<Item class="Folder" referent="RBX2">
-			<Properties>
-				<string name="Name">WaterWars</string>
-			</Properties>
-			<Item class="Folder" referent="RBX3">
-				<Properties>
-					<string name="Name">Config</string>
-				</Properties>
-				<Item class="ModuleScript" referent="RBX4">
-					<Properties>
-						<string name="Name">GameConfig</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+<roblox version="4">
+  <Item class="Folder" referent="0">
+    <Properties>
+      <string name="Name">WaterWars_Installation</string>
+    </Properties>
+    <Item class="Folder" referent="1">
+      <Properties>
+        <string name="Name">WaterWars</string>
+      </Properties>
+      <Item class="Folder" referent="2">
+        <Properties>
+          <string name="Name">Config</string>
+        </Properties>
+        <Item class="ModuleScript" referent="3">
+          <Properties>
+            <string name="Name">GameConfig</string>
+            <string name="Source"><![CDATA[--[[
 	GameConfig
 	Toutes les constantes de reglage du jeu Water Wars.
 	Modifier ce fichier suffit pour re-equilibrer la partie : aucun autre
@@ -178,13 +178,13 @@ GameConfig.Keys = {
 
 table.freeze(GameConfig)
 return GameConfig
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX5">
-					<Properties>
-						<string name="Name">Maps</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="4">
+          <Properties>
+            <string name="Name">Maps</string>
+            <string name="Source"><![CDATA[--[[
 	Maps
 	Index des 6 terrains. Pour ajouter une map : creer le module a cote de
 	celui-ci puis l'ajouter a la liste ci-dessous. Le reste du jeu (vote,
@@ -238,12 +238,12 @@ function Maps.PickRandom(count, excludeId, rng)
 end
 
 return Maps
-]]></ProtectedString>
-					</Properties>
-					<Item class="ModuleScript" referent="RBX6">
-						<Properties>
-							<string name="Name">AquaPark</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+          <Item class="ModuleScript" referent="5">
+            <Properties>
+              <string name="Name">AquaPark</string>
+              <string name="Source"><![CDATA[--[[
 	Map 3/6 : Aqua Parc
 	Un parc aquatique abandonne pour la journee. Deux tours de toboggans
 	servent de bases et dominent une piscine a vagues centrale. Map tres
@@ -485,13 +485,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX7">
-						<Properties>
-							<string name="Name">Backyard</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="6">
+            <Properties>
+              <string name="Name">Backyard</string>
+              <string name="Source"><![CDATA[--[[
 	Map 1/6 : Jardin d'Ete
 	Une grande bataille d'arriere-cour : deux maisons face a face, une piscine
 	centrale, du mobilier de jardin en guise de couverture. Map d'initiation :
@@ -732,13 +732,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX8">
-						<Properties>
-							<string name="Name">NeonArena</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="7">
+            <Properties>
+              <string name="Name">NeonArena</string>
+              <string name="Source"><![CDATA[--[[
 	Map 6/6 : Arene Neon
 	Arene futuriste parfaitement symetrique, sans decor superflu : plateformes
 	flottantes, passerelles de verre et un anneau central sureleve. C'est la map
@@ -1002,13 +1002,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX9">
-						<Properties>
-							<string name="Name">Rooftops</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="8">
+            <Properties>
+              <string name="Name">Rooftops</string>
+              <string name="Source"><![CDATA[--[[
 	Map 4/6 : Toits de la Ville
 	Combat sur deux etages : des ruelles etroites au niveau de la rue et un
 	reseau de toits relies par des planches. Chaque base possede son propre
@@ -1276,13 +1276,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX10">
-						<Properties>
-							<string name="Name">SplashBay</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="9">
+            <Properties>
+              <string name="Name">SplashBay</string>
+              <string name="Source"><![CDATA[--[[
 	Map 2/6 : Baie des Eclaboussures
 	Plage ouverte bordee par la mer. Deux pontons de bois servent de bases, un
 	chateau de sable geant tient le centre. Les rochers et les barques offrent
@@ -1522,13 +1522,13 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-					<Item class="ModuleScript" referent="RBX11">
-						<Properties>
-							<string name="Name">SunkenTemple</string>
-							<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="10">
+            <Properties>
+              <string name="Name">SunkenTemple</string>
+              <string name="Source"><![CDATA[--[[
 	Map 5/6 : Temple Englouti
 	Des ruines envahies par la jungle autour d'un bassin sacre. Pyramide
 	centrale a gradins, galeries couvertes sur les flancs, cascades en fond.
@@ -1791,14 +1791,14 @@ function Map.build(b)
 end
 
 return Map
-]]></ProtectedString>
-						</Properties>
-					</Item>
-				</Item>
-				<Item class="ModuleScript" referent="RBX12">
-					<Properties>
-						<string name="Name">Weapons</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+            </Properties>
+          </Item>
+        </Item>
+        <Item class="ModuleScript" referent="11">
+          <Properties>
+            <string name="Name">Weapons</string>
+            <string name="Source"><![CDATA[--[[
 	Weapons
 	Catalogue des 25 armes a eau du jeu.
 
@@ -2231,18 +2231,18 @@ end
 Weapons.Count = #Weapons.List
 
 return Weapons
-]]></ProtectedString>
-					</Properties>
-				</Item>
-			</Item>
-			<Item class="Folder" referent="RBX13">
-				<Properties>
-					<string name="Name">Shared</string>
-				</Properties>
-				<Item class="ModuleScript" referent="RBX14">
-					<Properties>
-						<string name="Name">MapBuilder</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+      </Item>
+      <Item class="Folder" referent="12">
+        <Properties>
+          <string name="Name">Shared</string>
+        </Properties>
+        <Item class="ModuleScript" referent="13">
+          <Properties>
+            <string name="Name">MapBuilder</string>
+            <string name="Source"><![CDATA[--[[
 	MapBuilder
 	Petite bibliotheque de construction utilisee par les 6 maps.
 
@@ -2749,13 +2749,13 @@ function MapBuilder:Mirror(callback)
 end
 
 return MapBuilder
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX15">
-					<Properties>
-						<string name="Name">Net</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="14">
+          <Properties>
+            <string name="Name">Net</string>
+            <string name="Source"><![CDATA[--[[
 	Net
 	Point d'acces unique aux RemoteEvent / RemoteFunction du jeu.
 
@@ -2887,13 +2887,13 @@ function Net.Function(name): RemoteFunction
 end
 
 return Net
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX16">
-					<Properties>
-						<string name="Name">Signal</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="15">
+          <Properties>
+            <string name="Name">Signal</string>
+            <string name="Source"><![CDATA[--[[
 	Signal
 	Mini implementation d'evenement, plus legere qu'un BindableEvent et qui
 	conserve les references d'instances (un BindableEvent serialise ses
@@ -2949,13 +2949,13 @@ function Signal:DisconnectAll()
 end
 
 return Signal
-]]></ProtectedString>
-					</Properties>
-				</Item>
-				<Item class="ModuleScript" referent="RBX17">
-					<Properties>
-						<string name="Name">Util</string>
-						<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="16">
+          <Properties>
+            <string name="Name">Util</string>
+            <string name="Source"><![CDATA[--[[
 	Util
 	Petites fonctions partagees entre le serveur et le client.
 ]]
@@ -3128,2872 +3128,15 @@ function Util.CountKeys(dictionary)
 end
 
 return Util
-]]></ProtectedString>
-					</Properties>
-				</Item>
-			</Item>
-		</Item>
-	</Item>
-	<Item class="Folder" referent="RBX18">
-		<Properties>
-			<string name="Name">2 - A METTRE DANS ServerScriptService</string>
-		</Properties>
-		<Item class="Script" referent="RBX19">
-			<Properties>
-				<string name="Name">WaterWarsServer</string>
-				<ProtectedString name="Source"><![CDATA[--[[
-	Water Wars - point d'entree serveur
-	Ce script demarre tous les services dans l'ordre. Rien d'autre n'est
-	necessaire : la map, les armes, l'interface et les manches sont generees
-	a l'execution.
-]]
-
-local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Maps = require(Config:WaitForChild("Maps"))
-local Weapons = require(Config:WaitForChild("Weapons"))
-local Net = require(Shared:WaitForChild("Net"))
-
--- Les remotes doivent exister avant que le moindre client ne les attende.
-Net.Init()
-
-local CombatService = require(script:WaitForChild("CombatService"))
-local DataService = require(script:WaitForChild("DataService"))
-local MatchService = require(script:WaitForChild("MatchService"))
-local PickupService = require(script:WaitForChild("PickupService"))
-local PlayerService = require(script:WaitForChild("PlayerService"))
-local TeamService = require(script:WaitForChild("TeamService"))
-local WeaponService = require(script:WaitForChild("WeaponService"))
-
--- Reglages globaux du serveur.
-Players.RespawnTime = GameConfig.RespawnTime
-workspace.FallenPartsDestroyHeight = -500
-
-local START_ORDER = {
-	{ name = "DataService", service = DataService },
-	{ name = "TeamService", service = TeamService },
-	{ name = "WeaponService", service = WeaponService },
-	{ name = "PlayerService", service = PlayerService },
-	{ name = "CombatService", service = CombatService },
-	{ name = "PickupService", service = PickupService },
-	{ name = "MatchService", service = MatchService },
-}
-
-for _, entry in ipairs(START_ORDER) do
-	local ok, err = pcall(entry.service.Start)
-	if not ok then
-		warn(string.format("[WaterWars] Echec du demarrage de %s : %s", entry.name, tostring(err)))
-	end
-end
-
-print(string.format(
-	"[WaterWars] Serveur pret - %d armes, %d maps, %d joueurs max.",
-	Weapons.Count,
-	Maps.Count,
-	GameConfig.MaxPlayers
-))
-]]></ProtectedString>
-				<bool name="Disabled">false</bool>
-			</Properties>
-			<Item class="ModuleScript" referent="RBX20">
-				<Properties>
-					<string name="Name">CombatService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	CombatService
-	Simulation des projectiles et application des degats, entierement cote
-	serveur : le client n'envoie qu'une intention de tir (origine + direction).
-
-	Consequences :
-	  - impossible de tricher sur les degats, la cadence ou la portee ;
-	  - tous les joueurs voient la meme trajectoire ;
-	  - le client se contente d'afficher une goutte purement decorative.
-]]
-
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Net = require(Shared:WaitForChild("Net"))
-local Util = require(Shared:WaitForChild("Util"))
-
-local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
-local TeamService = require(script.Parent:WaitForChild("TeamService"))
-local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
-local DataService = require(script.Parent:WaitForChild("DataService"))
-
-local CombatService = {}
-
-local GRAVITY = 196.2 -- gravite Roblox par defaut (studs/s^2)
-
-local projectiles = {}
-local roundActive = false
-local rng = Random.new(os.time())
-
--- ------------------------------------------------------------- utilitaires
-
-local function getHumanoid(character)
-	return character and character:FindFirstChildOfClass("Humanoid") or nil
-end
-
-local function isAlive(player)
-	local humanoid = getHumanoid(player.Character)
-	return humanoid ~= nil and humanoid.Health > 0
-end
-
-local function now()
-	return os.clock()
-end
-
---- true si le personnage est encore protege par son apparition.
-local function isProtected(character)
-	if not character then
-		return false
-	end
-	local until_ = character:GetAttribute("ProtectedUntil")
-	return type(until_) == "number" and until_ > now()
-end
-
-local function damageMultiplierFor(character)
-	if not character then
-		return 1
-	end
-	local until_ = character:GetAttribute("DamageBoostUntil")
-	if type(until_) == "number" and until_ > now() then
-		return GameConfig.PowerupDamageMultiplier
-	end
-	return 1
-end
-
-local function shieldMultiplierFor(character)
-	if not character then
-		return 1
-	end
-	local until_ = character:GetAttribute("ShieldUntil")
-	if type(until_) == "number" and until_ > now() then
-		return GameConfig.PowerupShieldReduction
-	end
-	return 1
-end
-
--- ----------------------------------------------------------------- degats
-
---- Applique des degats a une victime. Gere protection, bouclier et elimination.
-function CombatService.ApplyDamage(victimPlayer, victimCharacter, attacker, amount, isHead, weapon)
-	local humanoid = getHumanoid(victimCharacter)
-	if not humanoid or humanoid.Health <= 0 then
-		return 0
-	end
-	if isProtected(victimCharacter) then
-		return 0
-	end
-
-	local final = amount * shieldMultiplierFor(victimCharacter)
-	if attacker then
-		final = final * damageMultiplierFor(attacker.Character)
-	end
-	final = math.max(1, math.floor(final + 0.5))
-
-	humanoid.Health = math.max(0, humanoid.Health - final)
-	victimCharacter:SetAttribute("LastHitAt", now())
-	-- Memorise le dernier agresseur : PlayerService s'en sert au moment du
-	-- deces pour attribuer l'elimination (y compris apres une chute).
-	if attacker then
-		victimCharacter:SetAttribute("LastAttackerUserId", attacker.UserId)
-		victimCharacter:SetAttribute("LastAttackerAt", now())
-		victimCharacter:SetAttribute("LastWeaponId", weapon and weapon.id or nil)
-	end
-
-	if victimPlayer then
-		local origin = attacker and attacker.Character and attacker.Character:FindFirstChild("HumanoidRootPart")
-		Net.Event("Damaged"):FireClient(
-			victimPlayer,
-			final,
-			origin and (origin :: BasePart).Position or nil,
-			attacker and attacker.Name or nil
-		)
-		ServerEvents.PlayerDamaged:Fire(victimPlayer, attacker, final, isHead)
-	end
-
-	if attacker and attacker ~= victimPlayer then
-		Net.Event("HitMarker"):FireClient(attacker, final, humanoid.Health <= 0, isHead)
-		DataService.AddStat(attacker, "hits", 1)
-	end
-
-	return final
-end
-
---- Ralentit temporairement un personnage (Rayon Glace, Lance a incendie).
-local function applySlow(character, amount, duration)
-	local humanoid = getHumanoid(character)
-	if not humanoid or amount <= 0 or duration <= 0 then
-		return
-	end
-	local baseSpeed = character:GetAttribute("BaseWalkSpeed")
-	if type(baseSpeed) ~= "number" then
-		baseSpeed = GameConfig.WalkSpeed
-	end
-	local until_ = now() + duration
-	character:SetAttribute("SlowUntil", until_)
-	character:SetAttribute("SlowFactor", 1 - math.clamp(amount, 0, 0.8))
-	humanoid.WalkSpeed = baseSpeed * (1 - math.clamp(amount, 0, 0.8))
-
-	task.delay(duration, function()
-		if character.Parent and character:GetAttribute("SlowUntil") == until_ then
-			character:SetAttribute("SlowUntil", nil)
-			character:SetAttribute("SlowFactor", nil)
-			local currentHumanoid = getHumanoid(character)
-			if currentHumanoid and currentHumanoid.Health > 0 then
-				local restore = character:GetAttribute("BaseWalkSpeed")
-				currentHumanoid.WalkSpeed = type(restore) == "number" and restore or GameConfig.WalkSpeed
-			end
-		end
-	end)
-end
-
---- Degats de zone avec attenuation et verification de la ligne de vue.
-local function applySplash(position, weapon, attacker, damageScale)
-	if weapon.splashRadius <= 0 then
-		return
-	end
-	local params = RaycastParams.new()
-	params.FilterType = Enum.RaycastFilterType.Exclude
-	params.IgnoreWater = true
-
-	for _, player in ipairs(Players:GetPlayers()) do
-		local character = player.Character
-		local root = character and character:FindFirstChild("HumanoidRootPart")
-		if root and isAlive(player) then
-			local rootPart = root :: BasePart
-			local offset = rootPart.Position - position
-			local distance = offset.Magnitude
-			if distance <= weapon.splashRadius then
-				local allied = attacker ~= nil and TeamService.AreAllies(attacker, player)
-				if not allied or weapon.heal > 0 then
-					-- Ligne de vue : une explosion ne traverse pas un mur.
-					params.FilterDescendantsInstances = { character }
-					local blocked = false
-					if distance > 1 then
-						local hit = workspace:Raycast(position, offset, params)
-						blocked = hit ~= nil
-					end
-					if not blocked then
-						local falloff = 1 - (distance / weapon.splashRadius) * 0.75
-						if allied and weapon.heal > 0 then
-							local humanoid = getHumanoid(character)
-							if humanoid then
-								humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + weapon.heal * falloff)
-							end
-						elseif not allied then
-							CombatService.ApplyDamage(
-								player,
-								character,
-								attacker,
-								weapon.splashDamage * falloff * damageScale,
-								false,
-								weapon
-							)
-						end
-					end
-				end
-			end
-		end
-	end
-end
-
--- ------------------------------------------------------------ projectiles
-
-local function spawnProjectile(player, weapon, origin, direction, damageScale)
-	if #projectiles >= GameConfig.MaxActiveProjectiles then
-		return
-	end
-	local character = player.Character
-	table.insert(projectiles, {
-		position = origin,
-		velocity = direction * weapon.speed,
-		weapon = weapon,
-		owner = player,
-		ownerCharacter = character,
-		damageScale = damageScale,
-		expires = now() + weapon.lifetime,
-	})
-end
-
---- Resout l'impact d'un projectile.
-local function resolveHit(projectile, result)
-	local weapon = projectile.weapon
-	local attacker = projectile.owner
-	local position = result.Position
-
-	local character, humanoid = Util.GetCharacterFromPart(result.Instance)
-	local hitCharacter = false
-
-	if character and humanoid and humanoid.Health > 0 then
-		local victim = Players:GetPlayerFromCharacter(character)
-		local allied = victim ~= nil and attacker ~= nil and TeamService.AreAllies(attacker, victim)
-
-		if allied and weapon.heal > 0 then
-			humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + weapon.heal)
-			hitCharacter = true
-		elseif not allied and character ~= projectile.ownerCharacter then
-			local isHead = result.Instance.Name == "Head"
-			local damage = weapon.damage * projectile.damageScale
-			if isHead then
-				damage = damage * weapon.headshot
-			end
-			CombatService.ApplyDamage(victim, character, attacker, damage, isHead, weapon)
-			if weapon.slow > 0 then
-				applySlow(character, weapon.slow, weapon.slowTime)
-			end
-			hitCharacter = true
-		end
-	end
-
-	applySplash(position, weapon, attacker, projectile.damageScale)
-
-	Net.Event("ImpactEffect"):FireAllClients(position, result.Normal, weapon.id, hitCharacter)
-end
-
-local function stepProjectiles(deltaTime)
-	if #projectiles == 0 then
-		return
-	end
-	local params = RaycastParams.new()
-	params.FilterType = Enum.RaycastFilterType.Exclude
-	params.IgnoreWater = true
-
-	local currentTime = now()
-	local index = 1
-	while index <= #projectiles do
-		local projectile = projectiles[index]
-		local weapon = projectile.weapon
-		local remove = false
-
-		projectile.velocity = projectile.velocity - Vector3.new(0, GRAVITY * weapon.gravity * deltaTime, 0)
-		local nextPosition = projectile.position + projectile.velocity * deltaTime
-
-		params.FilterDescendantsInstances = { projectile.ownerCharacter }
-		local result = workspace:Raycast(projectile.position, nextPosition - projectile.position, params)
-		if result then
-			resolveHit(projectile, result)
-			remove = true
-		else
-			projectile.position = nextPosition
-			if currentTime >= projectile.expires or nextPosition.Y < -500 then
-				remove = true
-			end
-		end
-
-		if remove then
-			-- Suppression en O(1) : on remplace par le dernier element.
-			projectiles[index] = projectiles[#projectiles]
-			projectiles[#projectiles] = nil
-		else
-			index = index + 1
-		end
-	end
-end
-
--- ------------------------------------------------------------------- tir
-
-local function handleFire(player, origin, direction, charge)
-	if not roundActive or not isAlive(player) then
-		return
-	end
-	if typeof(origin) ~= "Vector3" or typeof(direction) ~= "Vector3" then
-		return
-	end
-	if direction.Magnitude < 0.01 or origin.Magnitude > 100000 then
-		return
-	end
-
-	local weapon = WeaponService.GetEquipped(player)
-	if not weapon then
-		return
-	end
-
-	-- Anti-triche : l'origine declaree doit rester pres du personnage.
-	local character = player.Character
-	local root = character and character:FindFirstChild("HumanoidRootPart")
-	if not root then
-		return
-	end
-	if ((root :: BasePart).Position - origin).Magnitude > GameConfig.MaxFireOriginDistance then
-		return
-	end
-
-	local allowed = WeaponService.TryConsume(player, weapon)
-	if not allowed then
-		return
-	end
-
-	-- Tirer annule la protection d'apparition : on ne tire pas depuis un abri.
-	if character and isProtected(character) then
-		character:SetAttribute("ProtectedUntil", nil)
-	end
-
-	local chargeRatio = 0
-	if weapon.chargeTime > 0 and type(charge) == "number" then
-		chargeRatio = math.clamp(charge, 0, 1)
-	end
-	local damageScale = 1 + (weapon.chargeBonus - 1) * chargeRatio
-
-	DataService.AddStat(player, "shots", 1)
-
-	local unit = direction.Unit
-	local function volley()
-		for _ = 1, weapon.pellets do
-			local spread = Util.ApplySpread(unit, weapon.spread, rng)
-			spawnProjectile(player, weapon, origin, spread, damageScale)
-		end
-		Net.Event("ProjectileSpawned"):FireAllClients(
-			player,
-			weapon.id,
-			origin,
-			unit,
-			chargeRatio
-		)
-	end
-
-	volley()
-	-- Rafales : les coups suivants partent du meme point, sans nouvel envoi client.
-	for shot = 2, weapon.burst do
-		task.delay((shot - 1) * 0.07, function()
-			if roundActive and isAlive(player) then
-				volley()
-			end
-		end)
-	end
-end
-
--- ----------------------------------------------------------------- cycle
-
-function CombatService.SetRoundActive(active)
-	roundActive = active
-	if not active then
-		table.clear(projectiles)
-	end
-end
-
-function CombatService.GetProjectileCount()
-	return #projectiles
-end
-
-function CombatService.Start()
-	Net.Event("FireWeapon").OnServerEvent:Connect(function(player, origin, direction, charge)
-		local ok, err = pcall(handleFire, player, origin, direction, charge)
-		if not ok then
-			warn("[WaterWars] Erreur de tir : " .. tostring(err))
-		end
-	end)
-
-	Players.PlayerRemoving:Connect(function(player)
-		for index = #projectiles, 1, -1 do
-			if projectiles[index].owner == player then
-				projectiles[index] = projectiles[#projectiles]
-				projectiles[#projectiles] = nil
-			end
-		end
-	end)
-
-	RunService.Heartbeat:Connect(function(deltaTime)
-		local ok, err = pcall(stepProjectiles, math.min(deltaTime, 0.1))
-		if not ok then
-			warn("[WaterWars] Erreur de simulation : " .. tostring(err))
-		end
-	end)
-end
-
-return CombatService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX21">
-				<Properties>
-					<string name="Name">DataService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	DataService
-	Sauvegarde persistante : pieces, armes debloquees, equipement, statistiques.
-
-	Tout passe par pcall : si les DataStore sont indisponibles (Studio sans
-	acces API, coupure Roblox), le jeu continue avec un profil en memoire au
-	lieu de planter. C'est le comportement attendu d'un jeu en production.
-]]
-
-local DataStoreService = game:GetService("DataStoreService")
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Weapons = require(Config:WaitForChild("Weapons"))
-local Net = require(Shared:WaitForChild("Net"))
-local Signal = require(Shared:WaitForChild("Signal"))
-local Util = require(Shared:WaitForChild("Util"))
-
-local DataService = {}
-
-DataService.ProfileChanged = Signal.new("ProfileChanged")
-
-local profiles = {}
-local store = nil
-local storeAvailable = false
-
-local SAVE_RETRIES = 3
-
-local function defaultProfile()
-	local owned = {}
-	for _, id in ipairs(Weapons.StarterIds) do
-		owned[id] = true
-	end
-	return {
-		version = 1,
-		coins = GameConfig.Rewards.StartingCoins,
-		owned = owned,
-		loadout = {
-			primary = Weapons.DefaultPrimary,
-			secondary = Weapons.DefaultSecondary,
-		},
-		stats = {
-			kills = 0,
-			deaths = 0,
-			wins = 0,
-			rounds = 0,
-			shots = 0,
-			hits = 0,
-			bestStreak = 0,
-		},
-	}
-end
-
---- Repare un profil charge depuis le DataStore (migration douce).
-local function sanitize(profile)
-	local base = defaultProfile()
-	if type(profile) ~= "table" then
-		return base
-	end
-	profile.version = 1
-	profile.coins = math.max(0, math.floor(tonumber(profile.coins) or base.coins))
-
-	if type(profile.owned) ~= "table" then
-		profile.owned = base.owned
-	end
-	-- On retire les armes qui n'existent plus et on garantit les armes de depart.
-	for id in pairs(profile.owned) do
-		if not Weapons.Exists(id) then
-			profile.owned[id] = nil
-		end
-	end
-	for _, id in ipairs(Weapons.StarterIds) do
-		profile.owned[id] = true
-	end
-
-	if type(profile.loadout) ~= "table" then
-		profile.loadout = base.loadout
-	end
-	for slot, fallback in pairs(base.loadout) do
-		local current = profile.loadout[slot]
-		if type(current) ~= "string" or not Weapons.Exists(current) or not profile.owned[current] then
-			profile.loadout[slot] = fallback
-		end
-	end
-
-	if type(profile.stats) ~= "table" then
-		profile.stats = base.stats
-	end
-	for key, fallback in pairs(base.stats) do
-		profile.stats[key] = math.max(0, math.floor(tonumber(profile.stats[key]) or fallback))
-	end
-	return profile
-end
-
-local function keyFor(player)
-	return "player_" .. tostring(player.UserId)
-end
-
-local function loadProfile(player)
-	if not storeAvailable or not store then
-		return defaultProfile()
-	end
-	for attempt = 1, SAVE_RETRIES do
-		local ok, result = pcall(function()
-			return store:GetAsync(keyFor(player))
-		end)
-		if ok then
-			if result == nil then
-				return defaultProfile()
-			end
-			return sanitize(result)
-		end
-		warn(string.format("[WaterWars] Lecture du profil de %s echouee (essai %d) : %s", player.Name, attempt, tostring(result)))
-		task.wait(attempt * 0.8)
-	end
-	return defaultProfile()
-end
-
-local function saveProfile(player, profile)
-	if not storeAvailable or not store or profile == nil then
-		return false
-	end
-	for attempt = 1, SAVE_RETRIES do
-		local ok, err = pcall(function()
-			store:SetAsync(keyFor(player), profile)
-		end)
-		if ok then
-			return true
-		end
-		warn(string.format("[WaterWars] Sauvegarde du profil de %s echouee (essai %d) : %s", player.Name, attempt, tostring(err)))
-		task.wait(attempt * 0.8)
-	end
-	return false
-end
-
---- Envoie le profil au client concerne.
-function DataService.Push(player)
-	local profile = profiles[player]
-	if not profile then
-		return
-	end
-	Net.Event("ProfileUpdate"):FireClient(player, {
-		coins = profile.coins,
-		owned = profile.owned,
-		loadout = profile.loadout,
-		stats = profile.stats,
-	})
-end
-
-function DataService.Get(player)
-	return profiles[player]
-end
-
---- Ajoute (ou retire) des pieces, puis previent le client.
-function DataService.AddCoins(player, amount)
-	local profile = profiles[player]
-	if not profile then
-		return 0
-	end
-	profile.coins = math.max(0, profile.coins + math.floor(amount))
-	DataService.Push(player)
-	return profile.coins
-end
-
-function DataService.Owns(player, weaponId)
-	local profile = profiles[player]
-	return profile ~= nil and profile.owned[weaponId] == true
-end
-
---- Tente l'achat d'une arme. Renvoie (succes, message).
-function DataService.Purchase(player, weaponId)
-	local profile = profiles[player]
-	if not profile then
-		return false, "Profil indisponible"
-	end
-	local weapon = Weapons.Get(weaponId)
-	if not weapon then
-		return false, "Arme inconnue"
-	end
-	if profile.owned[weaponId] then
-		return false, "Vous possedez deja cette arme"
-	end
-	if profile.coins < weapon.price then
-		return false, string.format("Il vous manque %s pieces", Util.FormatNumber(weapon.price - profile.coins))
-	end
-	profile.coins = profile.coins - weapon.price
-	profile.owned[weaponId] = true
-	DataService.Push(player)
-	DataService.ProfileChanged:Fire(player, profile)
-	return true, string.format("%s debloque !", weapon.name)
-end
-
---- Change une arme d'equipement. Renvoie (succes, message).
-function DataService.SetLoadout(player, slot, weaponId)
-	local profile = profiles[player]
-	if not profile then
-		return false, "Profil indisponible"
-	end
-	if slot ~= "primary" and slot ~= "secondary" then
-		return false, "Emplacement invalide"
-	end
-	if not Weapons.Exists(weaponId) then
-		return false, "Arme inconnue"
-	end
-	if not profile.owned[weaponId] then
-		return false, "Arme non debloquee"
-	end
-	profile.loadout[slot] = weaponId
-	DataService.Push(player)
-	DataService.ProfileChanged:Fire(player, profile)
-	return true, string.format("%s equipe", Weapons.Get(weaponId).name)
-end
-
-function DataService.AddStat(player, key, amount)
-	local profile = profiles[player]
-	if not profile or profile.stats[key] == nil then
-		return
-	end
-	profile.stats[key] = profile.stats[key] + (amount or 1)
-end
-
-function DataService.SetBestStreak(player, streak)
-	local profile = profiles[player]
-	if profile and streak > profile.stats.bestStreak then
-		profile.stats.bestStreak = streak
-	end
-end
-
-local function onPlayerAdded(player)
-	local profile = loadProfile(player)
-	-- Le joueur a pu partir pendant le chargement.
-	if not player.Parent then
-		return
-	end
-	profiles[player] = profile
-	DataService.Push(player)
-	DataService.ProfileChanged:Fire(player, profile)
-end
-
-local function onPlayerRemoving(player)
-	local profile = profiles[player]
-	profiles[player] = nil
-	if profile then
-		saveProfile(player, profile)
-	end
-end
-
-function DataService.Start()
-	local ok, result = pcall(function()
-		return DataStoreService:GetDataStore(GameConfig.DataStoreName)
-	end)
-	if ok and result then
-		store = result
-		-- On teste l'acces reel : en Studio sans "API Services", GetAsync echoue.
-		local testOk = pcall(function()
-			store:GetAsync("__connectivity_probe__")
-		end)
-		storeAvailable = testOk
-	end
-	if not storeAvailable then
-		warn("[WaterWars] DataStore indisponible : les profils ne seront pas sauvegardes (normal en Studio sans acces API).")
-	end
-
-	Players.PlayerAdded:Connect(function(player)
-		task.spawn(onPlayerAdded, player)
-	end)
-	for _, player in ipairs(Players:GetPlayers()) do
-		task.spawn(onPlayerAdded, player)
-	end
-	Players.PlayerRemoving:Connect(onPlayerRemoving)
-
-	game:BindToClose(function()
-		for player, profile in pairs(profiles) do
-			saveProfile(player, profile)
-		end
-		if not RunService:IsStudio() then
-			task.wait(1)
-		end
-	end)
-
-	-- Sauvegarde periodique : on ne perd jamais plus d'une poignee de minutes.
-	task.spawn(function()
-		while true do
-			task.wait(GameConfig.AutosaveInterval)
-			for player, profile in pairs(profiles) do
-				saveProfile(player, profile)
-			end
-		end
-	end)
-
-	Net.Function("GetProfile").OnServerInvoke = function(player)
-		local profile = profiles[player]
-		if not profile then
-			return nil
-		end
-		return {
-			coins = profile.coins,
-			owned = profile.owned,
-			loadout = profile.loadout,
-			stats = profile.stats,
-		}
-	end
-
-	Net.Event("RequestPurchase").OnServerEvent:Connect(function(player, weaponId)
-		if type(weaponId) ~= "string" then
-			return
-		end
-		local success, message = DataService.Purchase(player, weaponId)
-		Net.Event("Notify"):FireClient(player, message, success and "good" or "bad")
-	end)
-end
-
-return DataService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX22">
-				<Properties>
-					<string name="Name">MapService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	MapService
-	Construit et detruit les terrains, applique l'ambiance lumineuse, et
-	fabrique les elements de jeu propres a la map : stations de recharge,
-	zone de controle, points d'apparition.
-
-	Toute la geometrie vit dans un seul Model (workspace.CurrentMap) : le
-	nettoyage de fin de manche est donc instantane et ne laisse rien derriere.
-]]
-
-local Lighting = game:GetService("Lighting")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Maps = require(Config:WaitForChild("Maps"))
-local MapBuilder = require(Shared:WaitForChild("MapBuilder"))
-
-local MapService = {}
-
-local currentMap = nil
-local currentModel = nil
-local refillParts = {}
-local hillPart = nil
-
-local MAP_MODEL_NAME = "CurrentMap"
-
---- Ambiance par defaut, restauree si aucune map n'est chargee.
-local function applyLighting(settings)
-	Lighting.ClockTime = settings.ClockTime or 14
-	Lighting.Brightness = settings.Brightness or 2.5
-	Lighting.Ambient = settings.Ambient or Color3.fromRGB(120, 120, 120)
-	Lighting.OutdoorAmbient = settings.OutdoorAmbient or Color3.fromRGB(150, 150, 150)
-	Lighting.FogColor = settings.FogColor or Color3.fromRGB(200, 220, 240)
-	Lighting.FogStart = settings.FogStart or 200
-	Lighting.FogEnd = settings.FogEnd or 800
-	Lighting.ColorShift_Top = settings.ColorShift_Top or Color3.fromRGB(255, 255, 255)
-	Lighting.GlobalShadows = true
-	Lighting.EnvironmentDiffuseScale = 0.6
-	Lighting.EnvironmentSpecularScale = 0.6
-
-	local atmosphere = Lighting:FindFirstChildOfClass("Atmosphere")
-	if not atmosphere then
-		atmosphere = Instance.new("Atmosphere")
-		atmosphere.Parent = Lighting
-	end
-	atmosphere.Density = settings.Density or 0.3
-	atmosphere.Haze = settings.Haze or 1.2
-	atmosphere.Glare = 0.2
-	atmosphere.Color = settings.FogColor or Color3.fromRGB(200, 220, 240)
-	atmosphere.Decay = settings.ColorShift_Top or Color3.fromRGB(180, 200, 220)
-end
-
---- Station de recharge : une plaque lumineuse avec un bidon qui tourne.
-local function createRefillStation(parent, position, index)
-	local station = Instance.new("Model")
-	station.Name = "RefillStation" .. index
-
-	local pad = Instance.new("Part")
-	pad.Name = "Pad"
-	pad.Shape = Enum.PartType.Cylinder
-	pad.Size = Vector3.new(1, GameConfig.RefillRadius * 2, GameConfig.RefillRadius * 2)
-	pad.CFrame = CFrame.new(position + Vector3.new(0, 0.5, 0)) * CFrame.Angles(0, 0, math.rad(90))
-	pad.Anchored = true
-	pad.CanCollide = false
-	pad.CanQuery = false
-	pad.CanTouch = false
-	pad.Material = Enum.Material.Neon
-	pad.Color = Color3.fromRGB(70, 200, 255)
-	pad.Transparency = 0.55
-	pad.CastShadow = false
-	pad.Parent = station
-
-	local tank = Instance.new("Part")
-	tank.Name = "Tank"
-	tank.Shape = Enum.PartType.Cylinder
-	tank.Size = Vector3.new(7, 5, 5)
-	tank.CFrame = CFrame.new(position + Vector3.new(0, 4.5, 0)) * CFrame.Angles(0, 0, math.rad(90))
-	tank.Anchored = true
-	tank.CanCollide = true
-	tank.Material = Enum.Material.SmoothPlastic
-	tank.Color = Color3.fromRGB(40, 130, 200)
-	tank.Parent = station
-
-	local light = Instance.new("PointLight")
-	light.Brightness = 2
-	light.Range = 22
-	light.Color = Color3.fromRGB(90, 200, 255)
-	light.Parent = tank
-
-	local billboard = Instance.new("BillboardGui")
-	billboard.Name = "Label"
-	billboard.Size = UDim2.fromOffset(180, 46)
-	billboard.StudsOffsetWorldSpace = Vector3.new(0, 5, 0)
-	billboard.AlwaysOnTop = false
-	billboard.MaxDistance = 140
-	billboard.Parent = tank
-
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.fromScale(1, 1)
-	label.BackgroundTransparency = 1
-	label.Text = "RECHARGE"
-	label.TextColor3 = Color3.fromRGB(180, 240, 255)
-	label.TextStrokeTransparency = 0.4
-	label.Font = Enum.Font.GothamBold
-	label.TextScaled = true
-	label.Parent = billboard
-
-	station.Parent = parent
-	return station
-end
-
---- Marqueur de la zone de controle (mode Roi de la piscine).
-local function createHill(parent, position)
-	local zone = Instance.new("Part")
-	zone.Name = "HillZone"
-	zone.Shape = Enum.PartType.Cylinder
-	zone.Size = Vector3.new(60, GameConfig.HillRadius * 2, GameConfig.HillRadius * 2)
-	zone.CFrame = CFrame.new(position) * CFrame.Angles(0, 0, math.rad(90))
-	zone.Anchored = true
-	zone.CanCollide = false
-	zone.CanQuery = false
-	zone.CanTouch = false
-	zone.Material = Enum.Material.Neon
-	zone.Color = Color3.fromRGB(230, 230, 230)
-	zone.Transparency = 0.86
-	zone.CastShadow = false
-	zone.Parent = parent
-	return zone
-end
-
---- Detruit la map courante et remet le monde a plat.
-function MapService.Unload()
-	if currentModel then
-		currentModel:Destroy()
-	end
-	currentModel = nil
-	currentMap = nil
-	refillParts = {}
-	hillPart = nil
-end
-
---- Construit `map` dans le workspace. Renvoie le Model cree.
-function MapService.Load(map)
-	assert(map, "MapService.Load : map manquante")
-	MapService.Unload()
-
-	local model = Instance.new("Model")
-	model.Name = MAP_MODEL_NAME
-
-	local geometry = Instance.new("Folder")
-	geometry.Name = "Geometry"
-	geometry.Parent = model
-
-	local builder = MapBuilder.new(geometry, 20240900 + (map.order or 1))
-	map.build(builder)
-
-	local props = Instance.new("Folder")
-	props.Name = "Props"
-	props.Parent = model
-
-	refillParts = {}
-	for index, position in ipairs(map.refillStations) do
-		local station = createRefillStation(props, position, index)
-		table.insert(refillParts, { position = position, model = station })
-	end
-
-	hillPart = createHill(props, map.controlPoint)
-
-	model.Parent = workspace
-	currentModel = model
-	currentMap = map
-
-	applyLighting(map.lighting)
-	workspace.FallenPartsDestroyHeight = (map.killY or -50) - 200
-
-	print(string.format(
-		"[WaterWars] Terrain construit : %s (%d pieces) -> workspace.%s",
-		map.name,
-		builder.count,
-		MAP_MODEL_NAME
-	))
-
-	return model
-end
-
-function MapService.GetCurrentMap()
-	return currentMap
-end
-
-function MapService.GetModel()
-	return currentModel
-end
-
-function MapService.GetRefillStations()
-	return refillParts
-end
-
-function MapService.GetHillPart()
-	return hillPart
-end
-
---- Colore la zone de controle selon l'equipe qui la tient.
-function MapService.SetHillColor(color, transparency)
-	if hillPart then
-		hillPart.Color = color
-		hillPart.Transparency = transparency or 0.86
-	end
-end
-
---- Renvoie une liste de points d'apparition pour un camp donne.
---- `teamId` vaut "Blue", "Red" ou nil (chacun pour soi).
-function MapService.GetSpawnList(teamId)
-	if not currentMap then
-		return {}
-	end
-	local spawns = currentMap.spawns
-	if teamId and spawns[teamId] then
-		return spawns[teamId]
-	end
-	return spawns.FFA
-end
-
---- CFrame d'apparition, orientee vers le centre du terrain.
-function MapService.GetSpawnCFrame(teamId, index)
-	local list = MapService.GetSpawnList(teamId)
-	if #list == 0 then
-		return CFrame.new(0, 20, 0)
-	end
-	local position = list[((index - 1) % #list) + 1]
-	local target = currentMap and currentMap.controlPoint or Vector3.new(0, position.Y, 0)
-	local flatTarget = Vector3.new(target.X, position.Y, target.Z)
-	if (flatTarget - position).Magnitude < 1 then
-		return CFrame.new(position)
-	end
-	return CFrame.lookAt(position, flatTarget)
-end
-
---- Hauteur en dessous de laquelle un joueur est considere comme tombe.
-function MapService.GetKillY()
-	return currentMap and currentMap.killY or -100
-end
-
---- Donnees envoyees au client pour l'ecran de vote et le HUD.
-function MapService.Describe(map)
-	return {
-		id = map.id,
-		name = map.name,
-		theme = map.theme,
-		description = map.description,
-	}
-end
-
-function MapService.GetAll()
-	return Maps.List
-end
-
-function MapService.PickRandom(count, excludeId, rng)
-	return Maps.PickRandom(count, excludeId, rng)
-end
-
-function MapService.GetById(id)
-	return Maps.Get(id)
-end
-
-return MapService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX23">
-				<Properties>
-					<string name="Name">MatchService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	MatchService
-	Chef d'orchestre de la partie : vote de map, lancement de la manche,
-	decompte, scores, eliminations, fin de manche et recompenses.
-
-	Cycle : Attente -> Vote -> Chargement -> Manche -> Resultats -> Vote ...
-]]
-
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Weapons = require(Config:WaitForChild("Weapons"))
-local Net = require(Shared:WaitForChild("Net"))
-local Util = require(Shared:WaitForChild("Util"))
-
-local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
-local CombatService = require(script.Parent:WaitForChild("CombatService"))
-local DataService = require(script.Parent:WaitForChild("DataService"))
-local MapService = require(script.Parent:WaitForChild("MapService"))
-local PickupService = require(script.Parent:WaitForChild("PickupService"))
-local PlayerService = require(script.Parent:WaitForChild("PlayerService"))
-local TeamService = require(script.Parent:WaitForChild("TeamService"))
-
-local MatchService = {}
-
-local STATE = {
-	Waiting = "Waiting",
-	Vote = "Vote",
-	Loading = "Loading",
-	Active = "Active",
-	Results = "Results",
-}
-
-local state = STATE.Waiting
-local stateEndsAt = 0
-local currentMode = GameConfig.GameModes[1]
-local currentMap = nil
-local modeIndex = 0
-local lastMapId = nil
-
-local teamScores = { Blue = 0, Red = 0 }
-local roundStats = {}
-local damageLog = {} -- damageLog[victim] = { [attacker] = degats }
-
-local voteOptions = {}
-local votes = {}
-
-local rng = Random.new(os.time() + 11)
-local hillAccumulator = 0
-local scoreboardAccumulator = 0
-local lastResult = nil
-
--- ------------------------------------------------------------- utilitaires
-
-local function statsFor(player)
-	local stats = roundStats[player]
-	if not stats then
-		stats = { kills = 0, deaths = 0, score = 0, streak = 0, assists = 0 }
-		roundStats[player] = stats
-	end
-	return stats
-end
-
-local function modeById(id)
-	for _, mode in ipairs(GameConfig.GameModes) do
-		if mode.id == id then
-			return mode
-		end
-	end
-	return GameConfig.GameModes[1]
-end
-
-local function scoreLimit()
-	return GameConfig.ScoreLimit[currentMode.id] or 50
-end
-
-local function timeLeft()
-	return math.max(0, stateEndsAt - os.clock())
-end
-
---- Vue envoyee au client a chaque changement d'etat et chaque seconde.
-local function buildStatePayload()
-	return {
-		state = state,
-		timeLeft = timeLeft(),
-		mode = {
-			id = currentMode.id,
-			name = currentMode.name,
-			description = currentMode.description,
-			teamBased = currentMode.teamBased,
-		},
-		map = currentMap and MapService.Describe(currentMap) or nil,
-		scores = { Blue = teamScores.Blue, Red = teamScores.Red },
-		scoreLimit = scoreLimit(),
-		playerCount = #Players:GetPlayers(),
-		minPlayers = GameConfig.MinPlayersToStart,
-		result = lastResult,
-	}
-end
-
-local function broadcastState()
-	Net.Event("MatchState"):FireAllClients(buildStatePayload())
-end
-
-local function broadcastScoreboard()
-	local rows = {}
-	for _, player in ipairs(Players:GetPlayers()) do
-		local stats = statsFor(player)
-		table.insert(rows, {
-			userId = player.UserId,
-			name = player.DisplayName,
-			team = TeamService.GetTeamId(player),
-			kills = stats.kills,
-			deaths = stats.deaths,
-			assists = stats.assists,
-			score = stats.score,
-			streak = stats.streak,
-		})
-	end
-	table.sort(rows, function(a, b)
-		if a.score == b.score then
-			return a.kills > b.kills
-		end
-		return a.score > b.score
-	end)
-	Net.Event("Scoreboard"):FireAllClients(rows)
-end
-
-local function setState(newState, duration)
-	state = newState
-	stateEndsAt = os.clock() + duration
-	broadcastState()
-end
-
-local function notifyAll(message, kind)
-	Net.Event("Notify"):FireAllClients(message, kind or "info")
-end
-
--- ------------------------------------------------------------------ vote
-
-local function startVote()
-	currentMap = nil
-	lastResult = nil
-	table.clear(votes)
-	voteOptions = MapService.PickRandom(GameConfig.MapVoteChoices, lastMapId, rng)
-
-	modeIndex = modeIndex + 1
-	local rotation = GameConfig.ModeRotation
-	currentMode = modeById(rotation[((modeIndex - 1) % #rotation) + 1])
-
-	local payload = {}
-	for _, map in ipairs(voteOptions) do
-		table.insert(payload, MapService.Describe(map))
-	end
-
-	setState(STATE.Vote, GameConfig.MapVoteTime)
-	Net.Event("MapVote"):FireAllClients({
-		phase = "open",
-		options = payload,
-		duration = GameConfig.MapVoteTime,
-		votes = {},
-		mode = currentMode.name,
-	})
-end
-
-local function broadcastVotes()
-	local counts = {}
-	for _, mapId in pairs(votes) do
-		counts[mapId] = (counts[mapId] or 0) + 1
-	end
-	Net.Event("MapVote"):FireAllClients({ phase = "update", votes = counts })
-end
-
-local function resolveVote()
-	local counts = {}
-	for _, mapId in pairs(votes) do
-		counts[mapId] = (counts[mapId] or 0) + 1
-	end
-	local bestMap, bestCount = nil, -1
-	for _, map in ipairs(voteOptions) do
-		local count = counts[map.id] or 0
-		if count > bestCount then
-			bestMap, bestCount = map, count
-		end
-	end
-	if not bestMap then
-		bestMap = Util.Pick(MapService.GetAll(), rng)
-	end
-	return bestMap
-end
-
--- ------------------------------------------------------------- manche
-
-local function resetRound()
-	teamScores.Blue = 0
-	teamScores.Red = 0
-	table.clear(roundStats)
-	table.clear(damageLog)
-	for _, player in ipairs(Players:GetPlayers()) do
-		statsFor(player)
-	end
-end
-
-local function startRound(map)
-	currentMap = map
-	lastMapId = map.id
-	resetRound()
-
-	setState(STATE.Loading, 3)
-	CombatService.SetRoundActive(false)
-	PlayerService.SetRespawnEnabled(false)
-	MapService.Load(map)
-	PickupService.Setup(map)
-	TeamService.SetTeamMode(currentMode.teamBased)
-	Net.Event("MapReady"):FireAllClients(MapService.Describe(map))
-
-	task.wait(2)
-
-	PlayerService.SetRespawnEnabled(true)
-	PlayerService.SpawnAll()
-	CombatService.SetRoundActive(true)
-
-	setState(STATE.Active, GameConfig.RoundTime)
-	notifyAll(string.format("%s - %s", currentMode.name, map.name), "good")
-	broadcastScoreboard()
-	ServerEvents.RoundStarted:Fire(map, currentMode)
-end
-
-local function winnerText()
-	if currentMode.teamBased then
-		if teamScores.Blue == teamScores.Red then
-			return "Egalite parfaite !", nil
-		end
-		local winnerId = teamScores.Blue > teamScores.Red and "Blue" or "Red"
-		for _, definition in ipairs(GameConfig.Teams) do
-			if definition.id == winnerId then
-				return definition.name .. " remporte la manche !", winnerId
-			end
-		end
-	end
-
-	local bestPlayer, bestScore = nil, -1
-	for player, stats in pairs(roundStats) do
-		if stats.score > bestScore then
-			bestPlayer, bestScore = player, stats.score
-		end
-	end
-	if bestPlayer then
-		return string.format("%s remporte la manche avec %d points !", bestPlayer.DisplayName, bestScore), nil
-	end
-	return "Manche terminee", nil
-end
-
-local function payRewards(winnerTeamId)
-	for _, player in ipairs(Players:GetPlayers()) do
-		local stats = statsFor(player)
-		local reward = 0
-		if currentMode.teamBased then
-			local teamId = TeamService.GetTeamId(player)
-			if winnerTeamId and teamId == winnerTeamId then
-				reward = GameConfig.Rewards.RoundWin
-				DataService.AddStat(player, "wins", 1)
-			else
-				reward = GameConfig.Rewards.RoundLoss
-			end
-		else
-			reward = GameConfig.Rewards.RoundLoss + stats.score
-		end
-		DataService.AddStat(player, "rounds", 1)
-		if reward > 0 then
-			DataService.AddCoins(player, reward)
-		end
-	end
-end
-
-local function endRound()
-	CombatService.SetRoundActive(false)
-	PlayerService.SetRespawnEnabled(false)
-
-	local message, winnerTeamId = winnerText()
-	payRewards(winnerTeamId)
-
-	local ranking = {}
-	for player, stats in pairs(roundStats) do
-		table.insert(ranking, {
-			name = player.DisplayName,
-			kills = stats.kills,
-			deaths = stats.deaths,
-			score = stats.score,
-			team = TeamService.GetTeamId(player),
-		})
-	end
-	table.sort(ranking, function(a, b)
-		return a.score > b.score
-	end)
-
-	lastResult = {
-		message = message,
-		winner = winnerTeamId,
-		scores = { Blue = teamScores.Blue, Red = teamScores.Red },
-		ranking = ranking,
-		mapName = currentMap and currentMap.name or "",
-	}
-
-	setState(STATE.Results, GameConfig.PostRoundTime)
-	notifyAll(message, "good")
-	broadcastScoreboard()
-	ServerEvents.RoundEnded:Fire(lastResult)
-
-	task.wait(GameConfig.PostRoundTime)
-
-	-- La map reste chargee : entre deux manches les joueurs continuent de
-	-- s'echauffer dessus au lieu de fixer un ecran vide. Elle sera remplacee
-	-- par MapService.Load() au debut de la manche suivante.
-	PickupService.Clear()
-end
-
--- --------------------------------------------------------- roi de la piscine
-
-local function updateHill(deltaTime)
-	if currentMode.id ~= "KingOfTheHill" or not currentMap then
-		return
-	end
-	hillAccumulator = hillAccumulator + deltaTime
-	if hillAccumulator < GameConfig.HillTickRate then
-		return
-	end
-	hillAccumulator = 0
-
-	local center = currentMap.controlPoint
-	local counts = { Blue = 0, Red = 0 }
-	for _, player in ipairs(Players:GetPlayers()) do
-		local character = player.Character
-		local root = character and character:FindFirstChild("HumanoidRootPart")
-		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-		if root and humanoid and humanoid.Health > 0 then
-			if ((root :: BasePart).Position - center).Magnitude <= GameConfig.HillRadius then
-				local teamId = TeamService.GetTeamId(player)
-				if teamId and counts[teamId] then
-					counts[teamId] = counts[teamId] + 1
-				end
-			end
-		end
-	end
-
-	local holder = nil
-	if counts.Blue >= GameConfig.HillContestedNeeded and counts.Blue > counts.Red then
-		holder = "Blue"
-	elseif counts.Red >= GameConfig.HillContestedNeeded and counts.Red > counts.Blue then
-		holder = "Red"
-	end
-
-	if holder then
-		teamScores[holder] = teamScores[holder] + GameConfig.HillPointsPerTick
-		MapService.SetHillColor(TeamService.GetTeamColor(holder), 0.72)
-		for _, player in ipairs(Players:GetPlayers()) do
-			local character = player.Character
-			local root = character and character:FindFirstChild("HumanoidRootPart")
-			if root and TeamService.GetTeamId(player) == holder then
-				if ((root :: BasePart).Position - center).Magnitude <= GameConfig.HillRadius then
-					statsFor(player).score = statsFor(player).score + GameConfig.HillPointsPerTick
-					DataService.AddCoins(player, GameConfig.Rewards.CaptureTick)
-				end
-			end
-		end
-	elseif counts.Blue > 0 and counts.Red > 0 then
-		MapService.SetHillColor(Color3.fromRGB(255, 220, 90), 0.72) -- zone disputee
-	else
-		MapService.SetHillColor(Color3.fromRGB(230, 230, 230), 0.86)
-	end
-end
-
--- ------------------------------------------------------------ eliminations
-
-local function onPlayerKilled(victim, killer, weaponId)
-	if state ~= STATE.Active then
-		return
-	end
-	local victimStats = statsFor(victim)
-	victimStats.deaths = victimStats.deaths + 1
-	victimStats.streak = 0
-	DataService.AddStat(victim, "deaths", 1)
-
-	local weapon = weaponId and Weapons.Get(weaponId) or nil
-
-	if killer and killer ~= victim then
-		local killerStats = statsFor(killer)
-		killerStats.kills = killerStats.kills + 1
-		killerStats.streak = killerStats.streak + 1
-		killerStats.score = killerStats.score + GameConfig.Rewards.Splash
-		DataService.AddStat(killer, "kills", 1)
-		DataService.SetBestStreak(killer, killerStats.streak)
-
-		local coins = GameConfig.Rewards.Kill
-		local bonus = GameConfig.KillstreakBonus[killerStats.streak]
-		if bonus then
-			coins = coins + bonus
-			Net.Event("Notify"):FireClient(killer, string.format("Serie de %d ! +%d pieces", killerStats.streak, bonus), "good")
-		end
-		DataService.AddCoins(killer, coins)
-
-		if currentMode.teamBased then
-			local teamId = TeamService.GetTeamId(killer)
-			if teamId and teamScores[teamId] then
-				teamScores[teamId] = teamScores[teamId] + GameConfig.Rewards.Splash
-			end
-		end
-	end
-
-	-- Assistances : tout joueur ayant inflige au moins 25 degats a la victime.
-	local log = damageLog[victim]
-	if log then
-		for attacker, amount in pairs(log) do
-			if attacker ~= killer and attacker ~= victim and amount >= 25 and attacker.Parent then
-				local assistStats = statsFor(attacker)
-				assistStats.assists = assistStats.assists + 1
-				assistStats.score = assistStats.score + 1
-				DataService.AddCoins(attacker, GameConfig.Rewards.Assist)
-			end
-		end
-		damageLog[victim] = nil
-	end
-
-	Net.Event("KillFeed"):FireAllClients({
-		killer = killer and killer.DisplayName or nil,
-		killerTeam = killer and TeamService.GetTeamId(killer) or nil,
-		victim = victim.DisplayName,
-		victimTeam = TeamService.GetTeamId(victim),
-		weapon = weapon and weapon.name or nil,
-	})
-	broadcastState()
-	broadcastScoreboard()
-end
-
-local function onPlayerDamaged(victim, attacker, amount)
-	if not attacker or attacker == victim then
-		return
-	end
-	local log = damageLog[victim]
-	if not log then
-		log = {}
-		damageLog[victim] = log
-	end
-	log[attacker] = (log[attacker] or 0) + amount
-end
-
--- --------------------------------------------------------- fin de manche ?
-
-local function shouldEndRound()
-	if timeLeft() <= 0 then
-		return true
-	end
-	local limit = scoreLimit()
-	if currentMode.teamBased then
-		return teamScores.Blue >= limit or teamScores.Red >= limit
-	end
-	for _, stats in pairs(roundStats) do
-		if stats.kills >= limit then
-			return true
-		end
-	end
-	return false
-end
-
--- ------------------------------------------------------------ boucle
-
-local function gameLoop()
-	-- Un terrain est charge des le demarrage du serveur : les premiers joueurs
-	-- arrivent dans un decor, pas dans le vide.
-	if not MapService.GetCurrentMap() then
-		local first = Util.Pick(MapService.GetAll(), rng)
-		local ok, err = pcall(MapService.Load, first)
-		if not ok then
-			-- Sans ce message, un terrain qui ne se construit pas donnerait un
-			-- monde vide sans la moindre explication dans la console.
-			warn("[WaterWars] Chargement du terrain de depart impossible : " .. tostring(err))
-		end
-	end
-
-	while true do
-		if #Players:GetPlayers() < GameConfig.MinPlayersToStart then
-			setState(STATE.Waiting, 1)
-			PlayerService.SetRespawnEnabled(true)
-			PlayerService.SpawnAll()
-			repeat
-				task.wait(1)
-				broadcastState()
-			until #Players:GetPlayers() >= GameConfig.MinPlayersToStart
-		end
-
-		-- Echauffement : tout le monde est vivant et peut tirer, mais rien
-		-- n'est compte au score (voir onPlayerKilled).
-		PlayerService.SetRespawnEnabled(true)
-		CombatService.SetRoundActive(true)
-		PlayerService.SpawnAll()
-
-		startVote()
-		local voteEnd = os.clock() + GameConfig.MapVoteTime
-		while os.clock() < voteEnd do
-			task.wait(1)
-			broadcastState()
-		end
-
-		local map = resolveVote()
-		Net.Event("MapVote"):FireAllClients({ phase = "closed", chosen = MapService.Describe(map) })
-
-		local ok, err = pcall(startRound, map)
-		if not ok then
-			warn("[WaterWars] Impossible de demarrer la manche : " .. tostring(err))
-			MapService.Unload()
-			task.wait(3)
-		else
-			while state == STATE.Active and not shouldEndRound() do
-				task.wait(0.5)
-				broadcastState()
-			end
-			local endedOk, endErr = pcall(endRound)
-			if not endedOk then
-				warn("[WaterWars] Erreur de fin de manche : " .. tostring(endErr))
-				PlayerService.DespawnAll()
-				PickupService.Clear()
-				MapService.Unload()
-			end
-		end
-	end
-end
-
--- ------------------------------------------------------------ interface
-
-function MatchService.GetState()
-	return state
-end
-
-function MatchService.IsRoundActive()
-	return state == STATE.Active
-end
-
-function MatchService.Start()
-	ServerEvents.PlayerKilled:Connect(onPlayerKilled)
-	ServerEvents.PlayerDamaged:Connect(onPlayerDamaged)
-
-	ServerEvents.CharacterSpawned:Connect(function(player)
-		damageLog[player] = nil
-	end)
-
-	Net.Event("CastMapVote").OnServerEvent:Connect(function(player, mapId)
-		if state ~= STATE.Vote or type(mapId) ~= "string" then
-			return
-		end
-		for _, map in ipairs(voteOptions) do
-			if map.id == mapId then
-				votes[player] = mapId
-				broadcastVotes()
-				return
-			end
-		end
-	end)
-
-	Players.PlayerAdded:Connect(function(player)
-		statsFor(player)
-		TeamService.Assign(player)
-		task.wait(0.5)
-		broadcastState()
-		broadcastScoreboard()
-		-- Un joueur qui arrive entre directement en jeu, sauf pendant le
-		-- chargement d'un terrain (il apparaitrait dans le vide).
-		if state ~= STATE.Loading then
-			task.spawn(PlayerService.Spawn, player)
-		end
-	end)
-
-	Players.PlayerRemoving:Connect(function(player)
-		roundStats[player] = nil
-		damageLog[player] = nil
-		votes[player] = nil
-		broadcastScoreboard()
-	end)
-
-	for _, player in ipairs(Players:GetPlayers()) do
-		statsFor(player)
-		TeamService.Assign(player)
-	end
-
-	RunService.Heartbeat:Connect(function(deltaTime)
-		if state ~= STATE.Active then
-			return
-		end
-		local ok, err = pcall(updateHill, deltaTime)
-		if not ok then
-			warn("[WaterWars] Erreur de la zone de controle : " .. tostring(err))
-		end
-		scoreboardAccumulator = scoreboardAccumulator + deltaTime
-		if scoreboardAccumulator >= 3 then
-			scoreboardAccumulator = 0
-			broadcastScoreboard()
-		end
-	end)
-
-	task.spawn(function()
-		local ok, err = pcall(gameLoop)
-		if not ok then
-			warn("[WaterWars] La boucle de partie s'est arretee : " .. tostring(err))
-		end
-	end)
-end
-
-return MatchService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX24">
-				<Properties>
-					<string name="Name">PickupService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	PickupService
-	Bonus au sol : turbo, haute pression, impermeable et citerne.
-	Les plaques apparaissent aux emplacements definis par la map, se
-	reactivent apres un delai, et sont ramassees par simple proximite (plus
-	fiable que Touched, qui rate des collisions a grande vitesse).
-]]
-
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Net = require(Shared:WaitForChild("Net"))
-local Util = require(Shared:WaitForChild("Util"))
-
-local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
-
-local PickupService = {}
-
-local PICKUP_RADIUS = 7
-local CHECK_INTERVAL = 0.15
-
-local pads = {}
-local container = nil
-local accumulator = 0
-local spin = 0
-
-local function powerupById(id)
-	for _, definition in ipairs(GameConfig.Powerups) do
-		if definition.id == id then
-			return definition
-		end
-	end
-	return GameConfig.Powerups[1]
-end
-
-local function buildPad(position, definition)
-	local model = Instance.new("Model")
-	model.Name = "Powerup_" .. definition.id
-
-	local base = Instance.new("Part")
-	base.Name = "Base"
-	base.Shape = Enum.PartType.Cylinder
-	base.Size = Vector3.new(0.6, 9, 9)
-	base.CFrame = CFrame.new(position) * CFrame.Angles(0, 0, math.rad(90))
-	base.Anchored = true
-	base.CanCollide = false
-	base.CanQuery = false
-	base.CanTouch = false
-	base.CastShadow = false
-	base.Material = Enum.Material.Neon
-	base.Color = definition.color
-	base.Transparency = 0.5
-	base.Parent = model
-
-	local core = Instance.new("Part")
-	core.Name = "Core"
-	core.Size = Vector3.new(3.4, 3.4, 3.4)
-	core.CFrame = CFrame.new(position + Vector3.new(0, 4, 0))
-	core.Anchored = true
-	core.CanCollide = false
-	core.CanQuery = false
-	core.CanTouch = false
-	core.Material = Enum.Material.Neon
-	core.Color = definition.color
-	core.Parent = model
-
-	local light = Instance.new("PointLight")
-	light.Color = definition.color
-	light.Brightness = 3
-	light.Range = 20
-	light.Parent = core
-
-	local billboard = Instance.new("BillboardGui")
-	billboard.Size = UDim2.fromOffset(190, 40)
-	billboard.StudsOffsetWorldSpace = Vector3.new(0, 4, 0)
-	billboard.MaxDistance = 130
-	billboard.Parent = core
-
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.fromScale(1, 1)
-	label.BackgroundTransparency = 1
-	label.Text = string.upper(definition.name)
-	label.TextColor3 = definition.color
-	label.TextStrokeTransparency = 0.35
-	label.Font = Enum.Font.GothamBold
-	label.TextScaled = true
-	label.Parent = billboard
-
-	model.Parent = container
-	return model, core
-end
-
-local function setPadVisible(pad, visible)
-	pad.active = visible
-	pad.model.Parent = visible and container or nil
-end
-
---- Applique l'effet d'un bonus au joueur.
-local function grant(player, definition)
-	local character = player.Character
-	local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-	if not character or not humanoid then
-		return false
-	end
-
-	if definition.id == "Refill" then
-		WeaponService.RefillAll(player)
-		humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + 25)
-	elseif definition.id == "Speed" then
-		character:SetAttribute("SpeedBoostUntil", os.clock() + definition.duration)
-	elseif definition.id == "Damage" then
-		character:SetAttribute("DamageBoostUntil", os.clock() + definition.duration)
-	elseif definition.id == "Shield" then
-		character:SetAttribute("ShieldUntil", os.clock() + definition.duration)
-		local existing = character:FindFirstChildOfClass("ForceField")
-		if existing then
-			existing:Destroy()
-		end
-		local field = Instance.new("ForceField")
-		field.Visible = true
-		field.Parent = character
-		Util.DestroyAfter(field, definition.duration)
-	end
-
-	Net.Event("Notify"):FireClient(player, definition.name .. " recupere !", "good")
-	Net.Event("EffectState"):FireClient(player, definition.id, definition.duration)
-	return true
-end
-
-local function step(deltaTime)
-	spin = spin + deltaTime * 2
-	for _, pad in ipairs(pads) do
-		if pad.active and pad.core.Parent then
-			pad.core.CFrame = CFrame.new(pad.position + Vector3.new(0, 4 + math.sin(spin * 1.5) * 0.7, 0))
-				* CFrame.Angles(spin, spin * 0.8, 0)
-		end
-	end
-
-	accumulator = accumulator + deltaTime
-	if accumulator < CHECK_INTERVAL then
-		return
-	end
-	accumulator = 0
-
-	for _, pad in ipairs(pads) do
-		if pad.active then
-			for _, player in ipairs(Players:GetPlayers()) do
-				local character = player.Character
-				local root = character and character:FindFirstChild("HumanoidRootPart")
-				local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-				if root and humanoid and humanoid.Health > 0 then
-					if ((root :: BasePart).Position - pad.position).Magnitude <= PICKUP_RADIUS then
-						if grant(player, pad.definition) then
-							setPadVisible(pad, false)
-							task.delay(GameConfig.PowerupRespawn, function()
-								if pad.model.Parent ~= nil or container ~= nil then
-									-- Nouveau bonus tire au sort a la reapparition.
-									setPadVisible(pad, true)
-								end
-							end)
-						end
-						break
-					end
-				end
-			end
-		end
-	end
-end
-
---- (Re)cree les plaques de bonus pour la map courante.
-function PickupService.Setup(map)
-	PickupService.Clear()
-	container = Instance.new("Folder")
-	container.Name = "Powerups"
-	container.Parent = workspace
-
-	for index, position in ipairs(map.powerupSpots) do
-		-- Un bonus different a chaque emplacement, dans l'ordre de la config.
-		local definition = GameConfig.Powerups[((index - 1) % #GameConfig.Powerups) + 1]
-		if index == 1 then
-			-- L'emplacement central est toujours un bonus offensif.
-			definition = powerupById("Damage")
-		end
-		local model, core = buildPad(position, definition)
-		table.insert(pads, {
-			position = position,
-			definition = definition,
-			model = model,
-			core = core,
-			active = true,
-		})
-	end
-end
-
-function PickupService.Clear()
-	for _, pad in ipairs(pads) do
-		pad.model:Destroy()
-	end
-	table.clear(pads)
-	if container then
-		container:Destroy()
-		container = nil
-	end
-end
-
-function PickupService.Start()
-	RunService.Heartbeat:Connect(function(deltaTime)
-		if #pads == 0 then
-			return
-		end
-		local ok, err = pcall(step, deltaTime)
-		if not ok then
-			warn("[WaterWars] Erreur des bonus : " .. tostring(err))
-		end
-	end)
-end
-
-return PickupService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX25">
-				<Properties>
-					<string name="Name">PlayerService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	PlayerService
-	Tout ce qui concerne le personnage en jeu :
-	  - apparition sur un point de la map avec protection temporaire ;
-	  - course (sprint) et endurance ;
-	  - regeneration hors combat ;
-	  - rechargement aux stations d'eau ;
-	  - chute hors de la map ;
-	  - file de reapparition.
-
-	Les valeurs affichees par le HUD (endurance, bonus actifs) passent par des
-	attributs du personnage : ils se repliquent tout seuls vers le client, ce
-	qui evite une vingtaine de RemoteEvents par seconde.
-]]
-
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Net = require(Shared:WaitForChild("Net"))
-
-local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
-local MapService = require(script.Parent:WaitForChild("MapService"))
-local TeamService = require(script.Parent:WaitForChild("TeamService"))
-local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
-
-local PlayerService = {}
-
-local respawnEnabled = false
-local spawnCounters = { Blue = 0, Red = 0, FFA = 0 }
-local sprinting = {}
-local pendingRespawn = {}
-local refillAccumulator = 0
-
-local function now()
-	return os.clock()
-end
-
-local function nextSpawnIndex(key)
-	spawnCounters[key] = (spawnCounters[key] or 0) + 1
-	return spawnCounters[key]
-end
-
---- Fait apparaitre le joueur sur un point de la map courante.
-function PlayerService.Spawn(player)
-	if not player.Parent then
-		return
-	end
-	pendingRespawn[player] = nil
-
-	local teamId = TeamService.IsTeamMode() and TeamService.GetTeamId(player) or nil
-	local key = teamId or "FFA"
-	local spawnCFrame = MapService.GetSpawnCFrame(teamId, nextSpawnIndex(key))
-
-	player:LoadCharacter()
-
-	local character = player.Character
-	if not character then
-		return
-	end
-	local humanoid = character:FindFirstChildOfClass("Humanoid")
-	local root = character:FindFirstChild("HumanoidRootPart")
-	if not humanoid or not root then
-		return
-	end
-
-	character:PivotTo(spawnCFrame + Vector3.new(0, 3.5, 0))
-
-	humanoid.MaxHealth = GameConfig.MaxHealth
-	humanoid.Health = GameConfig.MaxHealth
-	humanoid.UseJumpPower = true
-	humanoid.JumpPower = GameConfig.JumpPower
-	humanoid.WalkSpeed = GameConfig.WalkSpeed
-	humanoid.BreakJointsOnDeath = false
-	humanoid.NameDisplayDistance = 90
-	humanoid.HealthDisplayDistance = 90
-
-	character:SetAttribute("BaseWalkSpeed", GameConfig.WalkSpeed)
-	character:SetAttribute("Stamina", GameConfig.StaminaMax)
-	character:SetAttribute("ProtectedUntil", now() + GameConfig.SpawnProtectionTime)
-	character:SetAttribute("LastHitAt", 0)
-	character:SetAttribute("LastAttackerUserId", nil)
-	character:SetAttribute("LastWeaponId", nil)
-	sprinting[player] = false
-
-	-- Bouclier visuel pendant la protection d'apparition.
-	local field = Instance.new("ForceField")
-	field.Visible = true
-	field.Parent = character
-	task.delay(GameConfig.SpawnProtectionTime, function()
-		if field.Parent then
-			field:Destroy()
-		end
-	end)
-
-	WeaponService.GiveLoadout(player)
-
-	humanoid.Died:Connect(function()
-		PlayerService.HandleDeath(player, character)
-	end)
-
-	ServerEvents.CharacterSpawned:Fire(player, character)
-end
-
---- Gere un deces : attribution de l'elimination puis file de reapparition.
-function PlayerService.HandleDeath(player, character)
-	if character:GetAttribute("DeathHandled") then
-		return
-	end
-	character:SetAttribute("DeathHandled", true)
-
-	local killer = nil
-	local attackerId = character:GetAttribute("LastAttackerUserId")
-	local attackerAt = character:GetAttribute("LastAttackerAt")
-	-- On n'attribue l'elimination que si le dernier coup est recent (10 s).
-	if type(attackerId) == "number" and type(attackerAt) == "number" and now() - attackerAt < 10 then
-		local candidate = Players:GetPlayerByUserId(attackerId)
-		if candidate and candidate ~= player then
-			killer = candidate
-		end
-	end
-	local weaponId = character:GetAttribute("LastWeaponId")
-
-	ServerEvents.PlayerKilled:Fire(player, killer, type(weaponId) == "string" and weaponId or nil)
-
-	if respawnEnabled then
-		pendingRespawn[player] = now() + GameConfig.RespawnTime
-		Net.Event("Notify"):FireClient(player, string.format("Reapparition dans %d s", GameConfig.RespawnTime), "info")
-	end
-end
-
-function PlayerService.SetRespawnEnabled(enabled)
-	respawnEnabled = enabled
-	if not enabled then
-		table.clear(pendingRespawn)
-	end
-end
-
---- Fait apparaitre tout le monde (debut de manche).
-function PlayerService.SpawnAll()
-	spawnCounters.Blue = 0
-	spawnCounters.Red = 0
-	spawnCounters.FFA = 0
-	for _, player in ipairs(Players:GetPlayers()) do
-		task.spawn(PlayerService.Spawn, player)
-	end
-end
-
---- Renvoie tout le monde au vestiaire (fin de manche).
-function PlayerService.DespawnAll()
-	table.clear(pendingRespawn)
-	for _, player in ipairs(Players:GetPlayers()) do
-		WeaponService.ClearTools(player)
-		if player.Character then
-			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-			if humanoid then
-				humanoid.WalkSpeed = GameConfig.WalkSpeed
-			end
-		end
-	end
-end
-
--- ------------------------------------------------------- boucle par frame
-
-local function updateCharacter(player, deltaTime)
-	local character = player.Character
-	if not character then
-		return
-	end
-	local humanoid = character:FindFirstChildOfClass("Humanoid")
-	local root = character:FindFirstChild("HumanoidRootPart")
-	if not humanoid or not root or humanoid.Health <= 0 then
-		return
-	end
-	local rootPart = root :: BasePart
-	local currentTime = now()
-
-	-- ------------------------------------------------------- endurance
-	local stamina = character:GetAttribute("Stamina")
-	if type(stamina) ~= "number" then
-		stamina = GameConfig.StaminaMax
-	end
-	local wantsSprint = sprinting[player] == true
-	local moving = rootPart.AssemblyLinearVelocity.Magnitude > 4
-	local isSprinting = wantsSprint and moving and stamina > 0
-
-	if isSprinting then
-		stamina = math.max(0, stamina - GameConfig.StaminaDrain * deltaTime)
-		if stamina <= 0 then
-			sprinting[player] = false
-		end
-	else
-		stamina = math.min(GameConfig.StaminaMax, stamina + GameConfig.StaminaRegen * deltaTime)
-	end
-	character:SetAttribute("Stamina", stamina)
-
-	-- ------------------------------------------------ vitesse effective
-	local weapon = WeaponService.GetEquipped(player)
-	local base = isSprinting and GameConfig.SprintSpeed or GameConfig.WalkSpeed
-	if weapon then
-		base = base * weapon.walkSpeedMul
-	end
-	character:SetAttribute("BaseWalkSpeed", base)
-
-	local multiplier = 1
-	local slowUntil = character:GetAttribute("SlowUntil")
-	if type(slowUntil) == "number" and slowUntil > currentTime then
-		local factor = character:GetAttribute("SlowFactor")
-		multiplier = multiplier * (type(factor) == "number" and factor or 1)
-	end
-	local speedUntil = character:GetAttribute("SpeedBoostUntil")
-	if type(speedUntil) == "number" and speedUntil > currentTime then
-		multiplier = multiplier * GameConfig.PowerupSpeedMultiplier
-	end
-	humanoid.WalkSpeed = base * multiplier
-
-	-- ------------------------------------------------- regeneration
-	local lastHit = character:GetAttribute("LastHitAt")
-	if type(lastHit) == "number" and currentTime - lastHit > GameConfig.RegenDelay then
-		if humanoid.Health < humanoid.MaxHealth then
-			humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + GameConfig.RegenRate * deltaTime)
-		end
-	end
-
-	-- --------------------------------------------------------- chute
-	if rootPart.Position.Y < MapService.GetKillY() then
-		humanoid.Health = 0
-	end
-end
-
-local function updateRefills(deltaTime)
-	local stations = MapService.GetRefillStations()
-	if #stations == 0 then
-		return
-	end
-	for _, player in ipairs(Players:GetPlayers()) do
-		local character = player.Character
-		local root = character and character:FindFirstChild("HumanoidRootPart")
-		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-		if root and humanoid and humanoid.Health > 0 then
-			local position = (root :: BasePart).Position
-			for _, station in ipairs(stations) do
-				if (position - station.position).Magnitude <= GameConfig.RefillRadius then
-					WeaponService.AddWater(player, GameConfig.RefillRate * deltaTime)
-					humanoid.Health = math.min(
-						humanoid.MaxHealth,
-						humanoid.Health + GameConfig.RefillHealRate * deltaTime
-					)
-					break
-				end
-			end
-		end
-	end
-end
-
-local function step(deltaTime)
-	local currentTime = now()
-	for _, player in ipairs(Players:GetPlayers()) do
-		updateCharacter(player, deltaTime)
-	end
-
-	refillAccumulator = refillAccumulator + deltaTime
-	if refillAccumulator >= 0.2 then
-		updateRefills(refillAccumulator)
-		refillAccumulator = 0
-	end
-
-	for player, readyAt in pairs(pendingRespawn) do
-		if currentTime >= readyAt then
-			pendingRespawn[player] = nil
-			if respawnEnabled and player.Parent then
-				task.spawn(PlayerService.Spawn, player)
-			end
-		end
-	end
-end
-
-function PlayerService.Start()
-	Players.CharacterAutoLoads = false
-
-	Net.Event("SetSprint").OnServerEvent:Connect(function(player, wants)
-		sprinting[player] = wants == true
-	end)
-
-	Players.PlayerRemoving:Connect(function(player)
-		sprinting[player] = nil
-		pendingRespawn[player] = nil
-	end)
-
-	RunService.Heartbeat:Connect(function(deltaTime)
-		local ok, err = pcall(step, math.min(deltaTime, 0.25))
-		if not ok then
-			warn("[WaterWars] Erreur de mise a jour joueur : " .. tostring(err))
-		end
-	end)
-end
-
-return PlayerService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX26">
-				<Properties>
-					<string name="Name">ServerEvents</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	ServerEvents
-	Bus d'evenements interne au serveur. Il evite les dependances circulaires
-	entre les services : personne n'a besoin de connaitre MatchService pour lui
-	signaler une elimination.
-]]
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Shared = ReplicatedStorage:WaitForChild("WaterWars"):WaitForChild("Shared")
-local Signal = require(Shared:WaitForChild("Signal"))
-
-local ServerEvents = {}
-
--- (victime, tueur | nil, arme | nil)
-ServerEvents.PlayerKilled = Signal.new("PlayerKilled")
--- (victime, attaquant | nil, degats, estTeteTouchee)
-ServerEvents.PlayerDamaged = Signal.new("PlayerDamaged")
--- (joueur, personnage)
-ServerEvents.CharacterSpawned = Signal.new("CharacterSpawned")
--- (map, mode)
-ServerEvents.RoundStarted = Signal.new("RoundStarted")
--- (resultat)
-ServerEvents.RoundEnded = Signal.new("RoundEnded")
--- (joueur, points)
-ServerEvents.ScoreChanged = Signal.new("ScoreChanged")
-
-return ServerEvents
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX27">
-				<Properties>
-					<string name="Name">TeamService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	TeamService
-	Creation des equipes et repartition equilibree des 20 joueurs.
-	En mode "chacun pour soi" les equipes sont videes et tout le monde devient
-	neutre, ce qui desactive automatiquement la protection alliee.
-]]
-
-local Players = game:GetService("Players")
-local Teams = game:GetService("Teams")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local GameConfig = require(WaterWars:WaitForChild("Config"):WaitForChild("GameConfig"))
-
-local TeamService = {}
-
-local teamInstances = {}
-local teamEnabled = true
-
-function TeamService.Start()
-	for _, definition in ipairs(GameConfig.Teams) do
-		local existing = Teams:FindFirstChild(definition.name)
-		local team
-		if existing and existing:IsA("Team") then
-			team = existing
-		else
-			team = Instance.new("Team")
-			team.Name = definition.name
-			team.Parent = Teams
-		end
-		team.TeamColor = definition.brickColor
-		team.AutoAssignable = false
-		teamInstances[definition.id] = team
-	end
-end
-
-function TeamService.GetTeam(teamId)
-	return teamInstances[teamId]
-end
-
---- Identifiant logique ("Blue" / "Red") de l'equipe d'un joueur, ou nil.
-function TeamService.GetTeamId(player)
-	if player.Neutral or not player.Team then
-		return nil
-	end
-	for id, team in pairs(teamInstances) do
-		if team == player.Team then
-			return id
-		end
-	end
-	return nil
-end
-
-function TeamService.CountPlayers(teamId)
-	local team = teamInstances[teamId]
-	if not team then
-		return 0
-	end
-	local count = 0
-	for _, player in ipairs(Players:GetPlayers()) do
-		if player.Team == team then
-			count = count + 1
-		end
-	end
-	return count
-end
-
---- Place un joueur dans l'equipe la moins remplie.
-function TeamService.Assign(player)
-	if not teamEnabled then
-		player.Neutral = true
-		player.Team = nil
-		return nil
-	end
-	local bestId, bestCount = nil, math.huge
-	for _, definition in ipairs(GameConfig.Teams) do
-		local count = TeamService.CountPlayers(definition.id)
-		if count < bestCount then
-			bestId, bestCount = definition.id, count
-		end
-	end
-	if bestId then
-		player.Neutral = false
-		player.Team = teamInstances[bestId]
-	end
-	return bestId
-end
-
---- Active ou desactive le jeu en equipes (selon le mode de la manche).
-function TeamService.SetTeamMode(enabled)
-	teamEnabled = enabled
-	if not enabled then
-		for _, player in ipairs(Players:GetPlayers()) do
-			player.Neutral = true
-			player.Team = nil
-		end
-		return
-	end
-	-- Reequilibrage complet : on vide puis on redistribue en alternance.
-	local players = Players:GetPlayers()
-	table.sort(players, function(a, b)
-		return a.UserId < b.UserId
-	end)
-	for index, player in ipairs(players) do
-		local definition = GameConfig.Teams[((index - 1) % #GameConfig.Teams) + 1]
-		player.Neutral = false
-		player.Team = teamInstances[definition.id]
-	end
-end
-
---- true si `a` et `b` sont dans la meme equipe (jamais en mode neutre).
-function TeamService.AreAllies(a, b)
-	if not teamEnabled then
-		return false
-	end
-	if a == b then
-		return true
-	end
-	local teamA = TeamService.GetTeamId(a)
-	local teamB = TeamService.GetTeamId(b)
-	return teamA ~= nil and teamA == teamB
-end
-
-function TeamService.IsTeamMode()
-	return teamEnabled
-end
-
-function TeamService.GetTeamColor(teamId)
-	for _, definition in ipairs(GameConfig.Teams) do
-		if definition.id == teamId then
-			return definition.color
-		end
-	end
-	return Color3.fromRGB(200, 200, 200)
-end
-
-return TeamService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX28">
-				<Properties>
-					<string name="Name">WeaponService</string>
-					<ProtectedString name="Source"><![CDATA[--[[
-	WeaponService
-	Fabrique les 25 armes sous forme de Tool entierement procedural (aucun
-	asset a uploader), distribue l'equipement et fait autorite sur les
-	munitions : reservoir, cadence et rechargement sont valides cote serveur.
-]]
-
-local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
-local Config = WaterWars:WaitForChild("Config")
-local Shared = WaterWars:WaitForChild("Shared")
-
-local GameConfig = require(Config:WaitForChild("GameConfig"))
-local Weapons = require(Config:WaitForChild("Weapons"))
-local Net = require(Shared:WaitForChild("Net"))
-
-local DataService = require(script.Parent:WaitForChild("DataService"))
-
-local WeaponService = {}
-
--- ammoState[player] = { [weaponId] = { ammo, reloading, lastShot, reloadToken } }
-local ammoState = {}
-
--- ------------------------------------------------------------------ modele
-
-local function weld(part, handle)
-	local constraint = Instance.new("WeldConstraint")
-	constraint.Part0 = handle
-	constraint.Part1 = part
-	constraint.Parent = part
-end
-
-local function makePart(name, size, cframe, color, material, parent)
-	local part = Instance.new("Part")
-	part.Name = name
-	part.Size = size
-	part.CFrame = cframe
-	part.Color = color
-	part.Material = material
-	part.Anchored = false
-	part.CanCollide = false
-	part.CanQuery = false
-	part.Massless = true
-	part.TopSurface = Enum.SurfaceType.Smooth
-	part.BottomSurface = Enum.SurfaceType.Smooth
-	part.Parent = parent
-	return part
-end
-
---- Assemble le modele 3D d'une arme a partir de ses dimensions.
-function WeaponService.BuildTool(weapon)
-	local model = weapon.model
-	local barrelLength = model.barrel
-	local thickness = model.thick
-	local tankScale = model.tank
-
-	local tool = Instance.new("Tool")
-	tool.Name = weapon.name
-	tool.RequiresHandle = true
-	tool.CanBeDropped = false
-	tool.ToolTip = weapon.desc
-	tool:SetAttribute("WeaponId", weapon.id)
-	tool:SetAttribute("Category", weapon.category)
-	-- Position de l'arme dans la main droite.
-	tool.Grip = CFrame.new(0, -0.25, 0.35) * CFrame.Angles(math.rad(-6), 0, 0)
-
-	-- La poignee : c'est elle qui est tenue par le personnage.
-	local handle = Instance.new("Part")
-	handle.Name = "Handle"
-	handle.Size = Vector3.new(thickness * 1.1, 1.5, thickness * 1.2)
-	handle.CFrame = CFrame.new(0, 0, 0)
-	handle.Color = Color3.fromRGB(45, 48, 56)
-	handle.Material = Enum.Material.SmoothPlastic
-	handle.Anchored = false
-	handle.CanCollide = false
-	handle.CanQuery = false
-	handle.Massless = true
-	handle.TopSurface = Enum.SurfaceType.Smooth
-	handle.BottomSurface = Enum.SurfaceType.Smooth
-	handle.Parent = tool
-
-	-- Corps principal, aligne sur -Z (la direction dans laquelle l'arme pointe).
-	local body = makePart(
-		"Body",
-		Vector3.new(thickness * 1.25, thickness * 1.35, barrelLength * 0.62),
-		CFrame.new(0, 0.95, -barrelLength * 0.2),
-		weapon.color,
-		Enum.Material.SmoothPlastic,
-		tool
-	)
-	weld(body, handle)
-
-	-- Canon.
-	local barrel = makePart(
-		"Barrel",
-		Vector3.new(barrelLength * 0.78, thickness * 0.78, thickness * 0.78),
-		CFrame.new(0, 1.0, -barrelLength * 0.62) * CFrame.Angles(0, math.rad(90), math.rad(90)),
-		weapon.accent,
-		Enum.Material.Metal,
-		tool
-	)
-	barrel.Shape = Enum.PartType.Cylinder
-	weld(barrel, handle)
-
-	-- Buse lumineuse : repere visuel de la sortie d'eau.
-	local nozzle = makePart(
-		"Nozzle",
-		Vector3.new(thickness * 0.5, thickness * 0.95, thickness * 0.95),
-		CFrame.new(0, 1.0, -barrelLength * 1.0) * CFrame.Angles(0, math.rad(90), math.rad(90)),
-		weapon.trail,
-		Enum.Material.Neon,
-		tool
-	)
-	nozzle.Shape = Enum.PartType.Cylinder
-	nozzle.CastShadow = false
-	weld(nozzle, handle)
-
-	-- Reservoir d'eau, monte sur le dessus.
-	local tank = makePart(
-		"Tank",
-		Vector3.new(barrelLength * 0.42 * tankScale, thickness * 1.5 * tankScale, thickness * 1.5 * tankScale),
-		CFrame.new(0, 1.05 + thickness * 1.1, barrelLength * 0.12) * CFrame.Angles(0, math.rad(90), math.rad(90)),
-		Color3.fromRGB(150, 225, 255),
-		Enum.Material.Glass,
-		tool
-	)
-	tank.Shape = Enum.PartType.Cylinder
-	tank.Transparency = 0.35
-	weld(tank, handle)
-
-	local water = makePart(
-		"TankWater",
-		Vector3.new(barrelLength * 0.38 * tankScale, thickness * 1.15 * tankScale, thickness * 1.15 * tankScale),
-		tank.CFrame,
-		Color3.fromRGB(60, 170, 235),
-		Enum.Material.SmoothPlastic,
-		tool
-	)
-	water.Shape = Enum.PartType.Cylinder
-	water.Transparency = 0.15
-	weld(water, handle)
-
-	-- Garde et crosse pour donner du volume.
-	local guard = makePart(
-		"Guard",
-		Vector3.new(thickness * 0.4, 0.55, thickness * 1.3),
-		CFrame.new(0, 0.35, -thickness * 0.5),
-		Color3.fromRGB(38, 40, 48),
-		Enum.Material.SmoothPlastic,
-		tool
-	)
-	weld(guard, handle)
-
-	if weapon.category == "Sniper" then
-		local scope = makePart(
-			"Scope",
-			Vector3.new(barrelLength * 0.3, thickness * 0.55, thickness * 0.55),
-			CFrame.new(0, 1.05 + thickness * 1.9, -barrelLength * 0.1) * CFrame.Angles(0, math.rad(90), math.rad(90)),
-			Color3.fromRGB(28, 30, 36),
-			Enum.Material.Metal,
-			tool
-		)
-		scope.Shape = Enum.PartType.Cylinder
-		weld(scope, handle)
-	elseif weapon.category == "Heavy" then
-		local shroud = makePart(
-			"Shroud",
-			Vector3.new(thickness * 1.9, thickness * 1.9, barrelLength * 0.35),
-			CFrame.new(0, 1.0, -barrelLength * 0.5),
-			Color3.fromRGB(70, 74, 84),
-			Enum.Material.DiamondPlate,
-			tool
-		)
-		weld(shroud, handle)
-	elseif weapon.category == "Launcher" then
-		local drum = makePart(
-			"Drum",
-			Vector3.new(thickness * 1.6, thickness * 2.1, thickness * 2.1),
-			CFrame.new(0, 1.0, barrelLength * 0.05) * CFrame.Angles(0, math.rad(90), math.rad(90)),
-			weapon.color,
-			Enum.Material.SmoothPlastic,
-			tool
-		)
-		drum.Shape = Enum.PartType.Cylinder
-		weld(drum, handle)
-	end
-
-	-- Point de sortie des projectiles, lu par le client pour les effets.
-	local muzzle = Instance.new("Attachment")
-	muzzle.Name = "Muzzle"
-	muzzle.CFrame = CFrame.new(0, 1.0, -barrelLength * 1.05)
-	muzzle.Parent = handle
-
-	return tool
-end
-
--- ----------------------------------------------------------------- etat
-
-local function stateFor(player)
-	local state = ammoState[player]
-	if not state then
-		state = {}
-		ammoState[player] = state
-	end
-	return state
-end
-
-local function entryFor(player, weapon)
-	local state = stateFor(player)
-	local entry = state[weapon.id]
-	if not entry then
-		entry = { ammo = weapon.tankSize, reloading = false, lastShot = 0, reloadToken = 0 }
-		state[weapon.id] = entry
-	end
-	return entry
-end
-
---- Envoie l'etat des munitions de l'arme tenue au client.
-function WeaponService.PushAmmo(player)
-	local weapon = WeaponService.GetEquipped(player)
-	if not weapon then
-		Net.Event("AmmoUpdate"):FireClient(player, nil, 0, 0, false)
-		return
-	end
-	local entry = entryFor(player, weapon)
-	Net.Event("AmmoUpdate"):FireClient(player, weapon.id, entry.ammo, weapon.tankSize, entry.reloading)
-end
-
---- Arme actuellement tenue par le joueur, ou nil.
-function WeaponService.GetEquipped(player)
-	local character = player.Character
-	if not character then
-		return nil
-	end
-	local tool = character:FindFirstChildOfClass("Tool")
-	if not tool then
-		return nil
-	end
-	local id = tool:GetAttribute("WeaponId")
-	if type(id) ~= "string" then
-		return nil
-	end
-	return Weapons.Get(id)
-end
-
-function WeaponService.GetAmmo(player, weapon)
-	return entryFor(player, weapon).ammo
-end
-
-function WeaponService.IsReloading(player, weapon)
-	return entryFor(player, weapon).reloading
-end
-
---- Lance un rechargement. Renvoie true s'il a effectivement demarre.
-function WeaponService.Reload(player, weapon)
-	local entry = entryFor(player, weapon)
-	if entry.reloading or entry.ammo >= weapon.tankSize then
-		return false
-	end
-	entry.reloading = true
-	entry.reloadToken = entry.reloadToken + 1
-	local token = entry.reloadToken
-	WeaponService.PushAmmo(player)
-
-	task.delay(weapon.reloadTime, function()
-		-- Un changement d'arme ou une mort annule le rechargement en cours.
-		if entry.reloadToken ~= token then
-			return
-		end
-		entry.reloading = false
-		entry.ammo = weapon.tankSize
-		if player.Parent then
-			WeaponService.PushAmmo(player)
-		end
-	end)
-	return true
-end
-
---- Verifie cadence + munitions et consomme l'eau. Renvoie (autorise, raison).
-function WeaponService.TryConsume(player, weapon)
-	local entry = entryFor(player, weapon)
-	if entry.reloading then
-		return false, "reloading"
-	end
-
-	local now = os.clock()
-	local minimumDelay = (1 / weapon.fireRate) * GameConfig.FireRateTolerance
-	if now - entry.lastShot < minimumDelay then
-		return false, "ratelimit"
-	end
-
-	local cost = weapon.tankCost * weapon.burst
-	if entry.ammo < cost then
-		WeaponService.Reload(player, weapon)
-		return false, "empty"
-	end
-
-	entry.lastShot = now
-	entry.ammo = entry.ammo - cost
-	if entry.ammo < cost then
-		-- Rechargement automatique des que le reservoir ne suffit plus.
-		WeaponService.Reload(player, weapon)
-	else
-		WeaponService.PushAmmo(player)
-	end
-	return true, nil
-end
-
---- Remet tous les reservoirs a plein (apparition, station de recharge).
-function WeaponService.RefillAll(player)
-	local state = stateFor(player)
-	for id, entry in pairs(state) do
-		local weapon = Weapons.Get(id)
-		if weapon then
-			entry.ammo = weapon.tankSize
-			entry.reloading = false
-			entry.reloadToken = entry.reloadToken + 1
-		end
-	end
-	WeaponService.PushAmmo(player)
-end
-
---- Recharge progressive pres d'une station. Renvoie true si de l'eau a ete ajoutee.
-function WeaponService.AddWater(player, amount)
-	local weapon = WeaponService.GetEquipped(player)
-	if not weapon then
-		return false
-	end
-	local entry = entryFor(player, weapon)
-	if entry.ammo >= weapon.tankSize then
-		return false
-	end
-	entry.ammo = math.min(weapon.tankSize, entry.ammo + amount)
-	entry.reloading = false
-	entry.reloadToken = entry.reloadToken + 1
-	WeaponService.PushAmmo(player)
-	return true
-end
-
---- Vide le sac et la main du joueur.
-function WeaponService.ClearTools(player)
-	local backpack = player:FindFirstChildOfClass("Backpack")
-	if backpack then
-		for _, child in ipairs(backpack:GetChildren()) do
-			if child:IsA("Tool") then
-				child:Destroy()
-			end
-		end
-	end
-	local character = player.Character
-	if character then
-		for _, child in ipairs(character:GetChildren()) do
-			if child:IsA("Tool") then
-				child:Destroy()
-			end
-		end
-	end
-end
-
---- Donne au joueur les deux armes de son equipement et remplit les reservoirs.
-function WeaponService.GiveLoadout(player)
-	local profile = DataService.Get(player)
-	local backpack = player:FindFirstChildOfClass("Backpack")
-	if not profile or not backpack then
-		return
-	end
-
-	WeaponService.ClearTools(player)
-	ammoState[player] = {}
-
-	local order = { profile.loadout.primary, profile.loadout.secondary }
-	local firstTool = nil
-	for _, id in ipairs(order) do
-		local weapon = Weapons.Get(id)
-		if weapon then
-			local tool = WeaponService.BuildTool(weapon)
-			tool.Parent = backpack
-			entryFor(player, weapon)
-			if not firstTool then
-				firstTool = tool
-			end
-		end
-	end
-
-	-- L'arme principale est mise en main : le joueur peut tirer immediatement.
-	local character = player.Character
-	local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-	if firstTool and humanoid and humanoid.Health > 0 then
-		humanoid:EquipTool(firstTool)
-	end
-
-	WeaponService.PushAmmo(player)
-end
-
-function WeaponService.Start()
-	Net.Event("RequestReload").OnServerEvent:Connect(function(player)
-		local weapon = WeaponService.GetEquipped(player)
-		if weapon then
-			WeaponService.Reload(player, weapon)
-		end
-	end)
-
-	Net.Event("RequestEquip").OnServerEvent:Connect(function(player, slot, weaponId)
-		if type(slot) ~= "string" or type(weaponId) ~= "string" then
-			return
-		end
-		local success, message = DataService.SetLoadout(player, slot, weaponId)
-		Net.Event("Notify"):FireClient(player, message, success and "good" or "bad")
-		if success then
-			-- Applique immediatement si le joueur est vivant.
-			local character = player.Character
-			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-			if humanoid and humanoid.Health > 0 then
-				WeaponService.GiveLoadout(player)
-			end
-		end
-	end)
-
-	Players.PlayerRemoving:Connect(function(player)
-		ammoState[player] = nil
-	end)
-end
-
-return WeaponService
-]]></ProtectedString>
-				</Properties>
-			</Item>
-		</Item>
-	</Item>
-	<Item class="Folder" referent="RBX29">
-		<Properties>
-			<string name="Name">3 - A METTRE DANS StarterPlayer.StarterPlayerScripts</string>
-		</Properties>
-		<Item class="LocalScript" referent="RBX30">
-			<Properties>
-				<string name="Name">WaterWarsClient</string>
-				<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+          </Properties>
+        </Item>
+      </Item>
+    </Item>
+    <Item class="LocalScript" referent="17">
+      <Properties>
+        <string name="Name">WaterWarsClient</string>
+        <string name="Source"><![CDATA[--[[
 	Water Wars - point d'entree client
 	Demarre les controleurs dans l'ordre. Chaque controleur est isole : si
 	l'un d'eux echoue, les autres continuent de fonctionner et l'erreur est
@@ -6003,9 +3146,27 @@ return WeaponService
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+--- Attend une instance, mais previent au lieu de bloquer indefiniment en
+--- silence : un client qui attend un dossier absent est impossible a
+--- diagnostiquer sans ce message.
+local function waitFor(parent, name, timeout)
+	local found = parent:WaitForChild(name, timeout or 15)
+	if found then
+		return found
+	end
+	warn(string.format(
+		"[WaterWars] '%s' n'est toujours pas apparu dans %s apres %d s."
+			.. " Le serveur n'a probablement pas demarre : regardez la console du serveur.",
+		name,
+		parent:GetFullName(),
+		timeout or 15
+	))
+	return parent:WaitForChild(name)
+end
+
 -- On attend que le serveur ait publie les remotes avant de brancher quoi que ce soit.
-ReplicatedStorage:WaitForChild("WaterWars")
-ReplicatedStorage:WaitForChild("WaterWarsRemotes")
+waitFor(ReplicatedStorage, "WaterWars")
+waitFor(ReplicatedStorage, "WaterWarsRemotes")
 
 local ClientState = require(script:WaitForChild("ClientState"))
 local EffectsController = require(script:WaitForChild("EffectsController"))
@@ -6037,13 +3198,12 @@ end
 ClientState.MatchChanged:Fire(ClientState.match)
 
 print(string.format("[WaterWars] Client pret pour %s.", Players.LocalPlayer.DisplayName))
-]]></ProtectedString>
-				<bool name="Disabled">false</bool>
-			</Properties>
-			<Item class="ModuleScript" referent="RBX31">
-				<Properties>
-					<string name="Name">ClientState</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+      </Properties>
+      <Item class="ModuleScript" referent="18">
+        <Properties>
+          <string name="Name">ClientState</string>
+          <string name="Source"><![CDATA[--[[
 	ClientState
 	Etat local partage entre les controleurs du client (match en cours, profil,
 	munitions, equipe...). Chaque changement emet un signal : le HUD, la
@@ -6165,13 +3325,13 @@ function ClientState.GetEquippedWeapon()
 end
 
 return ClientState
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX32">
-				<Properties>
-					<string name="Name">EffectsController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="19">
+        <Properties>
+          <string name="Name">EffectsController</string>
+          <string name="Source"><![CDATA[--[[
 	EffectsController
 	Tout le visuel du combat cote client : gouttes d'eau, gerbes d'impact,
 	flaques au sol et lueur de canon.
@@ -6439,13 +3599,13 @@ function EffectsController.Start()
 end
 
 return EffectsController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX33">
-				<Properties>
-					<string name="Name">HudController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="20">
+        <Properties>
+          <string name="Name">HudController</string>
+          <string name="Source"><![CDATA[--[[
 	HudController
 	Interface de jeu : vie, endurance, reservoir d'eau, viseur dynamique,
 	chronometre, scores d'equipe, journal des eliminations, notifications,
@@ -7058,13 +4218,13 @@ function HudController.Start()
 end
 
 return HudController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX34">
-				<Properties>
-					<string name="Name">ScoreboardController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="21">
+        <Properties>
+          <string name="Name">ScoreboardController</string>
+          <string name="Source"><![CDATA[--[[
 	ScoreboardController
 	Tableau des scores affiche tant que la touche Tab est maintenue.
 	Les joueurs sont regroupes par equipe en mode par equipes, et classes par
@@ -7280,13 +4440,13 @@ function ScoreboardController.Start()
 end
 
 return ScoreboardController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX35">
-				<Properties>
-					<string name="Name">ShopController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="22">
+        <Properties>
+          <string name="Name">ShopController</string>
+          <string name="Source"><![CDATA[--[[
 	ShopController
 	Boutique et vestiaire : parcourir les 25 armes par categorie, consulter
 	leurs statistiques, les acheter avec les pieces gagnees en jeu, puis les
@@ -7696,13 +4856,13 @@ function ShopController.Start()
 end
 
 return ShopController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX36">
-				<Properties>
-					<string name="Name">SoundController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="23">
+        <Properties>
+          <string name="Name">SoundController</string>
+          <string name="Source"><![CDATA[--[[
 	SoundController
 	Habillage sonore. On n'utilise que des sons livres avec le client Roblox
 	(rbxasset://...) : aucun upload, aucun ID a moderer. Pour mettre vos
@@ -7824,13 +4984,13 @@ function SoundController.Start()
 end
 
 return SoundController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX37">
-				<Properties>
-					<string name="Name">UIKit</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="24">
+        <Properties>
+          <string name="Name">UIKit</string>
+          <string name="Source"><![CDATA[--[[
 	UIKit
 	Petits assistants pour construire l'interface en code. Aucune image n'est
 	utilisee : tout le HUD est fait de Frames, de coins arrondis et de degrades,
@@ -7998,13 +5158,13 @@ function UIKit.Screen(name, displayOrder)
 end
 
 return UIKit
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX38">
-				<Properties>
-					<string name="Name">VoteController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="25">
+        <Properties>
+          <string name="Name">VoteController</string>
+          <string name="Source"><![CDATA[--[[
 	VoteController
 	Ecran de vote entre les manches : trois terrains proposes, un clic pour
 	voter, le nombre de voix se met a jour en direct.
@@ -8154,13 +5314,13 @@ function VoteController.Start()
 end
 
 return VoteController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX39">
-				<Properties>
-					<string name="Name">WeaponController</string>
-					<ProtectedString name="Source"><![CDATA[--[[
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="26">
+        <Properties>
+          <string name="Name">WeaponController</string>
+          <string name="Source"><![CDATA[--[[
 	WeaponController
 	Entrees de combat : tir, rafale automatique, charge, visee, rechargement
 	et course. Le client ne fait que declarer une intention de tir ; le serveur
@@ -8435,9 +5595,3001 @@ function WeaponController.Start()
 end
 
 return WeaponController
-]]></ProtectedString>
-				</Properties>
-			</Item>
-		</Item>
-	</Item>
+]]></string>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Script" referent="27">
+      <Properties>
+        <string name="Name">WaterWarsServer</string>
+        <token name="RunContext">0</token>
+        <string name="Source"><![CDATA[--[[
+	Water Wars - point d'entree serveur
+
+	Ce script est volontairement tolerant sur l'installation : que le contenu
+	ait ete ouvert comme une place complete ou insere n'importe ou comme un
+	modele, il retrouve ses morceaux et les remet a leur place tout seul.
+
+	Regle de conduite : on n'attend jamais indefiniment en silence. Si quelque
+	chose manque, on le dit clairement dans la fenetre Output.
+]]
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerScriptService = game:GetService("ServerScriptService")
+local ServerStorage = game:GetService("ServerStorage")
+local StarterGui = game:GetService("StarterGui")
+local StarterPack = game:GetService("StarterPack")
+local StarterPlayer = game:GetService("StarterPlayer")
+
+local SHARED_NAME = "WaterWars"
+local CLIENT_NAME = "WaterWarsClient"
+
+--- Endroits ou le contenu peut avoir ete depose par erreur.
+local function searchRoots()
+	return { workspace, ServerScriptService, ServerStorage, StarterPlayer, StarterGui, StarterPack, ReplicatedStorage }
+end
+
+local function findDescendant(root, predicate)
+	for _, descendant in ipairs(root:GetDescendants()) do
+		if predicate(descendant) then
+			return descendant
+		end
+	end
+	return nil
+end
+
+--- Retrouve le dossier partage et le replace dans ReplicatedStorage.
+local function ensureSharedFolder()
+	local existing = ReplicatedStorage:FindFirstChild(SHARED_NAME)
+	if existing and existing:FindFirstChild("Config") then
+		return existing
+	end
+
+	for _, root in ipairs(searchRoots()) do
+		local found = findDescendant(root, function(instance)
+			return instance.Name == SHARED_NAME
+				and instance:IsA("Folder")
+				and instance:FindFirstChild("Config") ~= nil
+				and instance:FindFirstChild("Shared") ~= nil
+		end)
+		if found then
+			found.Parent = ReplicatedStorage
+			warn(string.format(
+				"[WaterWars] Le dossier partage etait dans %s : il a ete deplace vers ReplicatedStorage.",
+				root.Name
+			))
+			return found
+		end
+	end
+	return nil
+end
+
+--- Replace le script client dans StarterPlayerScripts (sans quoi il ne
+--- s'execute jamais : un LocalScript ne tourne que dans certains conteneurs).
+local function ensureClientScript()
+	local starterScripts = StarterPlayer:FindFirstChildOfClass("StarterPlayerScripts")
+	if not starterScripts then
+		warn("[WaterWars] StarterPlayerScripts est introuvable : l'interface ne pourra pas demarrer.")
+		return
+	end
+	if starterScripts:FindFirstChild(CLIENT_NAME) then
+		return
+	end
+
+	local found = nil
+	for _, root in ipairs(searchRoots()) do
+		found = findDescendant(root, function(instance)
+			return instance.Name == CLIENT_NAME and instance:IsA("LocalScript")
+		end)
+		if found then
+			break
+		end
+	end
+	if not found then
+		warn(string.format(
+			"[WaterWars] Le script client '%s' est introuvable : le jeu tournera sans interface.",
+			CLIENT_NAME
+		))
+		return
+	end
+
+	found.Parent = starterScripts
+	warn("[WaterWars] Le script client a ete deplace vers StarterPlayer.StarterPlayerScripts.")
+
+	-- Les joueurs deja connectes ont recu leur copie de StarterPlayerScripts
+	-- avant ce deplacement : on leur injecte le script a la main.
+	for _, player in ipairs(Players:GetPlayers()) do
+		pcall(function()
+			local playerScripts = player:FindFirstChild("PlayerScripts")
+			if playerScripts and not playerScripts:FindFirstChild(CLIENT_NAME) then
+				local copy = found:Clone()
+				copy.Parent = playerScripts
+			end
+		end)
+	end
+end
+
+--- Si le script a ete insere dans Workspace avec le modele, il se range.
+local function tidySelf()
+	if script.Parent == ServerScriptService then
+		return
+	end
+	local installer = script.Parent
+	pcall(function()
+		script.Parent = ServerScriptService
+	end)
+	-- Le dossier d'installation vide n'a plus de raison d'exister.
+	if installer and installer ~= ServerScriptService and #installer:GetChildren() == 0 then
+		pcall(function()
+			installer:Destroy()
+		end)
+	end
+end
+
+-- ========================== installation ==================================
+
+if not ensureSharedFolder() then
+	error(
+		"[WaterWars] Installation incomplete : le dossier 'WaterWars' (avec Config et Shared) est introuvable.\n"
+			.. "  - Si vous avez ouvert WaterWars.rbxlx : utilisez Fichier > Ouvrir, pas 'Insert from File'.\n"
+			.. "  - Si vous avez insere WaterWars.rbxmx : verifiez que le dossier insere est complet.",
+		0
+	)
+end
+
+ensureClientScript()
+tidySelf()
+
+-- ========================== demarrage des services ========================
+
+-- A ce stade le dossier est garanti present dans ReplicatedStorage : on y
+-- accede par son chemin litteral, ce qui permet aussi aux outils d'analyse
+-- de resoudre les modules.
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Maps = require(Config:WaitForChild("Maps"))
+local Weapons = require(Config:WaitForChild("Weapons"))
+local Net = require(Shared:WaitForChild("Net"))
+
+-- Les remotes doivent exister avant que le moindre client ne les attende.
+Net.Init()
+
+local CombatService = require(script:WaitForChild("CombatService"))
+local DataService = require(script:WaitForChild("DataService"))
+local MatchService = require(script:WaitForChild("MatchService"))
+local PickupService = require(script:WaitForChild("PickupService"))
+local PlayerService = require(script:WaitForChild("PlayerService"))
+local TeamService = require(script:WaitForChild("TeamService"))
+local WeaponService = require(script:WaitForChild("WeaponService"))
+
+Players.RespawnTime = GameConfig.RespawnTime
+workspace.FallenPartsDestroyHeight = -500
+
+local START_ORDER = {
+	{ name = "DataService", service = DataService },
+	{ name = "TeamService", service = TeamService },
+	{ name = "WeaponService", service = WeaponService },
+	{ name = "PlayerService", service = PlayerService },
+	{ name = "CombatService", service = CombatService },
+	{ name = "PickupService", service = PickupService },
+	{ name = "MatchService", service = MatchService },
+}
+
+local failures = 0
+for _, entry in ipairs(START_ORDER) do
+	local ok, err = pcall(entry.service.Start)
+	if not ok then
+		failures = failures + 1
+		warn(string.format("[WaterWars] Echec du demarrage de %s : %s", entry.name, tostring(err)))
+	end
+end
+
+if failures > 0 then
+	warn(string.format("[WaterWars] %d service(s) n'ont pas demarre : le jeu sera degrade.", failures))
+end
+
+print(string.format(
+	"[WaterWars] Serveur pret - %d armes, %d maps, %d joueurs max.",
+	Weapons.Count,
+	Maps.Count,
+	GameConfig.MaxPlayers
+))
+]]></string>
+      </Properties>
+      <Item class="ModuleScript" referent="28">
+        <Properties>
+          <string name="Name">CombatService</string>
+          <string name="Source"><![CDATA[--[[
+	CombatService
+	Simulation des projectiles et application des degats, entierement cote
+	serveur : le client n'envoie qu'une intention de tir (origine + direction).
+
+	Consequences :
+	  - impossible de tricher sur les degats, la cadence ou la portee ;
+	  - tous les joueurs voient la meme trajectoire ;
+	  - le client se contente d'afficher une goutte purement decorative.
+]]
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Net = require(Shared:WaitForChild("Net"))
+local Util = require(Shared:WaitForChild("Util"))
+
+local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
+local TeamService = require(script.Parent:WaitForChild("TeamService"))
+local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
+local DataService = require(script.Parent:WaitForChild("DataService"))
+
+local CombatService = {}
+
+local GRAVITY = 196.2 -- gravite Roblox par defaut (studs/s^2)
+
+local projectiles = {}
+local roundActive = false
+local rng = Random.new(os.time())
+
+-- ------------------------------------------------------------- utilitaires
+
+local function getHumanoid(character)
+	return character and character:FindFirstChildOfClass("Humanoid") or nil
+end
+
+local function isAlive(player)
+	local humanoid = getHumanoid(player.Character)
+	return humanoid ~= nil and humanoid.Health > 0
+end
+
+local function now()
+	return os.clock()
+end
+
+--- true si le personnage est encore protege par son apparition.
+local function isProtected(character)
+	if not character then
+		return false
+	end
+	local until_ = character:GetAttribute("ProtectedUntil")
+	return type(until_) == "number" and until_ > now()
+end
+
+local function damageMultiplierFor(character)
+	if not character then
+		return 1
+	end
+	local until_ = character:GetAttribute("DamageBoostUntil")
+	if type(until_) == "number" and until_ > now() then
+		return GameConfig.PowerupDamageMultiplier
+	end
+	return 1
+end
+
+local function shieldMultiplierFor(character)
+	if not character then
+		return 1
+	end
+	local until_ = character:GetAttribute("ShieldUntil")
+	if type(until_) == "number" and until_ > now() then
+		return GameConfig.PowerupShieldReduction
+	end
+	return 1
+end
+
+-- ----------------------------------------------------------------- degats
+
+--- Applique des degats a une victime. Gere protection, bouclier et elimination.
+function CombatService.ApplyDamage(victimPlayer, victimCharacter, attacker, amount, isHead, weapon)
+	local humanoid = getHumanoid(victimCharacter)
+	if not humanoid or humanoid.Health <= 0 then
+		return 0
+	end
+	if isProtected(victimCharacter) then
+		return 0
+	end
+
+	local final = amount * shieldMultiplierFor(victimCharacter)
+	if attacker then
+		final = final * damageMultiplierFor(attacker.Character)
+	end
+	final = math.max(1, math.floor(final + 0.5))
+
+	humanoid.Health = math.max(0, humanoid.Health - final)
+	victimCharacter:SetAttribute("LastHitAt", now())
+	-- Memorise le dernier agresseur : PlayerService s'en sert au moment du
+	-- deces pour attribuer l'elimination (y compris apres une chute).
+	if attacker then
+		victimCharacter:SetAttribute("LastAttackerUserId", attacker.UserId)
+		victimCharacter:SetAttribute("LastAttackerAt", now())
+		victimCharacter:SetAttribute("LastWeaponId", weapon and weapon.id or nil)
+	end
+
+	if victimPlayer then
+		local origin = attacker and attacker.Character and attacker.Character:FindFirstChild("HumanoidRootPart")
+		Net.Event("Damaged"):FireClient(
+			victimPlayer,
+			final,
+			origin and (origin :: BasePart).Position or nil,
+			attacker and attacker.Name or nil
+		)
+		ServerEvents.PlayerDamaged:Fire(victimPlayer, attacker, final, isHead)
+	end
+
+	if attacker and attacker ~= victimPlayer then
+		Net.Event("HitMarker"):FireClient(attacker, final, humanoid.Health <= 0, isHead)
+		DataService.AddStat(attacker, "hits", 1)
+	end
+
+	return final
+end
+
+--- Ralentit temporairement un personnage (Rayon Glace, Lance a incendie).
+local function applySlow(character, amount, duration)
+	local humanoid = getHumanoid(character)
+	if not humanoid or amount <= 0 or duration <= 0 then
+		return
+	end
+	local baseSpeed = character:GetAttribute("BaseWalkSpeed")
+	if type(baseSpeed) ~= "number" then
+		baseSpeed = GameConfig.WalkSpeed
+	end
+	local until_ = now() + duration
+	character:SetAttribute("SlowUntil", until_)
+	character:SetAttribute("SlowFactor", 1 - math.clamp(amount, 0, 0.8))
+	humanoid.WalkSpeed = baseSpeed * (1 - math.clamp(amount, 0, 0.8))
+
+	task.delay(duration, function()
+		if character.Parent and character:GetAttribute("SlowUntil") == until_ then
+			character:SetAttribute("SlowUntil", nil)
+			character:SetAttribute("SlowFactor", nil)
+			local currentHumanoid = getHumanoid(character)
+			if currentHumanoid and currentHumanoid.Health > 0 then
+				local restore = character:GetAttribute("BaseWalkSpeed")
+				currentHumanoid.WalkSpeed = type(restore) == "number" and restore or GameConfig.WalkSpeed
+			end
+		end
+	end)
+end
+
+--- Degats de zone avec attenuation et verification de la ligne de vue.
+local function applySplash(position, weapon, attacker, damageScale)
+	if weapon.splashRadius <= 0 then
+		return
+	end
+	local params = RaycastParams.new()
+	params.FilterType = Enum.RaycastFilterType.Exclude
+	params.IgnoreWater = true
+
+	for _, player in ipairs(Players:GetPlayers()) do
+		local character = player.Character
+		local root = character and character:FindFirstChild("HumanoidRootPart")
+		if root and isAlive(player) then
+			local rootPart = root :: BasePart
+			local offset = rootPart.Position - position
+			local distance = offset.Magnitude
+			if distance <= weapon.splashRadius then
+				local allied = attacker ~= nil and TeamService.AreAllies(attacker, player)
+				if not allied or weapon.heal > 0 then
+					-- Ligne de vue : une explosion ne traverse pas un mur.
+					params.FilterDescendantsInstances = { character }
+					local blocked = false
+					if distance > 1 then
+						local hit = workspace:Raycast(position, offset, params)
+						blocked = hit ~= nil
+					end
+					if not blocked then
+						local falloff = 1 - (distance / weapon.splashRadius) * 0.75
+						if allied and weapon.heal > 0 then
+							local humanoid = getHumanoid(character)
+							if humanoid then
+								humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + weapon.heal * falloff)
+							end
+						elseif not allied then
+							CombatService.ApplyDamage(
+								player,
+								character,
+								attacker,
+								weapon.splashDamage * falloff * damageScale,
+								false,
+								weapon
+							)
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+-- ------------------------------------------------------------ projectiles
+
+local function spawnProjectile(player, weapon, origin, direction, damageScale)
+	if #projectiles >= GameConfig.MaxActiveProjectiles then
+		return
+	end
+	local character = player.Character
+	table.insert(projectiles, {
+		position = origin,
+		velocity = direction * weapon.speed,
+		weapon = weapon,
+		owner = player,
+		ownerCharacter = character,
+		damageScale = damageScale,
+		expires = now() + weapon.lifetime,
+	})
+end
+
+--- Resout l'impact d'un projectile.
+local function resolveHit(projectile, result)
+	local weapon = projectile.weapon
+	local attacker = projectile.owner
+	local position = result.Position
+
+	local character, humanoid = Util.GetCharacterFromPart(result.Instance)
+	local hitCharacter = false
+
+	if character and humanoid and humanoid.Health > 0 then
+		local victim = Players:GetPlayerFromCharacter(character)
+		local allied = victim ~= nil and attacker ~= nil and TeamService.AreAllies(attacker, victim)
+
+		if allied and weapon.heal > 0 then
+			humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + weapon.heal)
+			hitCharacter = true
+		elseif not allied and character ~= projectile.ownerCharacter then
+			local isHead = result.Instance.Name == "Head"
+			local damage = weapon.damage * projectile.damageScale
+			if isHead then
+				damage = damage * weapon.headshot
+			end
+			CombatService.ApplyDamage(victim, character, attacker, damage, isHead, weapon)
+			if weapon.slow > 0 then
+				applySlow(character, weapon.slow, weapon.slowTime)
+			end
+			hitCharacter = true
+		end
+	end
+
+	applySplash(position, weapon, attacker, projectile.damageScale)
+
+	Net.Event("ImpactEffect"):FireAllClients(position, result.Normal, weapon.id, hitCharacter)
+end
+
+local function stepProjectiles(deltaTime)
+	if #projectiles == 0 then
+		return
+	end
+	local params = RaycastParams.new()
+	params.FilterType = Enum.RaycastFilterType.Exclude
+	params.IgnoreWater = true
+
+	local currentTime = now()
+	local index = 1
+	while index <= #projectiles do
+		local projectile = projectiles[index]
+		local weapon = projectile.weapon
+		local remove = false
+
+		projectile.velocity = projectile.velocity - Vector3.new(0, GRAVITY * weapon.gravity * deltaTime, 0)
+		local nextPosition = projectile.position + projectile.velocity * deltaTime
+
+		params.FilterDescendantsInstances = { projectile.ownerCharacter }
+		local result = workspace:Raycast(projectile.position, nextPosition - projectile.position, params)
+		if result then
+			resolveHit(projectile, result)
+			remove = true
+		else
+			projectile.position = nextPosition
+			if currentTime >= projectile.expires or nextPosition.Y < -500 then
+				remove = true
+			end
+		end
+
+		if remove then
+			-- Suppression en O(1) : on remplace par le dernier element.
+			projectiles[index] = projectiles[#projectiles]
+			projectiles[#projectiles] = nil
+		else
+			index = index + 1
+		end
+	end
+end
+
+-- ------------------------------------------------------------------- tir
+
+local function handleFire(player, origin, direction, charge)
+	if not roundActive or not isAlive(player) then
+		return
+	end
+	if typeof(origin) ~= "Vector3" or typeof(direction) ~= "Vector3" then
+		return
+	end
+	if direction.Magnitude < 0.01 or origin.Magnitude > 100000 then
+		return
+	end
+
+	local weapon = WeaponService.GetEquipped(player)
+	if not weapon then
+		return
+	end
+
+	-- Anti-triche : l'origine declaree doit rester pres du personnage.
+	local character = player.Character
+	local root = character and character:FindFirstChild("HumanoidRootPart")
+	if not root then
+		return
+	end
+	if ((root :: BasePart).Position - origin).Magnitude > GameConfig.MaxFireOriginDistance then
+		return
+	end
+
+	local allowed = WeaponService.TryConsume(player, weapon)
+	if not allowed then
+		return
+	end
+
+	-- Tirer annule la protection d'apparition : on ne tire pas depuis un abri.
+	if character and isProtected(character) then
+		character:SetAttribute("ProtectedUntil", nil)
+	end
+
+	local chargeRatio = 0
+	if weapon.chargeTime > 0 and type(charge) == "number" then
+		chargeRatio = math.clamp(charge, 0, 1)
+	end
+	local damageScale = 1 + (weapon.chargeBonus - 1) * chargeRatio
+
+	DataService.AddStat(player, "shots", 1)
+
+	local unit = direction.Unit
+	local function volley()
+		for _ = 1, weapon.pellets do
+			local spread = Util.ApplySpread(unit, weapon.spread, rng)
+			spawnProjectile(player, weapon, origin, spread, damageScale)
+		end
+		Net.Event("ProjectileSpawned"):FireAllClients(
+			player,
+			weapon.id,
+			origin,
+			unit,
+			chargeRatio
+		)
+	end
+
+	volley()
+	-- Rafales : les coups suivants partent du meme point, sans nouvel envoi client.
+	for shot = 2, weapon.burst do
+		task.delay((shot - 1) * 0.07, function()
+			if roundActive and isAlive(player) then
+				volley()
+			end
+		end)
+	end
+end
+
+-- ----------------------------------------------------------------- cycle
+
+function CombatService.SetRoundActive(active)
+	roundActive = active
+	if not active then
+		table.clear(projectiles)
+	end
+end
+
+function CombatService.GetProjectileCount()
+	return #projectiles
+end
+
+function CombatService.Start()
+	Net.Event("FireWeapon").OnServerEvent:Connect(function(player, origin, direction, charge)
+		local ok, err = pcall(handleFire, player, origin, direction, charge)
+		if not ok then
+			warn("[WaterWars] Erreur de tir : " .. tostring(err))
+		end
+	end)
+
+	Players.PlayerRemoving:Connect(function(player)
+		for index = #projectiles, 1, -1 do
+			if projectiles[index].owner == player then
+				projectiles[index] = projectiles[#projectiles]
+				projectiles[#projectiles] = nil
+			end
+		end
+	end)
+
+	RunService.Heartbeat:Connect(function(deltaTime)
+		local ok, err = pcall(stepProjectiles, math.min(deltaTime, 0.1))
+		if not ok then
+			warn("[WaterWars] Erreur de simulation : " .. tostring(err))
+		end
+	end)
+end
+
+return CombatService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="29">
+        <Properties>
+          <string name="Name">DataService</string>
+          <string name="Source"><![CDATA[--[[
+	DataService
+	Sauvegarde persistante : pieces, armes debloquees, equipement, statistiques.
+
+	Tout passe par pcall : si les DataStore sont indisponibles (Studio sans
+	acces API, coupure Roblox), le jeu continue avec un profil en memoire au
+	lieu de planter. C'est le comportement attendu d'un jeu en production.
+]]
+
+local DataStoreService = game:GetService("DataStoreService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Weapons = require(Config:WaitForChild("Weapons"))
+local Net = require(Shared:WaitForChild("Net"))
+local Signal = require(Shared:WaitForChild("Signal"))
+local Util = require(Shared:WaitForChild("Util"))
+
+local DataService = {}
+
+DataService.ProfileChanged = Signal.new("ProfileChanged")
+
+local profiles = {}
+local store = nil
+local storeAvailable = false
+
+local SAVE_RETRIES = 3
+
+local function defaultProfile()
+	local owned = {}
+	for _, id in ipairs(Weapons.StarterIds) do
+		owned[id] = true
+	end
+	return {
+		version = 1,
+		coins = GameConfig.Rewards.StartingCoins,
+		owned = owned,
+		loadout = {
+			primary = Weapons.DefaultPrimary,
+			secondary = Weapons.DefaultSecondary,
+		},
+		stats = {
+			kills = 0,
+			deaths = 0,
+			wins = 0,
+			rounds = 0,
+			shots = 0,
+			hits = 0,
+			bestStreak = 0,
+		},
+	}
+end
+
+--- Repare un profil charge depuis le DataStore (migration douce).
+local function sanitize(profile)
+	local base = defaultProfile()
+	if type(profile) ~= "table" then
+		return base
+	end
+	profile.version = 1
+	profile.coins = math.max(0, math.floor(tonumber(profile.coins) or base.coins))
+
+	if type(profile.owned) ~= "table" then
+		profile.owned = base.owned
+	end
+	-- On retire les armes qui n'existent plus et on garantit les armes de depart.
+	for id in pairs(profile.owned) do
+		if not Weapons.Exists(id) then
+			profile.owned[id] = nil
+		end
+	end
+	for _, id in ipairs(Weapons.StarterIds) do
+		profile.owned[id] = true
+	end
+
+	if type(profile.loadout) ~= "table" then
+		profile.loadout = base.loadout
+	end
+	for slot, fallback in pairs(base.loadout) do
+		local current = profile.loadout[slot]
+		if type(current) ~= "string" or not Weapons.Exists(current) or not profile.owned[current] then
+			profile.loadout[slot] = fallback
+		end
+	end
+
+	if type(profile.stats) ~= "table" then
+		profile.stats = base.stats
+	end
+	for key, fallback in pairs(base.stats) do
+		profile.stats[key] = math.max(0, math.floor(tonumber(profile.stats[key]) or fallback))
+	end
+	return profile
+end
+
+local function keyFor(player)
+	return "player_" .. tostring(player.UserId)
+end
+
+local function loadProfile(player)
+	if not storeAvailable or not store then
+		return defaultProfile()
+	end
+	for attempt = 1, SAVE_RETRIES do
+		local ok, result = pcall(function()
+			return store:GetAsync(keyFor(player))
+		end)
+		if ok then
+			if result == nil then
+				return defaultProfile()
+			end
+			return sanitize(result)
+		end
+		warn(string.format("[WaterWars] Lecture du profil de %s echouee (essai %d) : %s", player.Name, attempt, tostring(result)))
+		task.wait(attempt * 0.8)
+	end
+	return defaultProfile()
+end
+
+local function saveProfile(player, profile)
+	if not storeAvailable or not store or profile == nil then
+		return false
+	end
+	for attempt = 1, SAVE_RETRIES do
+		local ok, err = pcall(function()
+			store:SetAsync(keyFor(player), profile)
+		end)
+		if ok then
+			return true
+		end
+		warn(string.format("[WaterWars] Sauvegarde du profil de %s echouee (essai %d) : %s", player.Name, attempt, tostring(err)))
+		task.wait(attempt * 0.8)
+	end
+	return false
+end
+
+--- Envoie le profil au client concerne.
+function DataService.Push(player)
+	local profile = profiles[player]
+	if not profile then
+		return
+	end
+	Net.Event("ProfileUpdate"):FireClient(player, {
+		coins = profile.coins,
+		owned = profile.owned,
+		loadout = profile.loadout,
+		stats = profile.stats,
+	})
+end
+
+function DataService.Get(player)
+	return profiles[player]
+end
+
+--- Ajoute (ou retire) des pieces, puis previent le client.
+function DataService.AddCoins(player, amount)
+	local profile = profiles[player]
+	if not profile then
+		return 0
+	end
+	profile.coins = math.max(0, profile.coins + math.floor(amount))
+	DataService.Push(player)
+	return profile.coins
+end
+
+function DataService.Owns(player, weaponId)
+	local profile = profiles[player]
+	return profile ~= nil and profile.owned[weaponId] == true
+end
+
+--- Tente l'achat d'une arme. Renvoie (succes, message).
+function DataService.Purchase(player, weaponId)
+	local profile = profiles[player]
+	if not profile then
+		return false, "Profil indisponible"
+	end
+	local weapon = Weapons.Get(weaponId)
+	if not weapon then
+		return false, "Arme inconnue"
+	end
+	if profile.owned[weaponId] then
+		return false, "Vous possedez deja cette arme"
+	end
+	if profile.coins < weapon.price then
+		return false, string.format("Il vous manque %s pieces", Util.FormatNumber(weapon.price - profile.coins))
+	end
+	profile.coins = profile.coins - weapon.price
+	profile.owned[weaponId] = true
+	DataService.Push(player)
+	DataService.ProfileChanged:Fire(player, profile)
+	return true, string.format("%s debloque !", weapon.name)
+end
+
+--- Change une arme d'equipement. Renvoie (succes, message).
+function DataService.SetLoadout(player, slot, weaponId)
+	local profile = profiles[player]
+	if not profile then
+		return false, "Profil indisponible"
+	end
+	if slot ~= "primary" and slot ~= "secondary" then
+		return false, "Emplacement invalide"
+	end
+	if not Weapons.Exists(weaponId) then
+		return false, "Arme inconnue"
+	end
+	if not profile.owned[weaponId] then
+		return false, "Arme non debloquee"
+	end
+	profile.loadout[slot] = weaponId
+	DataService.Push(player)
+	DataService.ProfileChanged:Fire(player, profile)
+	return true, string.format("%s equipe", Weapons.Get(weaponId).name)
+end
+
+function DataService.AddStat(player, key, amount)
+	local profile = profiles[player]
+	if not profile or profile.stats[key] == nil then
+		return
+	end
+	profile.stats[key] = profile.stats[key] + (amount or 1)
+end
+
+function DataService.SetBestStreak(player, streak)
+	local profile = profiles[player]
+	if profile and streak > profile.stats.bestStreak then
+		profile.stats.bestStreak = streak
+	end
+end
+
+local function onPlayerAdded(player)
+	local profile = loadProfile(player)
+	-- Le joueur a pu partir pendant le chargement.
+	if not player.Parent then
+		return
+	end
+	profiles[player] = profile
+	DataService.Push(player)
+	DataService.ProfileChanged:Fire(player, profile)
+end
+
+local function onPlayerRemoving(player)
+	local profile = profiles[player]
+	profiles[player] = nil
+	if profile then
+		saveProfile(player, profile)
+	end
+end
+
+function DataService.Start()
+	local ok, result = pcall(function()
+		return DataStoreService:GetDataStore(GameConfig.DataStoreName)
+	end)
+	if ok and result then
+		store = result
+		-- On teste l'acces reel : en Studio sans "API Services", GetAsync echoue.
+		local testOk = pcall(function()
+			store:GetAsync("__connectivity_probe__")
+		end)
+		storeAvailable = testOk
+	end
+	if not storeAvailable then
+		warn("[WaterWars] DataStore indisponible : les profils ne seront pas sauvegardes (normal en Studio sans acces API).")
+	end
+
+	Players.PlayerAdded:Connect(function(player)
+		task.spawn(onPlayerAdded, player)
+	end)
+	for _, player in ipairs(Players:GetPlayers()) do
+		task.spawn(onPlayerAdded, player)
+	end
+	Players.PlayerRemoving:Connect(onPlayerRemoving)
+
+	game:BindToClose(function()
+		for player, profile in pairs(profiles) do
+			saveProfile(player, profile)
+		end
+		if not RunService:IsStudio() then
+			task.wait(1)
+		end
+	end)
+
+	-- Sauvegarde periodique : on ne perd jamais plus d'une poignee de minutes.
+	task.spawn(function()
+		while true do
+			task.wait(GameConfig.AutosaveInterval)
+			for player, profile in pairs(profiles) do
+				saveProfile(player, profile)
+			end
+		end
+	end)
+
+	Net.Function("GetProfile").OnServerInvoke = function(player)
+		local profile = profiles[player]
+		if not profile then
+			return nil
+		end
+		return {
+			coins = profile.coins,
+			owned = profile.owned,
+			loadout = profile.loadout,
+			stats = profile.stats,
+		}
+	end
+
+	Net.Event("RequestPurchase").OnServerEvent:Connect(function(player, weaponId)
+		if type(weaponId) ~= "string" then
+			return
+		end
+		local success, message = DataService.Purchase(player, weaponId)
+		Net.Event("Notify"):FireClient(player, message, success and "good" or "bad")
+	end)
+end
+
+return DataService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="30">
+        <Properties>
+          <string name="Name">MapService</string>
+          <string name="Source"><![CDATA[--[[
+	MapService
+	Construit et detruit les terrains, applique l'ambiance lumineuse, et
+	fabrique les elements de jeu propres a la map : stations de recharge,
+	zone de controle, points d'apparition.
+
+	Toute la geometrie vit dans un seul Model (workspace.CurrentMap) : le
+	nettoyage de fin de manche est donc instantane et ne laisse rien derriere.
+]]
+
+local Lighting = game:GetService("Lighting")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Maps = require(Config:WaitForChild("Maps"))
+local MapBuilder = require(Shared:WaitForChild("MapBuilder"))
+
+local MapService = {}
+
+local currentMap = nil
+local currentModel = nil
+local refillParts = {}
+local hillPart = nil
+
+local MAP_MODEL_NAME = "CurrentMap"
+
+--- Ambiance par defaut, restauree si aucune map n'est chargee.
+local function applyLighting(settings)
+	Lighting.ClockTime = settings.ClockTime or 14
+	Lighting.Brightness = settings.Brightness or 2.5
+	Lighting.Ambient = settings.Ambient or Color3.fromRGB(120, 120, 120)
+	Lighting.OutdoorAmbient = settings.OutdoorAmbient or Color3.fromRGB(150, 150, 150)
+	Lighting.FogColor = settings.FogColor or Color3.fromRGB(200, 220, 240)
+	Lighting.FogStart = settings.FogStart or 200
+	Lighting.FogEnd = settings.FogEnd or 800
+	Lighting.ColorShift_Top = settings.ColorShift_Top or Color3.fromRGB(255, 255, 255)
+	Lighting.GlobalShadows = true
+	Lighting.EnvironmentDiffuseScale = 0.6
+	Lighting.EnvironmentSpecularScale = 0.6
+
+	local atmosphere = Lighting:FindFirstChildOfClass("Atmosphere")
+	if not atmosphere then
+		atmosphere = Instance.new("Atmosphere")
+		atmosphere.Parent = Lighting
+	end
+	atmosphere.Density = settings.Density or 0.3
+	atmosphere.Haze = settings.Haze or 1.2
+	atmosphere.Glare = 0.2
+	atmosphere.Color = settings.FogColor or Color3.fromRGB(200, 220, 240)
+	atmosphere.Decay = settings.ColorShift_Top or Color3.fromRGB(180, 200, 220)
+end
+
+--- Station de recharge : une plaque lumineuse avec un bidon qui tourne.
+local function createRefillStation(parent, position, index)
+	local station = Instance.new("Model")
+	station.Name = "RefillStation" .. index
+
+	local pad = Instance.new("Part")
+	pad.Name = "Pad"
+	pad.Shape = Enum.PartType.Cylinder
+	pad.Size = Vector3.new(1, GameConfig.RefillRadius * 2, GameConfig.RefillRadius * 2)
+	pad.CFrame = CFrame.new(position + Vector3.new(0, 0.5, 0)) * CFrame.Angles(0, 0, math.rad(90))
+	pad.Anchored = true
+	pad.CanCollide = false
+	pad.CanQuery = false
+	pad.CanTouch = false
+	pad.Material = Enum.Material.Neon
+	pad.Color = Color3.fromRGB(70, 200, 255)
+	pad.Transparency = 0.55
+	pad.CastShadow = false
+	pad.Parent = station
+
+	local tank = Instance.new("Part")
+	tank.Name = "Tank"
+	tank.Shape = Enum.PartType.Cylinder
+	tank.Size = Vector3.new(7, 5, 5)
+	tank.CFrame = CFrame.new(position + Vector3.new(0, 4.5, 0)) * CFrame.Angles(0, 0, math.rad(90))
+	tank.Anchored = true
+	tank.CanCollide = true
+	tank.Material = Enum.Material.SmoothPlastic
+	tank.Color = Color3.fromRGB(40, 130, 200)
+	tank.Parent = station
+
+	local light = Instance.new("PointLight")
+	light.Brightness = 2
+	light.Range = 22
+	light.Color = Color3.fromRGB(90, 200, 255)
+	light.Parent = tank
+
+	local billboard = Instance.new("BillboardGui")
+	billboard.Name = "Label"
+	billboard.Size = UDim2.fromOffset(180, 46)
+	billboard.StudsOffsetWorldSpace = Vector3.new(0, 5, 0)
+	billboard.AlwaysOnTop = false
+	billboard.MaxDistance = 140
+	billboard.Parent = tank
+
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.fromScale(1, 1)
+	label.BackgroundTransparency = 1
+	label.Text = "RECHARGE"
+	label.TextColor3 = Color3.fromRGB(180, 240, 255)
+	label.TextStrokeTransparency = 0.4
+	label.Font = Enum.Font.GothamBold
+	label.TextScaled = true
+	label.Parent = billboard
+
+	station.Parent = parent
+	return station
+end
+
+--- Marqueur de la zone de controle (mode Roi de la piscine).
+local function createHill(parent, position)
+	local zone = Instance.new("Part")
+	zone.Name = "HillZone"
+	zone.Shape = Enum.PartType.Cylinder
+	zone.Size = Vector3.new(60, GameConfig.HillRadius * 2, GameConfig.HillRadius * 2)
+	zone.CFrame = CFrame.new(position) * CFrame.Angles(0, 0, math.rad(90))
+	zone.Anchored = true
+	zone.CanCollide = false
+	zone.CanQuery = false
+	zone.CanTouch = false
+	zone.Material = Enum.Material.Neon
+	zone.Color = Color3.fromRGB(230, 230, 230)
+	zone.Transparency = 0.86
+	zone.CastShadow = false
+	zone.Parent = parent
+	return zone
+end
+
+--- Detruit la map courante et remet le monde a plat.
+function MapService.Unload()
+	if currentModel then
+		currentModel:Destroy()
+	end
+	currentModel = nil
+	currentMap = nil
+	refillParts = {}
+	hillPart = nil
+end
+
+--- Construit `map` dans le workspace. Renvoie le Model cree.
+function MapService.Load(map)
+	assert(map, "MapService.Load : map manquante")
+	MapService.Unload()
+
+	local model = Instance.new("Model")
+	model.Name = MAP_MODEL_NAME
+
+	local geometry = Instance.new("Folder")
+	geometry.Name = "Geometry"
+	geometry.Parent = model
+
+	local builder = MapBuilder.new(geometry, 20240900 + (map.order or 1))
+	map.build(builder)
+
+	local props = Instance.new("Folder")
+	props.Name = "Props"
+	props.Parent = model
+
+	refillParts = {}
+	for index, position in ipairs(map.refillStations) do
+		local station = createRefillStation(props, position, index)
+		table.insert(refillParts, { position = position, model = station })
+	end
+
+	hillPart = createHill(props, map.controlPoint)
+
+	model.Parent = workspace
+	currentModel = model
+	currentMap = map
+
+	applyLighting(map.lighting)
+	workspace.FallenPartsDestroyHeight = (map.killY or -50) - 200
+
+	print(string.format(
+		"[WaterWars] Terrain construit : %s (%d pieces) -> workspace.%s",
+		map.name,
+		builder.count,
+		MAP_MODEL_NAME
+	))
+
+	return model
+end
+
+function MapService.GetCurrentMap()
+	return currentMap
+end
+
+function MapService.GetModel()
+	return currentModel
+end
+
+function MapService.GetRefillStations()
+	return refillParts
+end
+
+function MapService.GetHillPart()
+	return hillPart
+end
+
+--- Colore la zone de controle selon l'equipe qui la tient.
+function MapService.SetHillColor(color, transparency)
+	if hillPart then
+		hillPart.Color = color
+		hillPart.Transparency = transparency or 0.86
+	end
+end
+
+--- Renvoie une liste de points d'apparition pour un camp donne.
+--- `teamId` vaut "Blue", "Red" ou nil (chacun pour soi).
+function MapService.GetSpawnList(teamId)
+	if not currentMap then
+		return {}
+	end
+	local spawns = currentMap.spawns
+	if teamId and spawns[teamId] then
+		return spawns[teamId]
+	end
+	return spawns.FFA
+end
+
+--- CFrame d'apparition, orientee vers le centre du terrain.
+function MapService.GetSpawnCFrame(teamId, index)
+	local list = MapService.GetSpawnList(teamId)
+	if #list == 0 then
+		return CFrame.new(0, 20, 0)
+	end
+	local position = list[((index - 1) % #list) + 1]
+	local target = currentMap and currentMap.controlPoint or Vector3.new(0, position.Y, 0)
+	local flatTarget = Vector3.new(target.X, position.Y, target.Z)
+	if (flatTarget - position).Magnitude < 1 then
+		return CFrame.new(position)
+	end
+	return CFrame.lookAt(position, flatTarget)
+end
+
+--- Hauteur en dessous de laquelle un joueur est considere comme tombe.
+function MapService.GetKillY()
+	return currentMap and currentMap.killY or -100
+end
+
+--- Donnees envoyees au client pour l'ecran de vote et le HUD.
+function MapService.Describe(map)
+	return {
+		id = map.id,
+		name = map.name,
+		theme = map.theme,
+		description = map.description,
+	}
+end
+
+function MapService.GetAll()
+	return Maps.List
+end
+
+function MapService.PickRandom(count, excludeId, rng)
+	return Maps.PickRandom(count, excludeId, rng)
+end
+
+function MapService.GetById(id)
+	return Maps.Get(id)
+end
+
+return MapService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="31">
+        <Properties>
+          <string name="Name">MatchService</string>
+          <string name="Source"><![CDATA[--[[
+	MatchService
+	Chef d'orchestre de la partie : vote de map, lancement de la manche,
+	decompte, scores, eliminations, fin de manche et recompenses.
+
+	Cycle : Attente -> Vote -> Chargement -> Manche -> Resultats -> Vote ...
+]]
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Weapons = require(Config:WaitForChild("Weapons"))
+local Net = require(Shared:WaitForChild("Net"))
+local Util = require(Shared:WaitForChild("Util"))
+
+local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
+local CombatService = require(script.Parent:WaitForChild("CombatService"))
+local DataService = require(script.Parent:WaitForChild("DataService"))
+local MapService = require(script.Parent:WaitForChild("MapService"))
+local PickupService = require(script.Parent:WaitForChild("PickupService"))
+local PlayerService = require(script.Parent:WaitForChild("PlayerService"))
+local TeamService = require(script.Parent:WaitForChild("TeamService"))
+
+local MatchService = {}
+
+local STATE = {
+	Waiting = "Waiting",
+	Vote = "Vote",
+	Loading = "Loading",
+	Active = "Active",
+	Results = "Results",
+}
+
+local state = STATE.Waiting
+local stateEndsAt = 0
+local currentMode = GameConfig.GameModes[1]
+local currentMap = nil
+local modeIndex = 0
+local lastMapId = nil
+
+local teamScores = { Blue = 0, Red = 0 }
+local roundStats = {}
+local damageLog = {} -- damageLog[victim] = { [attacker] = degats }
+
+local voteOptions = {}
+local votes = {}
+
+local rng = Random.new(os.time() + 11)
+local hillAccumulator = 0
+local scoreboardAccumulator = 0
+local lastResult = nil
+
+-- ------------------------------------------------------------- utilitaires
+
+local function statsFor(player)
+	local stats = roundStats[player]
+	if not stats then
+		stats = { kills = 0, deaths = 0, score = 0, streak = 0, assists = 0 }
+		roundStats[player] = stats
+	end
+	return stats
+end
+
+local function modeById(id)
+	for _, mode in ipairs(GameConfig.GameModes) do
+		if mode.id == id then
+			return mode
+		end
+	end
+	return GameConfig.GameModes[1]
+end
+
+local function scoreLimit()
+	return GameConfig.ScoreLimit[currentMode.id] or 50
+end
+
+local function timeLeft()
+	return math.max(0, stateEndsAt - os.clock())
+end
+
+--- Vue envoyee au client a chaque changement d'etat et chaque seconde.
+local function buildStatePayload()
+	return {
+		state = state,
+		timeLeft = timeLeft(),
+		mode = {
+			id = currentMode.id,
+			name = currentMode.name,
+			description = currentMode.description,
+			teamBased = currentMode.teamBased,
+		},
+		map = currentMap and MapService.Describe(currentMap) or nil,
+		scores = { Blue = teamScores.Blue, Red = teamScores.Red },
+		scoreLimit = scoreLimit(),
+		playerCount = #Players:GetPlayers(),
+		minPlayers = GameConfig.MinPlayersToStart,
+		result = lastResult,
+	}
+end
+
+local function broadcastState()
+	Net.Event("MatchState"):FireAllClients(buildStatePayload())
+end
+
+local function broadcastScoreboard()
+	local rows = {}
+	for _, player in ipairs(Players:GetPlayers()) do
+		local stats = statsFor(player)
+		table.insert(rows, {
+			userId = player.UserId,
+			name = player.DisplayName,
+			team = TeamService.GetTeamId(player),
+			kills = stats.kills,
+			deaths = stats.deaths,
+			assists = stats.assists,
+			score = stats.score,
+			streak = stats.streak,
+		})
+	end
+	table.sort(rows, function(a, b)
+		if a.score == b.score then
+			return a.kills > b.kills
+		end
+		return a.score > b.score
+	end)
+	Net.Event("Scoreboard"):FireAllClients(rows)
+end
+
+local function setState(newState, duration)
+	state = newState
+	stateEndsAt = os.clock() + duration
+	broadcastState()
+end
+
+local function notifyAll(message, kind)
+	Net.Event("Notify"):FireAllClients(message, kind or "info")
+end
+
+-- ------------------------------------------------------------------ vote
+
+local function startVote()
+	currentMap = nil
+	lastResult = nil
+	table.clear(votes)
+	voteOptions = MapService.PickRandom(GameConfig.MapVoteChoices, lastMapId, rng)
+
+	modeIndex = modeIndex + 1
+	local rotation = GameConfig.ModeRotation
+	currentMode = modeById(rotation[((modeIndex - 1) % #rotation) + 1])
+
+	local payload = {}
+	for _, map in ipairs(voteOptions) do
+		table.insert(payload, MapService.Describe(map))
+	end
+
+	setState(STATE.Vote, GameConfig.MapVoteTime)
+	Net.Event("MapVote"):FireAllClients({
+		phase = "open",
+		options = payload,
+		duration = GameConfig.MapVoteTime,
+		votes = {},
+		mode = currentMode.name,
+	})
+end
+
+local function broadcastVotes()
+	local counts = {}
+	for _, mapId in pairs(votes) do
+		counts[mapId] = (counts[mapId] or 0) + 1
+	end
+	Net.Event("MapVote"):FireAllClients({ phase = "update", votes = counts })
+end
+
+local function resolveVote()
+	local counts = {}
+	for _, mapId in pairs(votes) do
+		counts[mapId] = (counts[mapId] or 0) + 1
+	end
+	local bestMap, bestCount = nil, -1
+	for _, map in ipairs(voteOptions) do
+		local count = counts[map.id] or 0
+		if count > bestCount then
+			bestMap, bestCount = map, count
+		end
+	end
+	if not bestMap then
+		bestMap = Util.Pick(MapService.GetAll(), rng)
+	end
+	return bestMap
+end
+
+-- ------------------------------------------------------------- manche
+
+local function resetRound()
+	teamScores.Blue = 0
+	teamScores.Red = 0
+	table.clear(roundStats)
+	table.clear(damageLog)
+	for _, player in ipairs(Players:GetPlayers()) do
+		statsFor(player)
+	end
+end
+
+local function startRound(map)
+	currentMap = map
+	lastMapId = map.id
+	resetRound()
+
+	setState(STATE.Loading, 3)
+	CombatService.SetRoundActive(false)
+	PlayerService.SetRespawnEnabled(false)
+	MapService.Load(map)
+	PickupService.Setup(map)
+	TeamService.SetTeamMode(currentMode.teamBased)
+	Net.Event("MapReady"):FireAllClients(MapService.Describe(map))
+
+	task.wait(2)
+
+	PlayerService.SetRespawnEnabled(true)
+	PlayerService.SpawnAll()
+	CombatService.SetRoundActive(true)
+
+	setState(STATE.Active, GameConfig.RoundTime)
+	notifyAll(string.format("%s - %s", currentMode.name, map.name), "good")
+	broadcastScoreboard()
+	ServerEvents.RoundStarted:Fire(map, currentMode)
+end
+
+local function winnerText()
+	if currentMode.teamBased then
+		if teamScores.Blue == teamScores.Red then
+			return "Egalite parfaite !", nil
+		end
+		local winnerId = teamScores.Blue > teamScores.Red and "Blue" or "Red"
+		for _, definition in ipairs(GameConfig.Teams) do
+			if definition.id == winnerId then
+				return definition.name .. " remporte la manche !", winnerId
+			end
+		end
+	end
+
+	local bestPlayer, bestScore = nil, -1
+	for player, stats in pairs(roundStats) do
+		if stats.score > bestScore then
+			bestPlayer, bestScore = player, stats.score
+		end
+	end
+	if bestPlayer then
+		return string.format("%s remporte la manche avec %d points !", bestPlayer.DisplayName, bestScore), nil
+	end
+	return "Manche terminee", nil
+end
+
+local function payRewards(winnerTeamId)
+	for _, player in ipairs(Players:GetPlayers()) do
+		local stats = statsFor(player)
+		local reward = 0
+		if currentMode.teamBased then
+			local teamId = TeamService.GetTeamId(player)
+			if winnerTeamId and teamId == winnerTeamId then
+				reward = GameConfig.Rewards.RoundWin
+				DataService.AddStat(player, "wins", 1)
+			else
+				reward = GameConfig.Rewards.RoundLoss
+			end
+		else
+			reward = GameConfig.Rewards.RoundLoss + stats.score
+		end
+		DataService.AddStat(player, "rounds", 1)
+		if reward > 0 then
+			DataService.AddCoins(player, reward)
+		end
+	end
+end
+
+local function endRound()
+	CombatService.SetRoundActive(false)
+	PlayerService.SetRespawnEnabled(false)
+
+	local message, winnerTeamId = winnerText()
+	payRewards(winnerTeamId)
+
+	local ranking = {}
+	for player, stats in pairs(roundStats) do
+		table.insert(ranking, {
+			name = player.DisplayName,
+			kills = stats.kills,
+			deaths = stats.deaths,
+			score = stats.score,
+			team = TeamService.GetTeamId(player),
+		})
+	end
+	table.sort(ranking, function(a, b)
+		return a.score > b.score
+	end)
+
+	lastResult = {
+		message = message,
+		winner = winnerTeamId,
+		scores = { Blue = teamScores.Blue, Red = teamScores.Red },
+		ranking = ranking,
+		mapName = currentMap and currentMap.name or "",
+	}
+
+	setState(STATE.Results, GameConfig.PostRoundTime)
+	notifyAll(message, "good")
+	broadcastScoreboard()
+	ServerEvents.RoundEnded:Fire(lastResult)
+
+	task.wait(GameConfig.PostRoundTime)
+
+	-- La map reste chargee : entre deux manches les joueurs continuent de
+	-- s'echauffer dessus au lieu de fixer un ecran vide. Elle sera remplacee
+	-- par MapService.Load() au debut de la manche suivante.
+	PickupService.Clear()
+end
+
+-- --------------------------------------------------------- roi de la piscine
+
+local function updateHill(deltaTime)
+	if currentMode.id ~= "KingOfTheHill" or not currentMap then
+		return
+	end
+	hillAccumulator = hillAccumulator + deltaTime
+	if hillAccumulator < GameConfig.HillTickRate then
+		return
+	end
+	hillAccumulator = 0
+
+	local center = currentMap.controlPoint
+	local counts = { Blue = 0, Red = 0 }
+	for _, player in ipairs(Players:GetPlayers()) do
+		local character = player.Character
+		local root = character and character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+		if root and humanoid and humanoid.Health > 0 then
+			if ((root :: BasePart).Position - center).Magnitude <= GameConfig.HillRadius then
+				local teamId = TeamService.GetTeamId(player)
+				if teamId and counts[teamId] then
+					counts[teamId] = counts[teamId] + 1
+				end
+			end
+		end
+	end
+
+	local holder = nil
+	if counts.Blue >= GameConfig.HillContestedNeeded and counts.Blue > counts.Red then
+		holder = "Blue"
+	elseif counts.Red >= GameConfig.HillContestedNeeded and counts.Red > counts.Blue then
+		holder = "Red"
+	end
+
+	if holder then
+		teamScores[holder] = teamScores[holder] + GameConfig.HillPointsPerTick
+		MapService.SetHillColor(TeamService.GetTeamColor(holder), 0.72)
+		for _, player in ipairs(Players:GetPlayers()) do
+			local character = player.Character
+			local root = character and character:FindFirstChild("HumanoidRootPart")
+			if root and TeamService.GetTeamId(player) == holder then
+				if ((root :: BasePart).Position - center).Magnitude <= GameConfig.HillRadius then
+					statsFor(player).score = statsFor(player).score + GameConfig.HillPointsPerTick
+					DataService.AddCoins(player, GameConfig.Rewards.CaptureTick)
+				end
+			end
+		end
+	elseif counts.Blue > 0 and counts.Red > 0 then
+		MapService.SetHillColor(Color3.fromRGB(255, 220, 90), 0.72) -- zone disputee
+	else
+		MapService.SetHillColor(Color3.fromRGB(230, 230, 230), 0.86)
+	end
+end
+
+-- ------------------------------------------------------------ eliminations
+
+local function onPlayerKilled(victim, killer, weaponId)
+	if state ~= STATE.Active then
+		return
+	end
+	local victimStats = statsFor(victim)
+	victimStats.deaths = victimStats.deaths + 1
+	victimStats.streak = 0
+	DataService.AddStat(victim, "deaths", 1)
+
+	local weapon = weaponId and Weapons.Get(weaponId) or nil
+
+	if killer and killer ~= victim then
+		local killerStats = statsFor(killer)
+		killerStats.kills = killerStats.kills + 1
+		killerStats.streak = killerStats.streak + 1
+		killerStats.score = killerStats.score + GameConfig.Rewards.Splash
+		DataService.AddStat(killer, "kills", 1)
+		DataService.SetBestStreak(killer, killerStats.streak)
+
+		local coins = GameConfig.Rewards.Kill
+		local bonus = GameConfig.KillstreakBonus[killerStats.streak]
+		if bonus then
+			coins = coins + bonus
+			Net.Event("Notify"):FireClient(killer, string.format("Serie de %d ! +%d pieces", killerStats.streak, bonus), "good")
+		end
+		DataService.AddCoins(killer, coins)
+
+		if currentMode.teamBased then
+			local teamId = TeamService.GetTeamId(killer)
+			if teamId and teamScores[teamId] then
+				teamScores[teamId] = teamScores[teamId] + GameConfig.Rewards.Splash
+			end
+		end
+	end
+
+	-- Assistances : tout joueur ayant inflige au moins 25 degats a la victime.
+	local log = damageLog[victim]
+	if log then
+		for attacker, amount in pairs(log) do
+			if attacker ~= killer and attacker ~= victim and amount >= 25 and attacker.Parent then
+				local assistStats = statsFor(attacker)
+				assistStats.assists = assistStats.assists + 1
+				assistStats.score = assistStats.score + 1
+				DataService.AddCoins(attacker, GameConfig.Rewards.Assist)
+			end
+		end
+		damageLog[victim] = nil
+	end
+
+	Net.Event("KillFeed"):FireAllClients({
+		killer = killer and killer.DisplayName or nil,
+		killerTeam = killer and TeamService.GetTeamId(killer) or nil,
+		victim = victim.DisplayName,
+		victimTeam = TeamService.GetTeamId(victim),
+		weapon = weapon and weapon.name or nil,
+	})
+	broadcastState()
+	broadcastScoreboard()
+end
+
+local function onPlayerDamaged(victim, attacker, amount)
+	if not attacker or attacker == victim then
+		return
+	end
+	local log = damageLog[victim]
+	if not log then
+		log = {}
+		damageLog[victim] = log
+	end
+	log[attacker] = (log[attacker] or 0) + amount
+end
+
+-- --------------------------------------------------------- fin de manche ?
+
+local function shouldEndRound()
+	if timeLeft() <= 0 then
+		return true
+	end
+	local limit = scoreLimit()
+	if currentMode.teamBased then
+		return teamScores.Blue >= limit or teamScores.Red >= limit
+	end
+	for _, stats in pairs(roundStats) do
+		if stats.kills >= limit then
+			return true
+		end
+	end
+	return false
+end
+
+-- ------------------------------------------------------------ boucle
+
+local function gameLoop()
+	-- Un terrain est charge des le demarrage du serveur : les premiers joueurs
+	-- arrivent dans un decor, pas dans le vide.
+	if not MapService.GetCurrentMap() then
+		local first = Util.Pick(MapService.GetAll(), rng)
+		local ok, err = pcall(MapService.Load, first)
+		if not ok then
+			-- Sans ce message, un terrain qui ne se construit pas donnerait un
+			-- monde vide sans la moindre explication dans la console.
+			warn("[WaterWars] Chargement du terrain de depart impossible : " .. tostring(err))
+		end
+	end
+
+	while true do
+		if #Players:GetPlayers() < GameConfig.MinPlayersToStart then
+			setState(STATE.Waiting, 1)
+			PlayerService.SetRespawnEnabled(true)
+			PlayerService.SpawnAll()
+			repeat
+				task.wait(1)
+				broadcastState()
+			until #Players:GetPlayers() >= GameConfig.MinPlayersToStart
+		end
+
+		-- Echauffement : tout le monde est vivant et peut tirer, mais rien
+		-- n'est compte au score (voir onPlayerKilled).
+		PlayerService.SetRespawnEnabled(true)
+		CombatService.SetRoundActive(true)
+		PlayerService.SpawnAll()
+
+		startVote()
+		local voteEnd = os.clock() + GameConfig.MapVoteTime
+		while os.clock() < voteEnd do
+			task.wait(1)
+			broadcastState()
+		end
+
+		local map = resolveVote()
+		Net.Event("MapVote"):FireAllClients({ phase = "closed", chosen = MapService.Describe(map) })
+
+		local ok, err = pcall(startRound, map)
+		if not ok then
+			warn("[WaterWars] Impossible de demarrer la manche : " .. tostring(err))
+			MapService.Unload()
+			task.wait(3)
+		else
+			while state == STATE.Active and not shouldEndRound() do
+				task.wait(0.5)
+				broadcastState()
+			end
+			local endedOk, endErr = pcall(endRound)
+			if not endedOk then
+				warn("[WaterWars] Erreur de fin de manche : " .. tostring(endErr))
+				PlayerService.DespawnAll()
+				PickupService.Clear()
+				MapService.Unload()
+			end
+		end
+	end
+end
+
+-- ------------------------------------------------------------ interface
+
+function MatchService.GetState()
+	return state
+end
+
+function MatchService.IsRoundActive()
+	return state == STATE.Active
+end
+
+function MatchService.Start()
+	ServerEvents.PlayerKilled:Connect(onPlayerKilled)
+	ServerEvents.PlayerDamaged:Connect(onPlayerDamaged)
+
+	ServerEvents.CharacterSpawned:Connect(function(player)
+		damageLog[player] = nil
+	end)
+
+	Net.Event("CastMapVote").OnServerEvent:Connect(function(player, mapId)
+		if state ~= STATE.Vote or type(mapId) ~= "string" then
+			return
+		end
+		for _, map in ipairs(voteOptions) do
+			if map.id == mapId then
+				votes[player] = mapId
+				broadcastVotes()
+				return
+			end
+		end
+	end)
+
+	Players.PlayerAdded:Connect(function(player)
+		statsFor(player)
+		TeamService.Assign(player)
+		task.wait(0.5)
+		broadcastState()
+		broadcastScoreboard()
+		-- Un joueur qui arrive entre directement en jeu, sauf pendant le
+		-- chargement d'un terrain (il apparaitrait dans le vide).
+		if state ~= STATE.Loading then
+			task.spawn(PlayerService.Spawn, player)
+		end
+	end)
+
+	Players.PlayerRemoving:Connect(function(player)
+		roundStats[player] = nil
+		damageLog[player] = nil
+		votes[player] = nil
+		broadcastScoreboard()
+	end)
+
+	for _, player in ipairs(Players:GetPlayers()) do
+		statsFor(player)
+		TeamService.Assign(player)
+	end
+
+	RunService.Heartbeat:Connect(function(deltaTime)
+		if state ~= STATE.Active then
+			return
+		end
+		local ok, err = pcall(updateHill, deltaTime)
+		if not ok then
+			warn("[WaterWars] Erreur de la zone de controle : " .. tostring(err))
+		end
+		scoreboardAccumulator = scoreboardAccumulator + deltaTime
+		if scoreboardAccumulator >= 3 then
+			scoreboardAccumulator = 0
+			broadcastScoreboard()
+		end
+	end)
+
+	task.spawn(function()
+		local ok, err = pcall(gameLoop)
+		if not ok then
+			warn("[WaterWars] La boucle de partie s'est arretee : " .. tostring(err))
+		end
+	end)
+end
+
+return MatchService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="32">
+        <Properties>
+          <string name="Name">PickupService</string>
+          <string name="Source"><![CDATA[--[[
+	PickupService
+	Bonus au sol : turbo, haute pression, impermeable et citerne.
+	Les plaques apparaissent aux emplacements definis par la map, se
+	reactivent apres un delai, et sont ramassees par simple proximite (plus
+	fiable que Touched, qui rate des collisions a grande vitesse).
+]]
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Net = require(Shared:WaitForChild("Net"))
+local Util = require(Shared:WaitForChild("Util"))
+
+local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
+
+local PickupService = {}
+
+local PICKUP_RADIUS = 7
+local CHECK_INTERVAL = 0.15
+
+local pads = {}
+local container = nil
+local accumulator = 0
+local spin = 0
+
+local function powerupById(id)
+	for _, definition in ipairs(GameConfig.Powerups) do
+		if definition.id == id then
+			return definition
+		end
+	end
+	return GameConfig.Powerups[1]
+end
+
+local function buildPad(position, definition)
+	local model = Instance.new("Model")
+	model.Name = "Powerup_" .. definition.id
+
+	local base = Instance.new("Part")
+	base.Name = "Base"
+	base.Shape = Enum.PartType.Cylinder
+	base.Size = Vector3.new(0.6, 9, 9)
+	base.CFrame = CFrame.new(position) * CFrame.Angles(0, 0, math.rad(90))
+	base.Anchored = true
+	base.CanCollide = false
+	base.CanQuery = false
+	base.CanTouch = false
+	base.CastShadow = false
+	base.Material = Enum.Material.Neon
+	base.Color = definition.color
+	base.Transparency = 0.5
+	base.Parent = model
+
+	local core = Instance.new("Part")
+	core.Name = "Core"
+	core.Size = Vector3.new(3.4, 3.4, 3.4)
+	core.CFrame = CFrame.new(position + Vector3.new(0, 4, 0))
+	core.Anchored = true
+	core.CanCollide = false
+	core.CanQuery = false
+	core.CanTouch = false
+	core.Material = Enum.Material.Neon
+	core.Color = definition.color
+	core.Parent = model
+
+	local light = Instance.new("PointLight")
+	light.Color = definition.color
+	light.Brightness = 3
+	light.Range = 20
+	light.Parent = core
+
+	local billboard = Instance.new("BillboardGui")
+	billboard.Size = UDim2.fromOffset(190, 40)
+	billboard.StudsOffsetWorldSpace = Vector3.new(0, 4, 0)
+	billboard.MaxDistance = 130
+	billboard.Parent = core
+
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.fromScale(1, 1)
+	label.BackgroundTransparency = 1
+	label.Text = string.upper(definition.name)
+	label.TextColor3 = definition.color
+	label.TextStrokeTransparency = 0.35
+	label.Font = Enum.Font.GothamBold
+	label.TextScaled = true
+	label.Parent = billboard
+
+	model.Parent = container
+	return model, core
+end
+
+local function setPadVisible(pad, visible)
+	pad.active = visible
+	pad.model.Parent = visible and container or nil
+end
+
+--- Applique l'effet d'un bonus au joueur.
+local function grant(player, definition)
+	local character = player.Character
+	local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	if not character or not humanoid then
+		return false
+	end
+
+	if definition.id == "Refill" then
+		WeaponService.RefillAll(player)
+		humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + 25)
+	elseif definition.id == "Speed" then
+		character:SetAttribute("SpeedBoostUntil", os.clock() + definition.duration)
+	elseif definition.id == "Damage" then
+		character:SetAttribute("DamageBoostUntil", os.clock() + definition.duration)
+	elseif definition.id == "Shield" then
+		character:SetAttribute("ShieldUntil", os.clock() + definition.duration)
+		local existing = character:FindFirstChildOfClass("ForceField")
+		if existing then
+			existing:Destroy()
+		end
+		local field = Instance.new("ForceField")
+		field.Visible = true
+		field.Parent = character
+		Util.DestroyAfter(field, definition.duration)
+	end
+
+	Net.Event("Notify"):FireClient(player, definition.name .. " recupere !", "good")
+	Net.Event("EffectState"):FireClient(player, definition.id, definition.duration)
+	return true
+end
+
+local function step(deltaTime)
+	spin = spin + deltaTime * 2
+	for _, pad in ipairs(pads) do
+		if pad.active and pad.core.Parent then
+			pad.core.CFrame = CFrame.new(pad.position + Vector3.new(0, 4 + math.sin(spin * 1.5) * 0.7, 0))
+				* CFrame.Angles(spin, spin * 0.8, 0)
+		end
+	end
+
+	accumulator = accumulator + deltaTime
+	if accumulator < CHECK_INTERVAL then
+		return
+	end
+	accumulator = 0
+
+	for _, pad in ipairs(pads) do
+		if pad.active then
+			for _, player in ipairs(Players:GetPlayers()) do
+				local character = player.Character
+				local root = character and character:FindFirstChild("HumanoidRootPart")
+				local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+				if root and humanoid and humanoid.Health > 0 then
+					if ((root :: BasePart).Position - pad.position).Magnitude <= PICKUP_RADIUS then
+						if grant(player, pad.definition) then
+							setPadVisible(pad, false)
+							task.delay(GameConfig.PowerupRespawn, function()
+								if pad.model.Parent ~= nil or container ~= nil then
+									-- Nouveau bonus tire au sort a la reapparition.
+									setPadVisible(pad, true)
+								end
+							end)
+						end
+						break
+					end
+				end
+			end
+		end
+	end
+end
+
+--- (Re)cree les plaques de bonus pour la map courante.
+function PickupService.Setup(map)
+	PickupService.Clear()
+	container = Instance.new("Folder")
+	container.Name = "Powerups"
+	container.Parent = workspace
+
+	for index, position in ipairs(map.powerupSpots) do
+		-- Un bonus different a chaque emplacement, dans l'ordre de la config.
+		local definition = GameConfig.Powerups[((index - 1) % #GameConfig.Powerups) + 1]
+		if index == 1 then
+			-- L'emplacement central est toujours un bonus offensif.
+			definition = powerupById("Damage")
+		end
+		local model, core = buildPad(position, definition)
+		table.insert(pads, {
+			position = position,
+			definition = definition,
+			model = model,
+			core = core,
+			active = true,
+		})
+	end
+end
+
+function PickupService.Clear()
+	for _, pad in ipairs(pads) do
+		pad.model:Destroy()
+	end
+	table.clear(pads)
+	if container then
+		container:Destroy()
+		container = nil
+	end
+end
+
+function PickupService.Start()
+	RunService.Heartbeat:Connect(function(deltaTime)
+		if #pads == 0 then
+			return
+		end
+		local ok, err = pcall(step, deltaTime)
+		if not ok then
+			warn("[WaterWars] Erreur des bonus : " .. tostring(err))
+		end
+	end)
+end
+
+return PickupService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="33">
+        <Properties>
+          <string name="Name">PlayerService</string>
+          <string name="Source"><![CDATA[--[[
+	PlayerService
+	Tout ce qui concerne le personnage en jeu :
+	  - apparition sur un point de la map avec protection temporaire ;
+	  - course (sprint) et endurance ;
+	  - regeneration hors combat ;
+	  - rechargement aux stations d'eau ;
+	  - chute hors de la map ;
+	  - file de reapparition.
+
+	Les valeurs affichees par le HUD (endurance, bonus actifs) passent par des
+	attributs du personnage : ils se repliquent tout seuls vers le client, ce
+	qui evite une vingtaine de RemoteEvents par seconde.
+]]
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Net = require(Shared:WaitForChild("Net"))
+
+local ServerEvents = require(script.Parent:WaitForChild("ServerEvents"))
+local MapService = require(script.Parent:WaitForChild("MapService"))
+local TeamService = require(script.Parent:WaitForChild("TeamService"))
+local WeaponService = require(script.Parent:WaitForChild("WeaponService"))
+
+local PlayerService = {}
+
+local respawnEnabled = false
+local spawnCounters = { Blue = 0, Red = 0, FFA = 0 }
+local sprinting = {}
+local pendingRespawn = {}
+local refillAccumulator = 0
+
+local function now()
+	return os.clock()
+end
+
+local function nextSpawnIndex(key)
+	spawnCounters[key] = (spawnCounters[key] or 0) + 1
+	return spawnCounters[key]
+end
+
+--- Fait apparaitre le joueur sur un point de la map courante.
+function PlayerService.Spawn(player)
+	if not player.Parent then
+		return
+	end
+	pendingRespawn[player] = nil
+
+	-- Sans terrain, faire apparaitre le joueur le ferait tomber dans le vide
+	-- indefiniment. Mieux vaut ne pas l'incarner et le dire clairement.
+	if not MapService.GetCurrentMap() then
+		warn("[WaterWars] Apparition annulee : aucun terrain n'est charge.")
+		return
+	end
+
+	local teamId = TeamService.IsTeamMode() and TeamService.GetTeamId(player) or nil
+	local key = teamId or "FFA"
+	local spawnCFrame = MapService.GetSpawnCFrame(teamId, nextSpawnIndex(key))
+
+	player:LoadCharacter()
+
+	local character = player.Character
+	if not character then
+		return
+	end
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local root = character:FindFirstChild("HumanoidRootPart")
+	if not humanoid or not root then
+		return
+	end
+
+	character:PivotTo(spawnCFrame + Vector3.new(0, 3.5, 0))
+
+	humanoid.MaxHealth = GameConfig.MaxHealth
+	humanoid.Health = GameConfig.MaxHealth
+	humanoid.UseJumpPower = true
+	humanoid.JumpPower = GameConfig.JumpPower
+	humanoid.WalkSpeed = GameConfig.WalkSpeed
+	humanoid.BreakJointsOnDeath = false
+	humanoid.NameDisplayDistance = 90
+	humanoid.HealthDisplayDistance = 90
+
+	character:SetAttribute("BaseWalkSpeed", GameConfig.WalkSpeed)
+	character:SetAttribute("Stamina", GameConfig.StaminaMax)
+	character:SetAttribute("ProtectedUntil", now() + GameConfig.SpawnProtectionTime)
+	character:SetAttribute("LastHitAt", 0)
+	character:SetAttribute("LastAttackerUserId", nil)
+	character:SetAttribute("LastWeaponId", nil)
+	sprinting[player] = false
+
+	-- Bouclier visuel pendant la protection d'apparition.
+	local field = Instance.new("ForceField")
+	field.Visible = true
+	field.Parent = character
+	task.delay(GameConfig.SpawnProtectionTime, function()
+		if field.Parent then
+			field:Destroy()
+		end
+	end)
+
+	WeaponService.GiveLoadout(player)
+
+	humanoid.Died:Connect(function()
+		PlayerService.HandleDeath(player, character)
+	end)
+
+	ServerEvents.CharacterSpawned:Fire(player, character)
+end
+
+--- Gere un deces : attribution de l'elimination puis file de reapparition.
+function PlayerService.HandleDeath(player, character)
+	if character:GetAttribute("DeathHandled") then
+		return
+	end
+	character:SetAttribute("DeathHandled", true)
+
+	local killer = nil
+	local attackerId = character:GetAttribute("LastAttackerUserId")
+	local attackerAt = character:GetAttribute("LastAttackerAt")
+	-- On n'attribue l'elimination que si le dernier coup est recent (10 s).
+	if type(attackerId) == "number" and type(attackerAt) == "number" and now() - attackerAt < 10 then
+		local candidate = Players:GetPlayerByUserId(attackerId)
+		if candidate and candidate ~= player then
+			killer = candidate
+		end
+	end
+	local weaponId = character:GetAttribute("LastWeaponId")
+
+	ServerEvents.PlayerKilled:Fire(player, killer, type(weaponId) == "string" and weaponId or nil)
+
+	if respawnEnabled then
+		pendingRespawn[player] = now() + GameConfig.RespawnTime
+		Net.Event("Notify"):FireClient(player, string.format("Reapparition dans %d s", GameConfig.RespawnTime), "info")
+	end
+end
+
+function PlayerService.SetRespawnEnabled(enabled)
+	respawnEnabled = enabled
+	if not enabled then
+		table.clear(pendingRespawn)
+	end
+end
+
+--- Fait apparaitre tout le monde (debut de manche).
+function PlayerService.SpawnAll()
+	spawnCounters.Blue = 0
+	spawnCounters.Red = 0
+	spawnCounters.FFA = 0
+	for _, player in ipairs(Players:GetPlayers()) do
+		task.spawn(PlayerService.Spawn, player)
+	end
+end
+
+--- Renvoie tout le monde au vestiaire (fin de manche).
+function PlayerService.DespawnAll()
+	table.clear(pendingRespawn)
+	for _, player in ipairs(Players:GetPlayers()) do
+		WeaponService.ClearTools(player)
+		if player.Character then
+			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.WalkSpeed = GameConfig.WalkSpeed
+			end
+		end
+	end
+end
+
+-- ------------------------------------------------------- boucle par frame
+
+local function updateCharacter(player, deltaTime)
+	local character = player.Character
+	if not character then
+		return
+	end
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local root = character:FindFirstChild("HumanoidRootPart")
+	if not humanoid or not root or humanoid.Health <= 0 then
+		return
+	end
+	local rootPart = root :: BasePart
+	local currentTime = now()
+
+	-- ------------------------------------------------------- endurance
+	local stamina = character:GetAttribute("Stamina")
+	if type(stamina) ~= "number" then
+		stamina = GameConfig.StaminaMax
+	end
+	local wantsSprint = sprinting[player] == true
+	local moving = rootPart.AssemblyLinearVelocity.Magnitude > 4
+	local isSprinting = wantsSprint and moving and stamina > 0
+
+	if isSprinting then
+		stamina = math.max(0, stamina - GameConfig.StaminaDrain * deltaTime)
+		if stamina <= 0 then
+			sprinting[player] = false
+		end
+	else
+		stamina = math.min(GameConfig.StaminaMax, stamina + GameConfig.StaminaRegen * deltaTime)
+	end
+	character:SetAttribute("Stamina", stamina)
+
+	-- ------------------------------------------------ vitesse effective
+	local weapon = WeaponService.GetEquipped(player)
+	local base = isSprinting and GameConfig.SprintSpeed or GameConfig.WalkSpeed
+	if weapon then
+		base = base * weapon.walkSpeedMul
+	end
+	character:SetAttribute("BaseWalkSpeed", base)
+
+	local multiplier = 1
+	local slowUntil = character:GetAttribute("SlowUntil")
+	if type(slowUntil) == "number" and slowUntil > currentTime then
+		local factor = character:GetAttribute("SlowFactor")
+		multiplier = multiplier * (type(factor) == "number" and factor or 1)
+	end
+	local speedUntil = character:GetAttribute("SpeedBoostUntil")
+	if type(speedUntil) == "number" and speedUntil > currentTime then
+		multiplier = multiplier * GameConfig.PowerupSpeedMultiplier
+	end
+	humanoid.WalkSpeed = base * multiplier
+
+	-- ------------------------------------------------- regeneration
+	local lastHit = character:GetAttribute("LastHitAt")
+	if type(lastHit) == "number" and currentTime - lastHit > GameConfig.RegenDelay then
+		if humanoid.Health < humanoid.MaxHealth then
+			humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + GameConfig.RegenRate * deltaTime)
+		end
+	end
+
+	-- --------------------------------------------------------- chute
+	if rootPart.Position.Y < MapService.GetKillY() then
+		humanoid.Health = 0
+	end
+end
+
+local function updateRefills(deltaTime)
+	local stations = MapService.GetRefillStations()
+	if #stations == 0 then
+		return
+	end
+	for _, player in ipairs(Players:GetPlayers()) do
+		local character = player.Character
+		local root = character and character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+		if root and humanoid and humanoid.Health > 0 then
+			local position = (root :: BasePart).Position
+			for _, station in ipairs(stations) do
+				if (position - station.position).Magnitude <= GameConfig.RefillRadius then
+					WeaponService.AddWater(player, GameConfig.RefillRate * deltaTime)
+					humanoid.Health = math.min(
+						humanoid.MaxHealth,
+						humanoid.Health + GameConfig.RefillHealRate * deltaTime
+					)
+					break
+				end
+			end
+		end
+	end
+end
+
+local function step(deltaTime)
+	local currentTime = now()
+	for _, player in ipairs(Players:GetPlayers()) do
+		updateCharacter(player, deltaTime)
+	end
+
+	refillAccumulator = refillAccumulator + deltaTime
+	if refillAccumulator >= 0.2 then
+		updateRefills(refillAccumulator)
+		refillAccumulator = 0
+	end
+
+	for player, readyAt in pairs(pendingRespawn) do
+		if currentTime >= readyAt then
+			pendingRespawn[player] = nil
+			if respawnEnabled and player.Parent then
+				task.spawn(PlayerService.Spawn, player)
+			end
+		end
+	end
+end
+
+function PlayerService.Start()
+	Players.CharacterAutoLoads = false
+
+	Net.Event("SetSprint").OnServerEvent:Connect(function(player, wants)
+		sprinting[player] = wants == true
+	end)
+
+	Players.PlayerRemoving:Connect(function(player)
+		sprinting[player] = nil
+		pendingRespawn[player] = nil
+	end)
+
+	RunService.Heartbeat:Connect(function(deltaTime)
+		local ok, err = pcall(step, math.min(deltaTime, 0.25))
+		if not ok then
+			warn("[WaterWars] Erreur de mise a jour joueur : " .. tostring(err))
+		end
+	end)
+end
+
+return PlayerService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="34">
+        <Properties>
+          <string name="Name">ServerEvents</string>
+          <string name="Source"><![CDATA[--[[
+	ServerEvents
+	Bus d'evenements interne au serveur. Il evite les dependances circulaires
+	entre les services : personne n'a besoin de connaitre MatchService pour lui
+	signaler une elimination.
+]]
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Shared = ReplicatedStorage:WaitForChild("WaterWars"):WaitForChild("Shared")
+local Signal = require(Shared:WaitForChild("Signal"))
+
+local ServerEvents = {}
+
+-- (victime, tueur | nil, arme | nil)
+ServerEvents.PlayerKilled = Signal.new("PlayerKilled")
+-- (victime, attaquant | nil, degats, estTeteTouchee)
+ServerEvents.PlayerDamaged = Signal.new("PlayerDamaged")
+-- (joueur, personnage)
+ServerEvents.CharacterSpawned = Signal.new("CharacterSpawned")
+-- (map, mode)
+ServerEvents.RoundStarted = Signal.new("RoundStarted")
+-- (resultat)
+ServerEvents.RoundEnded = Signal.new("RoundEnded")
+-- (joueur, points)
+ServerEvents.ScoreChanged = Signal.new("ScoreChanged")
+
+return ServerEvents
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="35">
+        <Properties>
+          <string name="Name">TeamService</string>
+          <string name="Source"><![CDATA[--[[
+	TeamService
+	Creation des equipes et repartition equilibree des 20 joueurs.
+	En mode "chacun pour soi" les equipes sont videes et tout le monde devient
+	neutre, ce qui desactive automatiquement la protection alliee.
+]]
+
+local Players = game:GetService("Players")
+local Teams = game:GetService("Teams")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local GameConfig = require(WaterWars:WaitForChild("Config"):WaitForChild("GameConfig"))
+
+local TeamService = {}
+
+local teamInstances = {}
+local teamEnabled = true
+
+function TeamService.Start()
+	for _, definition in ipairs(GameConfig.Teams) do
+		local existing = Teams:FindFirstChild(definition.name)
+		local team
+		if existing and existing:IsA("Team") then
+			team = existing
+		else
+			team = Instance.new("Team")
+			team.Name = definition.name
+			team.Parent = Teams
+		end
+		team.TeamColor = definition.brickColor
+		team.AutoAssignable = false
+		teamInstances[definition.id] = team
+	end
+end
+
+function TeamService.GetTeam(teamId)
+	return teamInstances[teamId]
+end
+
+--- Identifiant logique ("Blue" / "Red") de l'equipe d'un joueur, ou nil.
+function TeamService.GetTeamId(player)
+	if player.Neutral or not player.Team then
+		return nil
+	end
+	for id, team in pairs(teamInstances) do
+		if team == player.Team then
+			return id
+		end
+	end
+	return nil
+end
+
+function TeamService.CountPlayers(teamId)
+	local team = teamInstances[teamId]
+	if not team then
+		return 0
+	end
+	local count = 0
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player.Team == team then
+			count = count + 1
+		end
+	end
+	return count
+end
+
+--- Place un joueur dans l'equipe la moins remplie.
+function TeamService.Assign(player)
+	if not teamEnabled then
+		player.Neutral = true
+		player.Team = nil
+		return nil
+	end
+	local bestId, bestCount = nil, math.huge
+	for _, definition in ipairs(GameConfig.Teams) do
+		local count = TeamService.CountPlayers(definition.id)
+		if count < bestCount then
+			bestId, bestCount = definition.id, count
+		end
+	end
+	if bestId then
+		player.Neutral = false
+		player.Team = teamInstances[bestId]
+	end
+	return bestId
+end
+
+--- Active ou desactive le jeu en equipes (selon le mode de la manche).
+function TeamService.SetTeamMode(enabled)
+	teamEnabled = enabled
+	if not enabled then
+		for _, player in ipairs(Players:GetPlayers()) do
+			player.Neutral = true
+			player.Team = nil
+		end
+		return
+	end
+	-- Reequilibrage complet : on vide puis on redistribue en alternance.
+	local players = Players:GetPlayers()
+	table.sort(players, function(a, b)
+		return a.UserId < b.UserId
+	end)
+	for index, player in ipairs(players) do
+		local definition = GameConfig.Teams[((index - 1) % #GameConfig.Teams) + 1]
+		player.Neutral = false
+		player.Team = teamInstances[definition.id]
+	end
+end
+
+--- true si `a` et `b` sont dans la meme equipe (jamais en mode neutre).
+function TeamService.AreAllies(a, b)
+	if not teamEnabled then
+		return false
+	end
+	if a == b then
+		return true
+	end
+	local teamA = TeamService.GetTeamId(a)
+	local teamB = TeamService.GetTeamId(b)
+	return teamA ~= nil and teamA == teamB
+end
+
+function TeamService.IsTeamMode()
+	return teamEnabled
+end
+
+function TeamService.GetTeamColor(teamId)
+	for _, definition in ipairs(GameConfig.Teams) do
+		if definition.id == teamId then
+			return definition.color
+		end
+	end
+	return Color3.fromRGB(200, 200, 200)
+end
+
+return TeamService
+]]></string>
+        </Properties>
+      </Item>
+      <Item class="ModuleScript" referent="36">
+        <Properties>
+          <string name="Name">WeaponService</string>
+          <string name="Source"><![CDATA[--[[
+	WeaponService
+	Fabrique les 25 armes sous forme de Tool entierement procedural (aucun
+	asset a uploader), distribue l'equipement et fait autorite sur les
+	munitions : reservoir, cadence et rechargement sont valides cote serveur.
+]]
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local WaterWars = ReplicatedStorage:WaitForChild("WaterWars")
+local Config = WaterWars:WaitForChild("Config")
+local Shared = WaterWars:WaitForChild("Shared")
+
+local GameConfig = require(Config:WaitForChild("GameConfig"))
+local Weapons = require(Config:WaitForChild("Weapons"))
+local Net = require(Shared:WaitForChild("Net"))
+
+local DataService = require(script.Parent:WaitForChild("DataService"))
+
+local WeaponService = {}
+
+-- ammoState[player] = { [weaponId] = { ammo, reloading, lastShot, reloadToken } }
+local ammoState = {}
+
+-- ------------------------------------------------------------------ modele
+
+local function weld(part, handle)
+	local constraint = Instance.new("WeldConstraint")
+	constraint.Part0 = handle
+	constraint.Part1 = part
+	constraint.Parent = part
+end
+
+local function makePart(name, size, cframe, color, material, parent)
+	local part = Instance.new("Part")
+	part.Name = name
+	part.Size = size
+	part.CFrame = cframe
+	part.Color = color
+	part.Material = material
+	part.Anchored = false
+	part.CanCollide = false
+	part.CanQuery = false
+	part.Massless = true
+	part.TopSurface = Enum.SurfaceType.Smooth
+	part.BottomSurface = Enum.SurfaceType.Smooth
+	part.Parent = parent
+	return part
+end
+
+--- Assemble le modele 3D d'une arme a partir de ses dimensions.
+function WeaponService.BuildTool(weapon)
+	local model = weapon.model
+	local barrelLength = model.barrel
+	local thickness = model.thick
+	local tankScale = model.tank
+
+	local tool = Instance.new("Tool")
+	tool.Name = weapon.name
+	tool.RequiresHandle = true
+	tool.CanBeDropped = false
+	tool.ToolTip = weapon.desc
+	tool:SetAttribute("WeaponId", weapon.id)
+	tool:SetAttribute("Category", weapon.category)
+	-- Position de l'arme dans la main droite.
+	tool.Grip = CFrame.new(0, -0.25, 0.35) * CFrame.Angles(math.rad(-6), 0, 0)
+
+	-- La poignee : c'est elle qui est tenue par le personnage.
+	local handle = Instance.new("Part")
+	handle.Name = "Handle"
+	handle.Size = Vector3.new(thickness * 1.1, 1.5, thickness * 1.2)
+	handle.CFrame = CFrame.new(0, 0, 0)
+	handle.Color = Color3.fromRGB(45, 48, 56)
+	handle.Material = Enum.Material.SmoothPlastic
+	handle.Anchored = false
+	handle.CanCollide = false
+	handle.CanQuery = false
+	handle.Massless = true
+	handle.TopSurface = Enum.SurfaceType.Smooth
+	handle.BottomSurface = Enum.SurfaceType.Smooth
+	handle.Parent = tool
+
+	-- Corps principal, aligne sur -Z (la direction dans laquelle l'arme pointe).
+	local body = makePart(
+		"Body",
+		Vector3.new(thickness * 1.25, thickness * 1.35, barrelLength * 0.62),
+		CFrame.new(0, 0.95, -barrelLength * 0.2),
+		weapon.color,
+		Enum.Material.SmoothPlastic,
+		tool
+	)
+	weld(body, handle)
+
+	-- Canon.
+	local barrel = makePart(
+		"Barrel",
+		Vector3.new(barrelLength * 0.78, thickness * 0.78, thickness * 0.78),
+		CFrame.new(0, 1.0, -barrelLength * 0.62) * CFrame.Angles(0, math.rad(90), math.rad(90)),
+		weapon.accent,
+		Enum.Material.Metal,
+		tool
+	)
+	barrel.Shape = Enum.PartType.Cylinder
+	weld(barrel, handle)
+
+	-- Buse lumineuse : repere visuel de la sortie d'eau.
+	local nozzle = makePart(
+		"Nozzle",
+		Vector3.new(thickness * 0.5, thickness * 0.95, thickness * 0.95),
+		CFrame.new(0, 1.0, -barrelLength * 1.0) * CFrame.Angles(0, math.rad(90), math.rad(90)),
+		weapon.trail,
+		Enum.Material.Neon,
+		tool
+	)
+	nozzle.Shape = Enum.PartType.Cylinder
+	nozzle.CastShadow = false
+	weld(nozzle, handle)
+
+	-- Reservoir d'eau, monte sur le dessus.
+	local tank = makePart(
+		"Tank",
+		Vector3.new(barrelLength * 0.42 * tankScale, thickness * 1.5 * tankScale, thickness * 1.5 * tankScale),
+		CFrame.new(0, 1.05 + thickness * 1.1, barrelLength * 0.12) * CFrame.Angles(0, math.rad(90), math.rad(90)),
+		Color3.fromRGB(150, 225, 255),
+		Enum.Material.Glass,
+		tool
+	)
+	tank.Shape = Enum.PartType.Cylinder
+	tank.Transparency = 0.35
+	weld(tank, handle)
+
+	local water = makePart(
+		"TankWater",
+		Vector3.new(barrelLength * 0.38 * tankScale, thickness * 1.15 * tankScale, thickness * 1.15 * tankScale),
+		tank.CFrame,
+		Color3.fromRGB(60, 170, 235),
+		Enum.Material.SmoothPlastic,
+		tool
+	)
+	water.Shape = Enum.PartType.Cylinder
+	water.Transparency = 0.15
+	weld(water, handle)
+
+	-- Garde et crosse pour donner du volume.
+	local guard = makePart(
+		"Guard",
+		Vector3.new(thickness * 0.4, 0.55, thickness * 1.3),
+		CFrame.new(0, 0.35, -thickness * 0.5),
+		Color3.fromRGB(38, 40, 48),
+		Enum.Material.SmoothPlastic,
+		tool
+	)
+	weld(guard, handle)
+
+	if weapon.category == "Sniper" then
+		local scope = makePart(
+			"Scope",
+			Vector3.new(barrelLength * 0.3, thickness * 0.55, thickness * 0.55),
+			CFrame.new(0, 1.05 + thickness * 1.9, -barrelLength * 0.1) * CFrame.Angles(0, math.rad(90), math.rad(90)),
+			Color3.fromRGB(28, 30, 36),
+			Enum.Material.Metal,
+			tool
+		)
+		scope.Shape = Enum.PartType.Cylinder
+		weld(scope, handle)
+	elseif weapon.category == "Heavy" then
+		local shroud = makePart(
+			"Shroud",
+			Vector3.new(thickness * 1.9, thickness * 1.9, barrelLength * 0.35),
+			CFrame.new(0, 1.0, -barrelLength * 0.5),
+			Color3.fromRGB(70, 74, 84),
+			Enum.Material.DiamondPlate,
+			tool
+		)
+		weld(shroud, handle)
+	elseif weapon.category == "Launcher" then
+		local drum = makePart(
+			"Drum",
+			Vector3.new(thickness * 1.6, thickness * 2.1, thickness * 2.1),
+			CFrame.new(0, 1.0, barrelLength * 0.05) * CFrame.Angles(0, math.rad(90), math.rad(90)),
+			weapon.color,
+			Enum.Material.SmoothPlastic,
+			tool
+		)
+		drum.Shape = Enum.PartType.Cylinder
+		weld(drum, handle)
+	end
+
+	-- Point de sortie des projectiles, lu par le client pour les effets.
+	local muzzle = Instance.new("Attachment")
+	muzzle.Name = "Muzzle"
+	muzzle.CFrame = CFrame.new(0, 1.0, -barrelLength * 1.05)
+	muzzle.Parent = handle
+
+	return tool
+end
+
+-- ----------------------------------------------------------------- etat
+
+local function stateFor(player)
+	local state = ammoState[player]
+	if not state then
+		state = {}
+		ammoState[player] = state
+	end
+	return state
+end
+
+local function entryFor(player, weapon)
+	local state = stateFor(player)
+	local entry = state[weapon.id]
+	if not entry then
+		entry = { ammo = weapon.tankSize, reloading = false, lastShot = 0, reloadToken = 0 }
+		state[weapon.id] = entry
+	end
+	return entry
+end
+
+--- Envoie l'etat des munitions de l'arme tenue au client.
+function WeaponService.PushAmmo(player)
+	local weapon = WeaponService.GetEquipped(player)
+	if not weapon then
+		Net.Event("AmmoUpdate"):FireClient(player, nil, 0, 0, false)
+		return
+	end
+	local entry = entryFor(player, weapon)
+	Net.Event("AmmoUpdate"):FireClient(player, weapon.id, entry.ammo, weapon.tankSize, entry.reloading)
+end
+
+--- Arme actuellement tenue par le joueur, ou nil.
+function WeaponService.GetEquipped(player)
+	local character = player.Character
+	if not character then
+		return nil
+	end
+	local tool = character:FindFirstChildOfClass("Tool")
+	if not tool then
+		return nil
+	end
+	local id = tool:GetAttribute("WeaponId")
+	if type(id) ~= "string" then
+		return nil
+	end
+	return Weapons.Get(id)
+end
+
+function WeaponService.GetAmmo(player, weapon)
+	return entryFor(player, weapon).ammo
+end
+
+function WeaponService.IsReloading(player, weapon)
+	return entryFor(player, weapon).reloading
+end
+
+--- Lance un rechargement. Renvoie true s'il a effectivement demarre.
+function WeaponService.Reload(player, weapon)
+	local entry = entryFor(player, weapon)
+	if entry.reloading or entry.ammo >= weapon.tankSize then
+		return false
+	end
+	entry.reloading = true
+	entry.reloadToken = entry.reloadToken + 1
+	local token = entry.reloadToken
+	WeaponService.PushAmmo(player)
+
+	task.delay(weapon.reloadTime, function()
+		-- Un changement d'arme ou une mort annule le rechargement en cours.
+		if entry.reloadToken ~= token then
+			return
+		end
+		entry.reloading = false
+		entry.ammo = weapon.tankSize
+		if player.Parent then
+			WeaponService.PushAmmo(player)
+		end
+	end)
+	return true
+end
+
+--- Verifie cadence + munitions et consomme l'eau. Renvoie (autorise, raison).
+function WeaponService.TryConsume(player, weapon)
+	local entry = entryFor(player, weapon)
+	if entry.reloading then
+		return false, "reloading"
+	end
+
+	local now = os.clock()
+	local minimumDelay = (1 / weapon.fireRate) * GameConfig.FireRateTolerance
+	if now - entry.lastShot < minimumDelay then
+		return false, "ratelimit"
+	end
+
+	local cost = weapon.tankCost * weapon.burst
+	if entry.ammo < cost then
+		WeaponService.Reload(player, weapon)
+		return false, "empty"
+	end
+
+	entry.lastShot = now
+	entry.ammo = entry.ammo - cost
+	if entry.ammo < cost then
+		-- Rechargement automatique des que le reservoir ne suffit plus.
+		WeaponService.Reload(player, weapon)
+	else
+		WeaponService.PushAmmo(player)
+	end
+	return true, nil
+end
+
+--- Remet tous les reservoirs a plein (apparition, station de recharge).
+function WeaponService.RefillAll(player)
+	local state = stateFor(player)
+	for id, entry in pairs(state) do
+		local weapon = Weapons.Get(id)
+		if weapon then
+			entry.ammo = weapon.tankSize
+			entry.reloading = false
+			entry.reloadToken = entry.reloadToken + 1
+		end
+	end
+	WeaponService.PushAmmo(player)
+end
+
+--- Recharge progressive pres d'une station. Renvoie true si de l'eau a ete ajoutee.
+function WeaponService.AddWater(player, amount)
+	local weapon = WeaponService.GetEquipped(player)
+	if not weapon then
+		return false
+	end
+	local entry = entryFor(player, weapon)
+	if entry.ammo >= weapon.tankSize then
+		return false
+	end
+	entry.ammo = math.min(weapon.tankSize, entry.ammo + amount)
+	entry.reloading = false
+	entry.reloadToken = entry.reloadToken + 1
+	WeaponService.PushAmmo(player)
+	return true
+end
+
+--- Vide le sac et la main du joueur.
+function WeaponService.ClearTools(player)
+	local backpack = player:FindFirstChildOfClass("Backpack")
+	if backpack then
+		for _, child in ipairs(backpack:GetChildren()) do
+			if child:IsA("Tool") then
+				child:Destroy()
+			end
+		end
+	end
+	local character = player.Character
+	if character then
+		for _, child in ipairs(character:GetChildren()) do
+			if child:IsA("Tool") then
+				child:Destroy()
+			end
+		end
+	end
+end
+
+--- Donne au joueur les deux armes de son equipement et remplit les reservoirs.
+function WeaponService.GiveLoadout(player)
+	local profile = DataService.Get(player)
+	local backpack = player:FindFirstChildOfClass("Backpack")
+	if not profile or not backpack then
+		return
+	end
+
+	WeaponService.ClearTools(player)
+	ammoState[player] = {}
+
+	local order = { profile.loadout.primary, profile.loadout.secondary }
+	local firstTool = nil
+	for _, id in ipairs(order) do
+		local weapon = Weapons.Get(id)
+		if weapon then
+			local tool = WeaponService.BuildTool(weapon)
+			tool.Parent = backpack
+			entryFor(player, weapon)
+			if not firstTool then
+				firstTool = tool
+			end
+		end
+	end
+
+	-- L'arme principale est mise en main : le joueur peut tirer immediatement.
+	local character = player.Character
+	local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	if firstTool and humanoid and humanoid.Health > 0 then
+		humanoid:EquipTool(firstTool)
+	end
+
+	WeaponService.PushAmmo(player)
+end
+
+function WeaponService.Start()
+	Net.Event("RequestReload").OnServerEvent:Connect(function(player)
+		local weapon = WeaponService.GetEquipped(player)
+		if weapon then
+			WeaponService.Reload(player, weapon)
+		end
+	end)
+
+	Net.Event("RequestEquip").OnServerEvent:Connect(function(player, slot, weaponId)
+		if type(slot) ~= "string" or type(weaponId) ~= "string" then
+			return
+		end
+		local success, message = DataService.SetLoadout(player, slot, weaponId)
+		Net.Event("Notify"):FireClient(player, message, success and "good" or "bad")
+		if success then
+			-- Applique immediatement si le joueur est vivant.
+			local character = player.Character
+			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+			if humanoid and humanoid.Health > 0 then
+				WeaponService.GiveLoadout(player)
+			end
+		end
+	end)
+
+	Players.PlayerRemoving:Connect(function(player)
+		ammoState[player] = nil
+	end)
+end
+
+return WeaponService
+]]></string>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
 </roblox>

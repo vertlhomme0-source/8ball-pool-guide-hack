@@ -53,6 +53,13 @@ function PlayerService.Spawn(player)
 	end
 	pendingRespawn[player] = nil
 
+	-- Sans terrain, faire apparaitre le joueur le ferait tomber dans le vide
+	-- indefiniment. Mieux vaut ne pas l'incarner et le dire clairement.
+	if not MapService.GetCurrentMap() then
+		warn("[WaterWars] Apparition annulee : aucun terrain n'est charge.")
+		return
+	end
+
 	local teamId = TeamService.IsTeamMode() and TeamService.GetTeamId(player) or nil
 	local key = teamId or "FFA"
 	local spawnCFrame = MapService.GetSpawnCFrame(teamId, nextSpawnIndex(key))

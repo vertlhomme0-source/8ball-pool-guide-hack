@@ -12,7 +12,7 @@ FAIL=0
 
 python3 "$ROOT/tools/gen_sourcemap.py" > /dev/null
 mapfile -t FILES < <(find "$ROOT/src" -name "*.luau" | sort)
-echo "== [1/4] luau-compile (${#FILES[@]} fichiers) =="
+echo "== [1/5] luau-compile (${#FILES[@]} fichiers) =="
 if [ -x "$LUAU_COMPILE" ]; then
   if ! "$LUAU_COMPILE" --binary -O2 "${FILES[@]}" > /dev/null; then FAIL=1; fi
   echo "   ok"
@@ -20,7 +20,7 @@ else
   echo "   (luau-compile introuvable, etape ignoree)"
 fi
 
-echo "== [2/4] luau-lsp analyze (types Roblox) =="
+echo "== [2/5] luau-lsp analyze (types Roblox) =="
 if [ -x "$LUAU_LSP" ]; then
   OUT="$("$LUAU_LSP" analyze --definitions="$ROOT/tools/globalTypes.d.luau" \
         --settings="$ROOT/tools/lsp-settings.json" \
@@ -33,11 +33,17 @@ else
   echo "   (luau-lsp introuvable, etape ignoree)"
 fi
 
-echo "== [3/4] passe stricte (proprietes Roblox) =="
+echo "== [3/5] passe stricte (proprietes Roblox) =="
 if ! python3 "$ROOT/tools/strict_pass.py"; then FAIL=1; fi
 
-echo "== [4/4] verifications de coherence =="
+echo "== [4/5] verifications de coherence =="
 if ! python3 "$ROOT/tools/check_data.py"; then FAIL=1; fi
+
+echo "== [5/5] demarrage reel du serveur (simulation Roblox) =="
+echo "   -- installation normale"
+if ! python3 "$ROOT/tools/boot_test.py" | sed 's/^/   /'; then FAIL=1; fi
+echo "   -- contenu insere au mauvais endroit (auto-reparation)"
+if ! python3 "$ROOT/tools/boot_test.py" --misplaced | sed 's/^/   /'; then FAIL=1; fi
 
 if [ $FAIL -ne 0 ]; then echo ""; echo "RESULTAT: ECHEC"; exit 1; fi
 echo ""; echo "RESULTAT: TOUT EST VERT"
