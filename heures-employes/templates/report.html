@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Rapport{% endblock %}
+{% block content %}
+<h1>Rapport journalier</h1>
+<section class="card">
+  <form method="get" class="entry-form">
+    <label>Journée <input type="date" name="date" value="{{ day.isoformat() }}" onchange="this.form.submit()"></label>
+    <a class="btn ghost" href="{{ url_for('report_csv', date=day.isoformat()) }}">Télécharger CSV</a>
+  </form>
+  <form method="post" action="{{ url_for('report_send') }}" class="entry-form">
+    <input type="hidden" name="date" value="{{ day.isoformat() }}">
+    <button class="btn" {{ 'disabled' if not cfg.smtp_configured }}>Envoyer maintenant par e-mail</button>
+  </form>
+  {% if cfg.smtp_configured %}
+    <p class="hint">Envoi automatique {{ 'activé' if cfg.scheduler_enabled else 'désactivé' }} :
+      chaque jour à <strong>{{ cfg.report_time }}</strong> ({{ cfg.timezone }}) à
+      <strong>{{ cfg.report_recipients|join(', ') }}</strong>.</p>
+  {% else %}
+    <p class="flash error">SMTP non configuré : copiez <code>.env.example</code> en <code>.env</code> et remplissez les paramètres e-mail.</p>
+  {% endif %}
+</section>
+
+<section class="card">
+  <h2>Aperçu de l'e-mail</h2>
+  <iframe class="preview" src="{{ url_for('report_preview', date=day.isoformat()) }}"></iframe>
+</section>
+
+<section class="card">
+  <h2>Derniers envois</h2>
+  <table>
+    <thead><tr><th>Journée</th><th>Envoyé le</th><th>Type</th><th>Destinataires</th><th>Résultat</th></tr></thead>
+    <tbody>
+    {% for r in reports %}
+      <tr><td>{{ r.report_date }}</td><td>{{ r.sent_at.replace('T', ' ') }}</td>
+        <td>{{ 'Automatique' if r.automatic else 'Manuel' }}</td><td>{{ r.recipients }}</td>
+        <td>{% if r.status == 'ok' %}<span class="ok">✔ envoyé</span>{% else %}<span class="danger" title="{{ r.detail }}">✖ {{ r.detail }}</span>{% endif %}</td></tr>
+    {% else %}
+      <tr><td colspan="5" class="muted">Aucun rapport envoyé pour l'instant.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

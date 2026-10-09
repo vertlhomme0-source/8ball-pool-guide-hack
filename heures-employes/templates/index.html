@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Saisie des heures{% endblock %}
+{% block content %}
+<div class="day-nav">
+  <a class="btn ghost" href="{{ url_for('index', date=prev_day.isoformat()) }}">←</a>
+  <form method="get"><input type="date" name="date" value="{{ day.isoformat() }}" onchange="this.form.submit()"></form>
+  <a class="btn ghost" href="{{ url_for('index', date=next_day.isoformat()) }}">→</a>
+  {% if day != today %}<a class="btn ghost" href="{{ url_for('index') }}">Aujourd'hui</a>{% endif %}
+  <h1>{{ date_fr(day)|capitalize }}</h1>
+</div>
+
+<section class="stats">
+  <div class="stat"><span>Heures totales</span><strong>{{ fmt_hours(report.total_hours) }}</strong></div>
+  <div class="stat"><span>Employés présents</span><strong>{{ report.summaries|length }}</strong></div>
+  <div class="stat"><span>Coût estimé</span><strong>{{ '%.2f'|format(report.total_cost) }} $</strong></div>
+</section>
+
+<section class="card">
+  <h2>Ajouter des heures</h2>
+  {% if not employees %}
+    <p>Aucun employé. <a href="{{ url_for('employees') }}">Ajoutez d'abord vos employés.</a></p>
+  {% else %}
+  <form method="post" action="{{ url_for('add_entry') }}" class="entry-form">
+    <input type="hidden" name="work_date" value="{{ day.isoformat() }}">
+    <label>Employé
+      <select name="employee_id" required>
+        <option value="">— choisir —</option>
+        {% for e in employees %}<option value="{{ e.id }}">{{ e.name }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Arrivée <input type="time" name="start_time" required></label>
+    <label>Départ <input type="time" name="end_time" required></label>
+    <label>Pause (min) <input type="number" name="break_minutes" min="0" step="5" value="0"></label>
+    <label class="grow">Notes <input type="text" name="notes" placeholder="optionnel"></label>
+    <button class="btn">Enregistrer</button>
+  </form>
+  <p class="hint">Si le départ est avant l'arrivée (ex. 22:00 → 06:00), le quart est compté sur la nuit.</p>
+  {% endif %}
+</section>
+
+<section class="card">
+  <h2>Pointages du jour</h2>
+  {% if report.summaries %}
+  <table>
+    <thead><tr><th>Employé</th><th>Horaire</th><th>Pause</th><th class="num">Heures</th><th>Notes</th><th></th></tr></thead>
+    <tbody>
+    {% for s in report.summaries %}
+      {% for e in s.entries %}
+      <tr>
+        <td>{% if loop.first %}{{ s.name }}{% if s.daily_overtime %} <span class="badge">heures sup.</span>{% endif %}{% endif %}</td>
+        <td>{{ e.start_time.strftime('%H:%M') }} → {{ e.end_time.strftime('%H:%M') }}{% if e.overnight %} 🌙{% endif %}</td>
+        <td>{{ e.break_minutes }} min</td>
+        <td class="num">{{ fmt_hours(e.hours) }}</td>
+        <td class="muted">{{ e.notes }}</td>
+        <td>
+          <form method="post" action="{{ url_for('delete_entry', entry_id=e.id) }}" onsubmit="return confirm('Supprimer ce pointage ?')">
+            <input type="hidden" name="date" value="{{ day.isoformat() }}">
+            <button class="link danger" title="Supprimer">✕</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+      <tr class="subtotal">
+        <td colspan="3">Sous-total {{ s.name }} · semaine : <span class="{{ 'warn' if s.weekly_overtime }}">{{ fmt_hours(s.week_hours) }}</span></td>
+        <td class="num">{{ fmt_hours(s.day_hours) }}</td><td colspan="2"></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p class="muted">Aucune heure saisie pour cette journée.</p>
+  {% endif %}
+  {% if report.absent %}<p class="muted">Sans pointage : {{ report.absent|join(', ') }}</p>{% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Historique{% endblock %}
+{% block content %}
+<h1>Historique des heures</h1>
+<form method="get" class="entry-form card">
+  <label>Du <input type="date" name="debut" value="{{ start.isoformat() }}"></label>
+  <label>Au <input type="date" name="fin" value="{{ end.isoformat() }}"></label>
+  <button class="btn">Afficher</button>
+</form>
+<section class="card scroll">
+  {% if names %}
+  <table class="grid">
+    <thead><tr><th>Employé</th>
+      {% for d in days %}<th class="num"><a href="{{ url_for('index', date=d.isoformat()) }}">{{ d.strftime('%d/%m') }}</a></th>{% endfor %}
+      <th class="num">Total</th></tr></thead>
+    <tbody>
+    {% for name in names %}
+      <tr><td>{{ name }}</td>
+        {% for d in days %}{% set h = grid[name][d] %}<td class="num {{ 'muted' if not h }}">{{ '%.2f'|format(h) if h else '–' }}</td>{% endfor %}
+        <td class="num"><strong>{{ fmt_hours(grid[name].values()|sum) }}</strong></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p class="muted">Aucune heure sur cette période.</p>
+  {% endif %}
+</section>
+{% endblock %}
